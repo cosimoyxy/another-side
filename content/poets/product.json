@@ -1,0 +1,1413 @@
+{
+  "meta": {
+    "id": "poets",
+    "title": "你的灵魂更像哪位古典诗人",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "object-match",
+    "description": "给十八个生活片段选一个回应，遇见与你表达方式相近的诗意。",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": false
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "你和朋友准备办一场小型诗会，第一次碰头时你更可能做什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先试读一首，看看现场感觉",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「你和朋友准备办一场小型诗会，第一次碰头时你更可能做什么？」，你选择了「先试读一首，看看现场感觉」。"
+        },
+        {
+          "id": "c2",
+          "text": "先听大家喜欢什么样的诗会",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「你和朋友准备办一场小型诗会，第一次碰头时你更可能做什么？」，你选择了「先听大家喜欢什么样的诗会」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动约一次短彩排，把想法试出来",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「你和朋友准备办一场小型诗会，第一次碰头时你更可能做什么？」，你选择了「主动约一次短彩排，把想法试出来」。"
+        },
+        {
+          "id": "c4",
+          "text": "看一场别人的诗会再决定",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「你和朋友准备办一场小型诗会，第一次碰头时你更可能做什么？」，你选择了「看一场别人的诗会再决定」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "一首旧诗的意思让你拿不准，你通常怎么读它？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "听听熟悉诗词的朋友怎么说",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「一首旧诗的意思让你拿不准，你通常怎么读它？」，你选择了「听听熟悉诗词的朋友怎么说」。"
+        },
+        {
+          "id": "c2",
+          "text": "比较原文版本、写作背景和不同解释",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「一首旧诗的意思让你拿不准，你通常怎么读它？」，你选择了「比较原文版本、写作背景和不同解释」。"
+        },
+        {
+          "id": "c3",
+          "text": "先保留自己的直观感受",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「一首旧诗的意思让你拿不准，你通常怎么读它？」，你选择了「先保留自己的直观感受」。"
+        },
+        {
+          "id": "c4",
+          "text": "看前后文和词语的用法",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「一首旧诗的意思让你拿不准，你通常怎么读它？」，你选择了「看前后文和词语的用法」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "一位朋友读完自己的诗后有点失落，你会先怎样回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先听听这首诗对他的意义，再讨论修改",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「一位朋友读完自己的诗后有点失落，你会先怎样回应？」，你选择了「先听听这首诗对他的意义，再讨论修改」。"
+        },
+        {
+          "id": "c2",
+          "text": "给一个容易做到的修改建议",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「一位朋友读完自己的诗后有点失落，你会先怎样回应？」，你选择了「给一个容易做到的修改建议」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问他最想表达却没传达出的部分",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「一位朋友读完自己的诗后有点失落，你会先怎样回应？」，你选择了「问问他最想表达却没传达出的部分」。"
+        },
+        {
+          "id": "c4",
+          "text": "指出可以改进的结构和用词",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「一位朋友读完自己的诗后有点失落，你会先怎样回应？」，你选择了「指出可以改进的结构和用词」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "诗会给了一个固定题目和常用格式，你会怎样创作？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "按格式写，把内容打磨好",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「诗会给了一个固定题目和常用格式，你会怎样创作？」，你选择了「按格式写，把内容打磨好」。"
+        },
+        {
+          "id": "c2",
+          "text": "在题目范围里尝试不同视角",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「诗会给了一个固定题目和常用格式，你会怎样创作？」，你选择了「在题目范围里尝试不同视角」。"
+        },
+        {
+          "id": "c3",
+          "text": "保留格式，加入自己的一个细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「诗会给了一个固定题目和常用格式，你会怎样创作？」，你选择了「保留格式，加入自己的一个细节」。"
+        },
+        {
+          "id": "c4",
+          "text": "把题目变成新的形式，附上创作说明",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「诗会给了一个固定题目和常用格式，你会怎样创作？」，你选择了「把题目变成新的形式，附上创作说明」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "诗会邀请大家朗读自己的作品，你更偏好？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "亲自读一首，再听听反馈",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「诗会邀请大家朗读自己的作品，你更偏好？」，你选择了「亲自读一首，再听听反馈」。"
+        },
+        {
+          "id": "c2",
+          "text": "把稿子放进作品集，自己听别人读",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「诗会邀请大家朗读自己的作品，你更偏好？」，你选择了「把稿子放进作品集，自己听别人读」。"
+        },
+        {
+          "id": "c3",
+          "text": "主持朗读环节，带大家交流创作",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「诗会邀请大家朗读自己的作品，你更偏好？」，你选择了「主持朗读环节，带大家交流创作」。"
+        },
+        {
+          "id": "c4",
+          "text": "请熟悉的朋友替自己读",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「诗会邀请大家朗读自己的作品，你更偏好？」，你选择了「请熟悉的朋友替自己读」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "你打算一个月完成一组小诗，通常怎样安排？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "记下几个主题，慢慢补齐",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「你打算一个月完成一组小诗，通常怎样安排？」，你选择了「记下几个主题，慢慢补齐」。"
+        },
+        {
+          "id": "c2",
+          "text": "排好写作、修改和选稿的完整日程",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「你打算一个月完成一组小诗，通常怎样安排？」，你选择了「排好写作、修改和选稿的完整日程」。"
+        },
+        {
+          "id": "c3",
+          "text": "有感受时就写，数量顺其自然",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「你打算一个月完成一组小诗，通常怎样安排？」，你选择了「有感受时就写，数量顺其自然」。"
+        },
+        {
+          "id": "c4",
+          "text": "每周写一首，并留时间回看",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「你打算一个月完成一组小诗，通常怎样安排？」，你选择了「每周写一首，并留时间回看」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "路过一处风景，忽然想把它写下来，你通常会怎样？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "马上找个地方坐下，写出第一稿",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「路过一处风景，忽然想把它写下来，你通常会怎样？」，你选择了「马上找个地方坐下，写出第一稿」。"
+        },
+        {
+          "id": "c2",
+          "text": "回到住处再记几个印象",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「路过一处风景，忽然想把它写下来，你通常会怎样？」，你选择了「回到住处再记几个印象」。"
+        },
+        {
+          "id": "c3",
+          "text": "当场写两句，之后再修改",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「路过一处风景，忽然想把它写下来，你通常会怎样？」，你选择了「当场写两句，之后再修改」。"
+        },
+        {
+          "id": "c4",
+          "text": "先慢慢看，等感受沉淀",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「路过一处风景，忽然想把它写下来，你通常会怎样？」，你选择了「先慢慢看，等感受沉淀」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "想描写一场雨，你最常用哪种观察方式？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "记下雨带给自己的情绪",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「想描写一场雨，你最常用哪种观察方式？」，你选择了「记下雨带给自己的情绪」。"
+        },
+        {
+          "id": "c2",
+          "text": "留意雨声、光线与环境变化",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「想描写一场雨，你最常用哪种观察方式？」，你选择了「留意雨声、光线与环境变化」。"
+        },
+        {
+          "id": "c3",
+          "text": "捕捉一个最鲜明的画面",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「想描写一场雨，你最常用哪种观察方式？」，你选择了「捕捉一个最鲜明的画面」。"
+        },
+        {
+          "id": "c4",
+          "text": "把细节分开记录，再找它们之间的关系",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「想描写一场雨，你最常用哪种观察方式？」，你选择了「把细节分开记录，再找它们之间的关系」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "诗会当天，朋友因为紧张忘了几句，你会怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问他想继续还是换个方式",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「诗会当天，朋友因为紧张忘了几句，你会怎么做？」，你选择了「问他想继续还是换个方式」。"
+        },
+        {
+          "id": "c2",
+          "text": "把流程接下去，避免全场卡住",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「诗会当天，朋友因为紧张忘了几句，你会怎么做？」，你选择了「把流程接下去，避免全场卡住」。"
+        },
+        {
+          "id": "c3",
+          "text": "先让他安心，再陪他按舒服的节奏完成",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「诗会当天，朋友因为紧张忘了几句，你会怎么做？」，你选择了「先让他安心，再陪他按舒服的节奏完成」。"
+        },
+        {
+          "id": "c4",
+          "text": "小声提醒下一句内容",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「诗会当天，朋友因为紧张忘了几句，你会怎么做？」，你选择了「小声提醒下一句内容」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "你写下一个别人觉得不太合常规的意象，你会怎么处理？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保留一点特别之处，其余写得稳妥",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「你写下一个别人觉得不太合常规的意象，你会怎么处理？」，你选择了「保留一点特别之处，其余写得稳妥」。"
+        },
+        {
+          "id": "c2",
+          "text": "围绕这个意象继续探索新的表达方法",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「你写下一个别人觉得不太合常规的意象，你会怎么处理？」，你选择了「围绕这个意象继续探索新的表达方法」。"
+        },
+        {
+          "id": "c3",
+          "text": "改成更容易理解的表达",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「你写下一个别人觉得不太合常规的意象，你会怎么处理？」，你选择了「改成更容易理解的表达」。"
+        },
+        {
+          "id": "c4",
+          "text": "保留意象，补足让人理解的线索",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「你写下一个别人觉得不太合常规的意象，你会怎么处理？」，你选择了「保留意象，补足让人理解的线索」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "你有一段刚完成的文字，想获得反馈时通常会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "组织一次公开交流，主动介绍创作过程",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「你有一段刚完成的文字，想获得反馈时通常会？」，你选择了「组织一次公开交流，主动介绍创作过程」。"
+        },
+        {
+          "id": "c2",
+          "text": "发给一位信任的朋友",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「你有一段刚完成的文字，想获得反馈时通常会？」，你选择了「发给一位信任的朋友」。"
+        },
+        {
+          "id": "c3",
+          "text": "放进小组，请大家回应",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「你有一段刚完成的文字，想获得反馈时通常会？」，你选择了「放进小组，请大家回应」。"
+        },
+        {
+          "id": "c4",
+          "text": "先留在笔记本里，修改后再说",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「你有一段刚完成的文字，想获得反馈时通常会？」，你选择了「先留在笔记本里，修改后再说」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "旅行时准备收集写作素材，你会怎样准备？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "带个本子，遇见什么记什么",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「旅行时准备收集写作素材，你会怎样准备？」，你选择了「带个本子，遇见什么记什么」。"
+        },
+        {
+          "id": "c2",
+          "text": "给每天留一段记录时间",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「旅行时准备收集写作素材，你会怎样准备？」，你选择了「给每天留一段记录时间」。"
+        },
+        {
+          "id": "c3",
+          "text": "想好几个关注点，其他随缘",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「旅行时准备收集写作素材，你会怎样准备？」，你选择了「想好几个关注点，其他随缘」。"
+        },
+        {
+          "id": "c4",
+          "text": "提前设计记录清单与整理方法",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「旅行时准备收集写作素材，你会怎样准备？」，你选择了「提前设计记录清单与整理方法」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "诗会迟迟没有开始筹备，你会怎么回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "提议先办十分钟的线上试读",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「诗会迟迟没有开始筹备，你会怎么回应？」，你选择了「提议先办十分钟的线上试读」。"
+        },
+        {
+          "id": "c2",
+          "text": "先确认大家是否还想办",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「诗会迟迟没有开始筹备，你会怎么回应？」，你选择了「先确认大家是否还想办」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动约好时间并准备开场作品",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「诗会迟迟没有开始筹备，你会怎么回应？」，你选择了「主动约好时间并准备开场作品」。"
+        },
+        {
+          "id": "c4",
+          "text": "等有空的伙伴提出时间",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「诗会迟迟没有开始筹备，你会怎么回应？」，你选择了「等有空的伙伴提出时间」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "别人说你的作品像某位诗人，你会怎样理解这句话？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "请他举一首相似的作品",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「别人说你的作品像某位诗人，你会怎样理解这句话？」，你选择了「请他举一首相似的作品」。"
+        },
+        {
+          "id": "c2",
+          "text": "找几首不同阶段的作品，核对相似与差别",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「别人说你的作品像某位诗人，你会怎样理解这句话？」，你选择了「找几首不同阶段的作品，核对相似与差别」。"
+        },
+        {
+          "id": "c3",
+          "text": "觉得气质相近就足够了",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「别人说你的作品像某位诗人，你会怎样理解这句话？」，你选择了「觉得气质相近就足够了」。"
+        },
+        {
+          "id": "c4",
+          "text": "比较表达方式和意象选择",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「别人说你的作品像某位诗人，你会怎样理解这句话？」，你选择了「比较表达方式和意象选择」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "编选一份朋友们的作品集，有人的稿子还很稚嫩，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先了解他想被看见的心意，再陪着调整",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「编选一份朋友们的作品集，有人的稿子还很稚嫩，你倾向？」，你选择了「先了解他想被看见的心意，再陪着调整」。"
+        },
+        {
+          "id": "c2",
+          "text": "给出修改清单后再决定",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「编选一份朋友们的作品集，有人的稿子还很稚嫩，你倾向？」，你选择了「给出修改清单后再决定」。"
+        },
+        {
+          "id": "c3",
+          "text": "一起找出作品最动人的部分",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「编选一份朋友们的作品集，有人的稿子还很稚嫩，你倾向？」，你选择了「一起找出作品最动人的部分」。"
+        },
+        {
+          "id": "c4",
+          "text": "按统一完成标准选稿",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「编选一份朋友们的作品集，有人的稿子还很稚嫩，你倾向？」，你选择了「按统一完成标准选稿」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "有一个完全自由的下午，你最想怎样寻找灵感？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "去熟悉的书店重读喜欢的作品",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「有一个完全自由的下午，你最想怎样寻找灵感？」，你选择了「去熟悉的书店重读喜欢的作品」。"
+        },
+        {
+          "id": "c2",
+          "text": "到没去过的街区随意走走",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「有一个完全自由的下午，你最想怎样寻找灵感？」，你选择了「到没去过的街区随意走走」。"
+        },
+        {
+          "id": "c3",
+          "text": "沿常走的路线观察新细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「有一个完全自由的下午，你最想怎样寻找灵感？」，你选择了「沿常走的路线观察新细节」。"
+        },
+        {
+          "id": "c4",
+          "text": "用一种从未试过的媒介记录这个下午",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「有一个完全自由的下午，你最想怎样寻找灵感？」，你选择了「用一种从未试过的媒介记录这个下午」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "朋友请你为聚会写一段祝福，你倾向用什么方式呈现？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "在聚会上读一小段",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「朋友请你为聚会写一段祝福，你倾向用什么方式呈现？」，你选择了「在聚会上读一小段」。"
+        },
+        {
+          "id": "c2",
+          "text": "写一张卡片，让他自己读",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「朋友请你为聚会写一段祝福，你倾向用什么方式呈现？」，你选择了「写一张卡片，让他自己读」。"
+        },
+        {
+          "id": "c3",
+          "text": "设计一段互动，让大家一起表达祝福",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「朋友请你为聚会写一段祝福，你倾向用什么方式呈现？」，你选择了「设计一段互动，让大家一起表达祝福」。"
+        },
+        {
+          "id": "c4",
+          "text": "私下读给他听",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「朋友请你为聚会写一段祝福，你倾向用什么方式呈现？」，你选择了「私下读给他听」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "要把零散笔记做成作品集，你通常从哪里开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先选出几个大主题",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「要把零散笔记做成作品集，你通常从哪里开始？」，你选择了「先选出几个大主题」。"
+        },
+        {
+          "id": "c2",
+          "text": "建立目录、版本和修改记录，再逐步整理",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「要把零散笔记做成作品集，你通常从哪里开始？」，你选择了「建立目录、版本和修改记录，再逐步整理」。"
+        },
+        {
+          "id": "c3",
+          "text": "一边翻阅一边挑喜欢的片段",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「要把零散笔记做成作品集，你通常从哪里开始？」，你选择了「一边翻阅一边挑喜欢的片段」。"
+        },
+        {
+          "id": "c4",
+          "text": "按主题分组，列好编辑步骤",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「要把零散笔记做成作品集，你通常从哪里开始？」，你选择了「按主题分组，列好编辑步骤」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "li-bai",
+      "name": "李白",
+      "subtitle": "让想象越过边界",
+      "lead": "重视直接的感受和自由表达，愿意把突来的灵感写成自己的样子。",
+      "contrast": "以作品表达为灵感，不从诗句推断作者完整人格或饮酒习惯。",
+      "insight": "把「让想象越过边界」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 67,
+        "analysis": 32,
+        "care": 43,
+        "freedom": 77,
+        "expression": 73,
+        "structure": 28
+      },
+      "sourceIds": [
+        "src_li-bai"
+      ],
+      "claimIds": [
+        "fact_li-bai",
+        "model_li-bai"
+      ],
+      "fact": "李白的《将进酒》使用开阔的意象与强烈的抒情表达。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "du-fu",
+      "name": "杜甫",
+      "subtitle": "看见生活的重量",
+      "lead": "留意具体处境，愿意理解别人，也把观察认真整理下来。",
+      "contrast": "来自作品主题的原创映射，不以忧患判断使用者的情绪健康。",
+      "insight": "把「看见生活的重量」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 36,
+        "analysis": 67,
+        "care": 72,
+        "freedom": 35,
+        "expression": 33,
+        "structure": 69
+      },
+      "sourceIds": [
+        "src_du-fu"
+      ],
+      "claimIds": [
+        "fact_du-fu",
+        "model_du-fu"
+      ],
+      "fact": "杜甫的《春望》写到战乱中的家国与亲人之思。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "su-shi",
+      "name": "苏轼",
+      "subtitle": "把风雨写成日常",
+      "lead": "在变化中保留好奇，也愿意分享自己的理解与生活趣味。",
+      "contrast": "只取作品中的从容视角，不将其所有人生阶段归为乐观。",
+      "insight": "把「把风雨写成日常」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 57,
+        "analysis": 52,
+        "care": 59,
+        "freedom": 67,
+        "expression": 66,
+        "structure": 42
+      },
+      "sourceIds": [
+        "src_su-shi"
+      ],
+      "claimIds": [
+        "fact_su-shi",
+        "model_su-shi"
+      ],
+      "fact": "苏轼的《定风波·莫听穿林打叶声》以途中遇雨展开书写。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "li-qingzhao",
+      "name": "李清照",
+      "subtitle": "为细节留下声音",
+      "lead": "珍惜感受的细部，愿意用自己的形式把它们清楚留下。",
+      "contrast": "以这首作品为主，不混写晚年境遇；不把细腻等同于脆弱。",
+      "insight": "把「为细节留下声音」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 39,
+        "analysis": 56,
+        "care": 68,
+        "freedom": 63,
+        "expression": 36,
+        "structure": 54
+      },
+      "sourceIds": [
+        "src_li-qingzhao"
+      ],
+      "claimIds": [
+        "fact_li-qingzhao",
+        "model_li-qingzhao"
+      ],
+      "fact": "李清照的《如梦令·常记溪亭日暮》写到游玩、回舟与误入荷花深处。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "wang-wei",
+      "name": "王维",
+      "subtitle": "在安静里看得更深",
+      "lead": "不急于把感受说得很响，愿意留出观察与独处的空间。",
+      "contrast": "从诗中意象设计原型，不推断宗教身份或社交能力。",
+      "insight": "把「在安静里看得更深」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 29,
+        "analysis": 57,
+        "care": 50,
+        "freedom": 41,
+        "expression": 24,
+        "structure": 58
+      },
+      "sourceIds": [
+        "src_wang-wei"
+      ],
+      "claimIds": [
+        "fact_wang-wei",
+        "model_wang-wei"
+      ],
+      "fact": "王维的《山居秋暝》描写雨后山中环境与人的活动。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "xin-qiji",
+      "name": "辛弃疾",
+      "subtitle": "让热望有一个方向",
+      "lead": "有方向感，也愿意把准备和行动接起来，认真回应自己的目标。",
+      "contrast": "借作品气势作原创匹配，不测量政治立场或军事能力。",
+      "insight": "把「让热望有一个方向」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 73,
+        "analysis": 53,
+        "care": 38,
+        "freedom": 47,
+        "expression": 65,
+        "structure": 70
+      },
+      "sourceIds": [
+        "src_xin-qiji"
+      ],
+      "claimIds": [
+        "fact_xin-qiji",
+        "model_xin-qiji"
+      ],
+      "fact": "辛弃疾的《破阵子·为陈同甫赋壮词以寄之》使用军旅意象。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "tao-yuanming",
+      "name": "陶渊明",
+      "subtitle": "按自己的步调生活",
+      "lead": "给自主选择与过程体验留位置，不急着追随统一的节奏。",
+      "contrast": "诗人生活不能只用归隐概括；原型不鼓励逃避现实责任。",
+      "insight": "把「按自己的步调生活」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 30,
+        "analysis": 32,
+        "care": 53,
+        "freedom": 73,
+        "expression": 27,
+        "structure": 31
+      },
+      "sourceIds": [
+        "src_tao-yuanming"
+      ],
+      "claimIds": [
+        "fact_tao-yuanming",
+        "model_tao-yuanming"
+      ],
+      "fact": "陶渊明的《归园田居》组诗描写田园生活与回归之意。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "bai-juyi",
+      "name": "白居易",
+      "subtitle": "把看见的事讲清楚",
+      "lead": "关心人具体怎样生活，愿意把观察写成容易理解的表达。",
+      "contrast": "亲近生活是作品解读，不把通俗等同于没有艺术复杂性。",
+      "insight": "把「把看见的事讲清楚」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 48,
+        "analysis": 63,
+        "care": 72,
+        "freedom": 35,
+        "expression": 63,
+        "structure": 60
+      },
+      "sourceIds": [
+        "src_bai-juyi"
+      ],
+      "claimIds": [
+        "fact_bai-juyi",
+        "model_bai-juyi"
+      ],
+      "fact": "白居易的《卖炭翁》叙写一位卖炭者的处境。",
+      "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。",
+      "accent": "#44787c",
+      "image": {
+        "file": "assets/poets.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_li-bai",
+      "checkedAt": "2026-10-11",
+      "title": "李白《将进酒》",
+      "url": "https://zh.wikisource.org/wiki/%E5%B0%87%E9%80%B2%E9%85%92_(%E6%9D%8E%E7%99%BD)",
+      "kind": "primary"
+    },
+    {
+      "id": "src_du-fu",
+      "checkedAt": "2026-10-11",
+      "title": "杜甫《春望》",
+      "url": "https://zh.wikisource.org/wiki/%E6%98%A5%E6%9C%9B",
+      "kind": "primary"
+    },
+    {
+      "id": "src_su-shi",
+      "checkedAt": "2026-10-11",
+      "title": "苏轼《定风波》",
+      "url": "https://zh.wikisource.org/wiki/%E5%AE%9A%E9%A2%A8%E6%B3%A2_(%E8%8E%AB%E8%81%BD%E7%A9%BF%E6%9E%97%E6%89%93%E8%91%89%E8%81%B2)",
+      "kind": "primary"
+    },
+    {
+      "id": "src_li-qingzhao",
+      "checkedAt": "2026-10-11",
+      "title": "李清照《如梦令》",
+      "url": "https://zh.wikisource.org/wiki/%E5%A6%82%E5%A4%A2%E4%BB%A4_(%E6%9D%8E%E6%B8%85%E7%85%A7)/%E5%A6%82%E5%A4%A2%E4%BB%A4_(%E5%B8%B8%E8%A8%98%E6%BA%AA%E4%BA%AD%E6%97%A5%E6%9A%AE)",
+      "kind": "primary"
+    },
+    {
+      "id": "src_wang-wei",
+      "checkedAt": "2026-10-11",
+      "title": "王维《山居秋暝》",
+      "url": "https://zh.wikisource.org/wiki/%E5%B1%B1%E5%B1%85%E7%A7%8B%E6%9A%9D",
+      "kind": "primary"
+    },
+    {
+      "id": "src_xin-qiji",
+      "checkedAt": "2026-10-11",
+      "title": "辛弃疾《破阵子》",
+      "url": "https://zh.wikisource.org/zh-hant/%E7%A0%B4%E9%98%B5%E5%AD%90%C2%B7%E4%B8%BA%E9%99%88%E5%90%8C%E7%94%AB%E8%B5%8B%E5%A3%AE%E8%AF%8D%E4%BB%A5%E5%AF%84",
+      "kind": "primary"
+    },
+    {
+      "id": "src_tao-yuanming",
+      "checkedAt": "2026-10-11",
+      "title": "陶渊明《归园田居》",
+      "url": "https://zh.wikisource.org/wiki/%E6%AD%B8%E5%9C%92%E7%94%B0%E5%B1%85",
+      "kind": "primary"
+    },
+    {
+      "id": "src_bai-juyi",
+      "checkedAt": "2026-10-11",
+      "title": "白居易《卖炭翁》",
+      "url": "https://zh.wikisource.org/wiki/%E8%B3%A3%E7%82%AD%E7%BF%81",
+      "kind": "primary"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_li-bai",
+      "text": "李白的《将进酒》使用开阔的意象与强烈的抒情表达。",
+      "type": "fact",
+      "sourceIds": [
+        "src_li-bai"
+      ],
+      "limits": "以作品表达为灵感，不从诗句推断作者完整人格或饮酒习惯。"
+    },
+    {
+      "id": "model_li-bai",
+      "text": "由公开作品侧面启发的原创解读：重视直接的感受和自由表达，愿意把突来的灵感写成自己的样子。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；以作品表达为灵感，不从诗句推断作者完整人格或饮酒习惯。"
+    },
+    {
+      "id": "fact_du-fu",
+      "text": "杜甫的《春望》写到战乱中的家国与亲人之思。",
+      "type": "fact",
+      "sourceIds": [
+        "src_du-fu"
+      ],
+      "limits": "来自作品主题的原创映射，不以忧患判断使用者的情绪健康。"
+    },
+    {
+      "id": "model_du-fu",
+      "text": "由公开作品侧面启发的原创解读：留意具体处境，愿意理解别人，也把观察认真整理下来。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；来自作品主题的原创映射，不以忧患判断使用者的情绪健康。"
+    },
+    {
+      "id": "fact_su-shi",
+      "text": "苏轼的《定风波·莫听穿林打叶声》以途中遇雨展开书写。",
+      "type": "fact",
+      "sourceIds": [
+        "src_su-shi"
+      ],
+      "limits": "只取作品中的从容视角，不将其所有人生阶段归为乐观。"
+    },
+    {
+      "id": "model_su-shi",
+      "text": "由公开作品侧面启发的原创解读：在变化中保留好奇，也愿意分享自己的理解与生活趣味。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；只取作品中的从容视角，不将其所有人生阶段归为乐观。"
+    },
+    {
+      "id": "fact_li-qingzhao",
+      "text": "李清照的《如梦令·常记溪亭日暮》写到游玩、回舟与误入荷花深处。",
+      "type": "fact",
+      "sourceIds": [
+        "src_li-qingzhao"
+      ],
+      "limits": "以这首作品为主，不混写晚年境遇；不把细腻等同于脆弱。"
+    },
+    {
+      "id": "model_li-qingzhao",
+      "text": "由公开作品侧面启发的原创解读：珍惜感受的细部，愿意用自己的形式把它们清楚留下。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；以这首作品为主，不混写晚年境遇；不把细腻等同于脆弱。"
+    },
+    {
+      "id": "fact_wang-wei",
+      "text": "王维的《山居秋暝》描写雨后山中环境与人的活动。",
+      "type": "fact",
+      "sourceIds": [
+        "src_wang-wei"
+      ],
+      "limits": "从诗中意象设计原型，不推断宗教身份或社交能力。"
+    },
+    {
+      "id": "model_wang-wei",
+      "text": "由公开作品侧面启发的原创解读：不急于把感受说得很响，愿意留出观察与独处的空间。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；从诗中意象设计原型，不推断宗教身份或社交能力。"
+    },
+    {
+      "id": "fact_xin-qiji",
+      "text": "辛弃疾的《破阵子·为陈同甫赋壮词以寄之》使用军旅意象。",
+      "type": "fact",
+      "sourceIds": [
+        "src_xin-qiji"
+      ],
+      "limits": "借作品气势作原创匹配，不测量政治立场或军事能力。"
+    },
+    {
+      "id": "model_xin-qiji",
+      "text": "由公开作品侧面启发的原创解读：有方向感，也愿意把准备和行动接起来，认真回应自己的目标。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；借作品气势作原创匹配，不测量政治立场或军事能力。"
+    },
+    {
+      "id": "fact_tao-yuanming",
+      "text": "陶渊明的《归园田居》组诗描写田园生活与回归之意。",
+      "type": "fact",
+      "sourceIds": [
+        "src_tao-yuanming"
+      ],
+      "limits": "诗人生活不能只用归隐概括；原型不鼓励逃避现实责任。"
+    },
+    {
+      "id": "model_tao-yuanming",
+      "text": "由公开作品侧面启发的原创解读：给自主选择与过程体验留位置，不急着追随统一的节奏。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；诗人生活不能只用归隐概括；原型不鼓励逃避现实责任。"
+    },
+    {
+      "id": "fact_bai-juyi",
+      "text": "白居易的《卖炭翁》叙写一位卖炭者的处境。",
+      "type": "fact",
+      "sourceIds": [
+        "src_bai-juyi"
+      ],
+      "limits": "亲近生活是作品解读，不把通俗等同于没有艺术复杂性。"
+    },
+    {
+      "id": "model_bai-juyi",
+      "text": "由公开作品侧面启发的原创解读：关心人具体怎样生活，愿意把观察写成容易理解的表达。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；亲近生活是作品解读，不把通俗等同于没有艺术复杂性。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "clear",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_li-bai",
+        "type": "name",
+        "origin": "src_li-bai",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_li-bai",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_du-fu",
+        "type": "name",
+        "origin": "src_du-fu",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_du-fu",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_su-shi",
+        "type": "name",
+        "origin": "src_su-shi",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_su-shi",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_li-qingzhao",
+        "type": "name",
+        "origin": "src_li-qingzhao",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_li-qingzhao",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_wang-wei",
+        "type": "name",
+        "origin": "src_wang-wei",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_wang-wei",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_xin-qiji",
+        "type": "name",
+        "origin": "src_xin-qiji",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_xin-qiji",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_tao-yuanming",
+        "type": "name",
+        "origin": "src_tao-yuanming",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_tao-yuanming",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_bai-juyi",
+        "type": "name",
+        "origin": "src_bai-juyi",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_bai-juyi",
+        "type": "image",
+        "file": "assets/poets.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "poets",
+    "minutes": 4,
+    "title": "你的灵魂更像哪位古典诗人",
+    "shortTitle": "与古典诗人相遇",
+    "category": "历史与诗意",
+    "color": "#44787c",
+    "wash": "#e4f2f3",
+    "tag": "诗词 · 气质",
+    "description": "给十八个生活片段选一个回应，遇见与你表达方式相近的诗意。",
+    "stage": "以所列唐宋作品为主，另含晋代陶渊明；不是全人生人格判断。"
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "sanguo",
+    "title": "测测你最像哪位三国人物",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "历史与诗意"
+  },
+  {
+    "id": "poets",
+    "title": "你的灵魂更像哪位古典诗人",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "历史与诗意"
+  },
+  {
+    "id": "scientists",
+    "title": "你的探索方式更像哪位科学家",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "历史与诗意"
+  },
+  {
+    "id": "journey",
+    "title": "西游路上，你最像谁",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "文学与魔法"
+  },
+  {
+    "id": "red-chamber",
+    "title": "测测你最像哪位红楼梦人物",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "文学与魔法"
+  },
+  {
+    "id": "harry-potter",
+    "title": "测测你最像哪位哈利波特角色",
+    "questions": 24,
+    "profiles": 20,
+    "dimensions": 8,
+    "category": "文学与魔法"
+  },
+  {
+    "id": "one-piece",
+    "title": "草帽一伙里，你最像哪位伙伴",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "动漫与电影"
+  },
+  {
+    "id": "naruto",
+    "title": "测测你最像哪位火影忍者角色",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "动漫与电影"
+  },
+  {
+    "id": "ghibli",
+    "title": "你最像哪位吉卜力电影人物",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "动漫与电影"
+  },
+  {
+    "id": "animals",
+    "title": "如果性格是一只动物，你会是谁",
+    "questions": 18,
+    "profiles": 8,
+    "dimensions": 6,
+    "category": "动物人格"
+  }
+]

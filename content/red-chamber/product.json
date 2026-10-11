@@ -1,0 +1,1413 @@
+{
+  "meta": {
+    "id": "red-chamber",
+    "title": "测测你最像哪位红楼梦人物",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "object-match",
+    "description": "从雅集到日常相处，在人物的细微侧面里，看见自己的回应方式。",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": false
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "园中准备举办一场小型雅集，大家只有模糊想法，你更可能怎样参与？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先试一个短小的环节",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「园中准备举办一场小型雅集，大家只有模糊想法，你更可能怎样参与？」，你选择了「先试一个短小的环节」。"
+        },
+        {
+          "id": "c2",
+          "text": "先听清每个人的兴趣",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「园中准备举办一场小型雅集，大家只有模糊想法，你更可能怎样参与？」，你选择了「先听清每个人的兴趣」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动约一次预演，把气氛做出来",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「园中准备举办一场小型雅集，大家只有模糊想法，你更可能怎样参与？」，你选择了「主动约一次预演，把气氛做出来」。"
+        },
+        {
+          "id": "c4",
+          "text": "看过往雅集的安排再提议",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「园中准备举办一场小型雅集，大家只有模糊想法，你更可能怎样参与？」，你选择了「看过往雅集的安排再提议」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "听见两个人对同一件事的说法不同，你会怎样理解？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "向熟悉双方的人问问",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「听见两个人对同一件事的说法不同，你会怎样理解？」，你选择了「向熟悉双方的人问问」。"
+        },
+        {
+          "id": "c2",
+          "text": "核对时间线与原始信息，再保留未知处",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「听见两个人对同一件事的说法不同，你会怎样理解？」，你选择了「核对时间线与原始信息，再保留未知处」。"
+        },
+        {
+          "id": "c3",
+          "text": "先相信自己对现场的感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「听见两个人对同一件事的说法不同，你会怎样理解？」，你选择了「先相信自己对现场的感觉」。"
+        },
+        {
+          "id": "c4",
+          "text": "分清各自看见与推测的部分",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「听见两个人对同一件事的说法不同，你会怎样理解？」，你选择了「分清各自看见与推测的部分」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "朋友在雅集上被误会，脸色明显变了，你最先会怎样做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先接住她的不舒服，再一起考虑如何回应",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「朋友在雅集上被误会，脸色明显变了，你最先会怎样做？」，你选择了「先接住她的不舒服，再一起考虑如何回应」。"
+        },
+        {
+          "id": "c2",
+          "text": "帮她找到具体的解释方式",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「朋友在雅集上被误会，脸色明显变了，你最先会怎样做？」，你选择了「帮她找到具体的解释方式」。"
+        },
+        {
+          "id": "c3",
+          "text": "私下问她希望怎样被支持",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「朋友在雅集上被误会，脸色明显变了，你最先会怎样做？」，你选择了「私下问她希望怎样被支持」。"
+        },
+        {
+          "id": "c4",
+          "text": "先澄清事实，让活动继续",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「朋友在雅集上被误会，脸色明显变了，你最先会怎样做？」，你选择了「先澄清事实，让活动继续」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "雅集规定了一种传统形式，但你想到不同表达，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "按形式完成，认真打磨内容",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「雅集规定了一种传统形式，但你想到不同表达，你倾向？」，你选择了「按形式完成，认真打磨内容」。"
+        },
+        {
+          "id": "c2",
+          "text": "说明想法，争取一个自由环节",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「雅集规定了一种传统形式，但你想到不同表达，你倾向？」，你选择了「说明想法，争取一个自由环节」。"
+        },
+        {
+          "id": "c3",
+          "text": "在规定形式里加一点变化",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「雅集规定了一种传统形式，但你想到不同表达，你倾向？」，你选择了「在规定形式里加一点变化」。"
+        },
+        {
+          "id": "c4",
+          "text": "试做新的形式，让大家看看效果",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「雅集规定了一种传统形式，但你想到不同表达，你倾向？」，你选择了「试做新的形式，让大家看看效果」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "雅集轮到你介绍自己的作品，你更喜欢？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "向大家说明创作思路",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「雅集轮到你介绍自己的作品，你更喜欢？」，你选择了「向大家说明创作思路」。"
+        },
+        {
+          "id": "c2",
+          "text": "把作品放出来，自己少说一点",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「雅集轮到你介绍自己的作品，你更喜欢？」，你选择了「把作品放出来，自己少说一点」。"
+        },
+        {
+          "id": "c3",
+          "text": "组织一段互动，让大家也参与解读",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「雅集轮到你介绍自己的作品，你更喜欢？」，你选择了「组织一段互动，让大家也参与解读」。"
+        },
+        {
+          "id": "c4",
+          "text": "私下解释给感兴趣的人",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「雅集轮到你介绍自己的作品，你更喜欢？」，你选择了「私下解释给感兴趣的人」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "你负责雅集的茶点与座位，通常怎样准备？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "备好常用物品，保留弹性",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「你负责雅集的茶点与座位，通常怎样准备？」，你选择了「备好常用物品，保留弹性」。"
+        },
+        {
+          "id": "c2",
+          "text": "按流程核对数量、摆放和备用安排",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「你负责雅集的茶点与座位，通常怎样准备？」，你选择了「按流程核对数量、摆放和备用安排」。"
+        },
+        {
+          "id": "c3",
+          "text": "确定大概人数，现场再调整",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「你负责雅集的茶点与座位，通常怎样准备？」，你选择了「确定大概人数，现场再调整」。"
+        },
+        {
+          "id": "c4",
+          "text": "列好清单，提前分配工作",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「你负责雅集的茶点与座位，通常怎样准备？」，你选择了「列好清单，提前分配工作」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "你有一个新的书签设计，却还没画草稿，你通常会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "立刻试做第一版，再据此修改",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「你有一个新的书签设计，却还没画草稿，你通常会？」，你选择了「立刻试做第一版，再据此修改」。"
+        },
+        {
+          "id": "c2",
+          "text": "看看类似作品再决定",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「你有一个新的书签设计，却还没画草稿，你通常会？」，你选择了「看看类似作品再决定」。"
+        },
+        {
+          "id": "c3",
+          "text": "随手做一张小样",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「你有一个新的书签设计，却还没画草稿，你通常会？」，你选择了「随手做一张小样」。"
+        },
+        {
+          "id": "c4",
+          "text": "先想想想表达的感觉",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「你有一个新的书签设计，却还没画草稿，你通常会？」，你选择了「先想想想表达的感觉」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "欣赏一件旧物时，你最常关注什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "它带来的熟悉感或情绪",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「欣赏一件旧物时，你最常关注什么？」，你选择了「它带来的熟悉感或情绪」。"
+        },
+        {
+          "id": "c2",
+          "text": "材质、纹样和用途",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「欣赏一件旧物时，你最常关注什么？」，你选择了「材质、纹样和用途」。"
+        },
+        {
+          "id": "c3",
+          "text": "朋友讲过的相关故事",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「欣赏一件旧物时，你最常关注什么？」，你选择了「朋友讲过的相关故事」。"
+        },
+        {
+          "id": "c4",
+          "text": "出处、版本与细节之间能互相印证的地方",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「欣赏一件旧物时，你最常关注什么？」，你选择了「出处、版本与细节之间能互相印证的地方」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "有人不太会作诗，担心自己显得格格不入，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "邀请他从喜欢的一个画面说起",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「有人不太会作诗，担心自己显得格格不入，你会？」，你选择了「邀请他从喜欢的一个画面说起」。"
+        },
+        {
+          "id": "c2",
+          "text": "安排一个他能完成的实际任务",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「有人不太会作诗，担心自己显得格格不入，你会？」，你选择了「安排一个他能完成的实际任务」。"
+        },
+        {
+          "id": "c3",
+          "text": "让他知道可以用自己的方式参与，不必证明水平",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「有人不太会作诗，担心自己显得格格不入，你会？」，你选择了「让他知道可以用自己的方式参与，不必证明水平」。"
+        },
+        {
+          "id": "c4",
+          "text": "提供一份入门方法",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「有人不太会作诗，担心自己显得格格不入，你会？」，你选择了「提供一份入门方法」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "有人建议你选择更符合期待的兴趣，你通常怎样回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "兼顾期待，保留一点个人兴趣",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「有人建议你选择更符合期待的兴趣，你通常怎样回应？」，你选择了「兼顾期待，保留一点个人兴趣」。"
+        },
+        {
+          "id": "c2",
+          "text": "自主选择新的方向，再用行动解释它",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「有人建议你选择更符合期待的兴趣，你通常怎样回应？」，你选择了「自主选择新的方向，再用行动解释它」。"
+        },
+        {
+          "id": "c3",
+          "text": "先采用大家熟悉的选择",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「有人建议你选择更符合期待的兴趣，你通常怎样回应？」，你选择了「先采用大家熟悉的选择」。"
+        },
+        {
+          "id": "c4",
+          "text": "把自己的喜好说清，并继续尝试",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「有人建议你选择更符合期待的兴趣，你通常怎样回应？」，你选择了「把自己的喜好说清，并继续尝试」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "你发现一句有意思的话，通常会怎样分享？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "围绕它发起一次有趣的交流",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「你发现一句有意思的话，通常会怎样分享？」，你选择了「围绕它发起一次有趣的交流」。"
+        },
+        {
+          "id": "c2",
+          "text": "送给一位适合的朋友",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「你发现一句有意思的话，通常会怎样分享？」，你选择了「送给一位适合的朋友」。"
+        },
+        {
+          "id": "c3",
+          "text": "在小聚时讲给大家听",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「你发现一句有意思的话，通常会怎样分享？」，你选择了「在小聚时讲给大家听」。"
+        },
+        {
+          "id": "c4",
+          "text": "写在自己的笔记里",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「你发现一句有意思的话，通常会怎样分享？」，你选择了「写在自己的笔记里」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "一份个人作品集还有两周完成，你会怎样推进？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "按灵感来，状态好时集中完成",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「一份个人作品集还有两周完成，你会怎样推进？」，你选择了「按灵感来，状态好时集中完成」。"
+        },
+        {
+          "id": "c2",
+          "text": "拆成选稿、修改和装订几个阶段",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「一份个人作品集还有两周完成，你会怎样推进？」，你选择了「拆成选稿、修改和装订几个阶段」。"
+        },
+        {
+          "id": "c3",
+          "text": "每天想到就整理一点",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「一份个人作品集还有两周完成，你会怎样推进？」，你选择了「每天想到就整理一点」。"
+        },
+        {
+          "id": "c4",
+          "text": "安排每个阶段的时间并预留复查",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「一份个人作品集还有两周完成，你会怎样推进？」，你选择了「安排每个阶段的时间并预留复查」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "雅集的筹备停滞了，离约好的日期不远，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "认领一个小任务，让进度恢复",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「雅集的筹备停滞了，离约好的日期不远，你会？」，你选择了「认领一个小任务，让进度恢复」。"
+        },
+        {
+          "id": "c2",
+          "text": "先问问大家是否需要调整目标",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「雅集的筹备停滞了，离约好的日期不远，你会？」，你选择了「先问问大家是否需要调整目标」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动召集一次短碰头并推动第一步",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「雅集的筹备停滞了，离约好的日期不远，你会？」，你选择了「主动召集一次短碰头并推动第一步」。"
+        },
+        {
+          "id": "c4",
+          "text": "等主要组织者重新分工",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「雅集的筹备停滞了，离约好的日期不远，你会？」，你选择了「等主要组织者重新分工」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "有人评价你的文字过于含蓄，你会怎样处理这个反馈？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "听听一位熟悉你的读者怎么说",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「有人评价你的文字过于含蓄，你会怎样处理这个反馈？」，你选择了「听听一位熟悉你的读者怎么说」。"
+        },
+        {
+          "id": "c2",
+          "text": "比较几位读者的反馈，分析哪里缺少线索",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「有人评价你的文字过于含蓄，你会怎样处理这个反馈？」，你选择了「比较几位读者的反馈，分析哪里缺少线索」。"
+        },
+        {
+          "id": "c3",
+          "text": "看自己是否也有这种感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「有人评价你的文字过于含蓄，你会怎样处理这个反馈？」，你选择了「看自己是否也有这种感觉」。"
+        },
+        {
+          "id": "c4",
+          "text": "找出读者没理解的具体句子",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「有人评价你的文字过于含蓄，你会怎样处理这个反馈？」，你选择了「找出读者没理解的具体句子」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "筹备一场朋友聚会时，你更常先考虑什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先营造让人自在的相处方式，再安排细节",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「筹备一场朋友聚会时，你更常先考虑什么？」，你选择了「先营造让人自在的相处方式，再安排细节」。"
+        },
+        {
+          "id": "c2",
+          "text": "让每个人知道自己做什么",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「筹备一场朋友聚会时，你更常先考虑什么？」，你选择了「让每个人知道自己做什么」。"
+        },
+        {
+          "id": "c3",
+          "text": "了解大家的偏好和不便",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「筹备一场朋友聚会时，你更常先考虑什么？」，你选择了「了解大家的偏好和不便」。"
+        },
+        {
+          "id": "c4",
+          "text": "流程和需要完成的事项",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「筹备一场朋友聚会时，你更常先考虑什么？」，你选择了「流程和需要完成的事项」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "要布置一个属于自己的读书角，你更想？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "用最实用的经典布置",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「要布置一个属于自己的读书角，你更想？」，你选择了「用最实用的经典布置」。"
+        },
+        {
+          "id": "c2",
+          "text": "混合书画、植物和个人收藏",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「要布置一个属于自己的读书角，你更想？」，你选择了「混合书画、植物和个人收藏」。"
+        },
+        {
+          "id": "c3",
+          "text": "在常见布置中加入喜欢的颜色",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「要布置一个属于自己的读书角，你更想？」，你选择了「在常见布置中加入喜欢的颜色」。"
+        },
+        {
+          "id": "c4",
+          "text": "按照自己的使用习惯设计独特空间",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「要布置一个属于自己的读书角，你更想？」，你选择了「按照自己的使用习惯设计独特空间」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "聚会里有人误读了你的意思，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "当场温和说清自己的意思",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「聚会里有人误读了你的意思，你会？」，你选择了「当场温和说清自己的意思」。"
+        },
+        {
+          "id": "c2",
+          "text": "之后写一段说明给他",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「聚会里有人误读了你的意思，你会？」，你选择了「之后写一段说明给他」。"
+        },
+        {
+          "id": "c3",
+          "text": "举一个具体例子，请大家重新讨论",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「聚会里有人误读了你的意思，你会？」，你选择了「举一个具体例子，请大家重新讨论」。"
+        },
+        {
+          "id": "c4",
+          "text": "找个安静时机私下解释",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「聚会里有人误读了你的意思，你会？」，你选择了「找个安静时机私下解释」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "突然增加两位客人，你更可能怎么处理？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先补上必要的茶点",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「突然增加两位客人，你更可能怎么处理？」，你选择了「先补上必要的茶点」。"
+        },
+        {
+          "id": "c2",
+          "text": "核对全部安排，确保其他环节也能接上",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「突然增加两位客人，你更可能怎么处理？」，你选择了「核对全部安排，确保其他环节也能接上」。"
+        },
+        {
+          "id": "c3",
+          "text": "现场换一换位置和份量",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「突然增加两位客人，你更可能怎么处理？」，你选择了「现场换一换位置和份量」。"
+        },
+        {
+          "id": "c4",
+          "text": "修改座位与物品分配",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「突然增加两位客人，你更可能怎么处理？」，你选择了「修改座位与物品分配」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "daiyu",
+      "name": "林黛玉",
+      "subtitle": "把细微的感受写下来",
+      "lead": "对表达有自己的尺度，愿意在安静中保留感受的细部。",
+      "contrast": "以原著前八十回的文学表达为主，不推断健康、创伤或感情命运。",
+      "insight": "把「把细微的感受写下来」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 33,
+        "analysis": 60,
+        "care": 65,
+        "freedom": 70,
+        "expression": 29,
+        "structure": 44
+      },
+      "sourceIds": [
+        "src_daiyu"
+      ],
+      "claimIds": [
+        "fact_daiyu",
+        "model_daiyu"
+      ],
+      "fact": "《红楼梦》中的林黛玉参与诗社活动，并创作诗作。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "baochai",
+      "name": "薛宝钗",
+      "subtitle": "让相处有一份稳妥",
+      "lead": "留意处境与安排，愿意用清楚稳妥的方式回应共同需要。",
+      "contrast": "稳妥不等于没有个人意愿，避免将人物化成道德样板。",
+      "insight": "把「让相处有一份稳妥」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 35,
+        "analysis": 62,
+        "care": 62,
+        "freedom": 28,
+        "expression": 39,
+        "structure": 74
+      },
+      "sourceIds": [
+        "src_baochai"
+      ],
+      "claimIds": [
+        "fact_baochai",
+        "model_baochai"
+      ],
+      "fact": "薛宝钗是《红楼梦》中参与大观园生活与诗社的人物。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "baoyu",
+      "name": "贾宝玉",
+      "subtitle": "珍惜不被定义的心意",
+      "lead": "重视人真实的感受，也愿意为个人喜好保留不同于期待的空间。",
+      "contrast": "只取关心与自主的文学侧面，不解读使用者的性别或感情关系。",
+      "insight": "把「珍惜不被定义的心意」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 47,
+        "analysis": 34,
+        "care": 76,
+        "freedom": 75,
+        "expression": 53,
+        "structure": 28
+      },
+      "sourceIds": [
+        "src_baoyu"
+      ],
+      "claimIds": [
+        "fact_baoyu",
+        "model_baoyu"
+      ],
+      "fact": "《红楼梦》写到贾宝玉与园中众人的交往和文学活动。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "xifeng",
+      "name": "王熙凤",
+      "subtitle": "把现场安排得有声有色",
+      "lead": "愿意公开沟通、推动执行，把零散事务接成可运行的安排。",
+      "contrast": "不美化操控或伤害行为；匹配仅涉及组织与表达偏好。",
+      "insight": "把「把现场安排得有声有色」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 72,
+        "analysis": 60,
+        "care": 33,
+        "freedom": 42,
+        "expression": 77,
+        "structure": 73
+      },
+      "sourceIds": [
+        "src_xifeng"
+      ],
+      "claimIds": [
+        "fact_xifeng",
+        "model_xifeng"
+      ],
+      "fact": "《红楼梦》中的王熙凤参与贾府事务管理。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "xiangyun",
+      "name": "史湘云",
+      "subtitle": "让相聚多一点活气",
+      "lead": "表达轻快，愿意参与，常能把共同经历变成自然的交流。",
+      "contrast": "活跃不意味着始终快乐，报告不推断现实家庭处境。",
+      "insight": "把「让相聚多一点活气」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 69,
+        "analysis": 31,
+        "care": 61,
+        "freedom": 62,
+        "expression": 75,
+        "structure": 32
+      },
+      "sourceIds": [
+        "src_xiangyun"
+      ],
+      "claimIds": [
+        "fact_xiangyun",
+        "model_xiangyun"
+      ],
+      "fact": "史湘云参加《红楼梦》中的诗社与园中聚会。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "tanchun",
+      "name": "贾探春",
+      "subtitle": "为变化立一个清楚的办法",
+      "lead": "喜欢让判断和安排连接起来，为改进找到具体的做法。",
+      "contrast": "采用前八十回的相关情节，不将管理行为归为完整性格。",
+      "insight": "把「为变化立一个清楚的办法」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 62,
+        "analysis": 65,
+        "care": 44,
+        "freedom": 50,
+        "expression": 60,
+        "structure": 74
+      },
+      "sourceIds": [
+        "src_tanchun"
+      ],
+      "claimIds": [
+        "fact_tanchun",
+        "model_tanchun"
+      ],
+      "fact": "《红楼梦》写到探春参与管理并提出兴利除弊的安排。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "xichun",
+      "name": "贾惜春",
+      "subtitle": "给安静留下一个角落",
+      "lead": "更习惯收回到自己的空间，用观察与作品保留个人节奏。",
+      "contrast": "独处侧面不代表冷漠或应当疏离关系，不推断宗教选择。",
+      "insight": "把「给安静留下一个角落」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 26,
+        "analysis": 43,
+        "care": 42,
+        "freedom": 63,
+        "expression": 23,
+        "structure": 57
+      },
+      "sourceIds": [
+        "src_xichun"
+      ],
+      "claimIds": [
+        "fact_xichun",
+        "model_xichun"
+      ],
+      "fact": "《红楼梦》中的惜春与绘画相关，并受托绘制大观园图景。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "pinger",
+      "name": "平儿",
+      "subtitle": "让理解成为具体帮助",
+      "lead": "愿意听清双方的需要，再用务实的小安排缓和难处。",
+      "contrast": "取其调停侧面，不把配合等同于没有边界或自我牺牲。",
+      "insight": "把「让理解成为具体帮助」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 45,
+        "analysis": 58,
+        "care": 76,
+        "freedom": 35,
+        "expression": 34,
+        "structure": 65
+      },
+      "sourceIds": [
+        "src_pinger"
+      ],
+      "claimIds": [
+        "fact_pinger",
+        "model_pinger"
+      ],
+      "fact": "平儿在《红楼梦》中协助王熙凤处理事务，并与园中人物交往。",
+      "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。",
+      "accent": "#aa6077",
+      "image": {
+        "file": "assets/red-chamber.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_daiyu",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    },
+    {
+      "id": "src_baochai",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    },
+    {
+      "id": "src_baoyu",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    },
+    {
+      "id": "src_xifeng",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    },
+    {
+      "id": "src_xiangyun",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    },
+    {
+      "id": "src_tanchun",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    },
+    {
+      "id": "src_xichun",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    },
+    {
+      "id": "src_pinger",
+      "checkedAt": "2026-10-11",
+      "title": "《红楼梦》原著，前八十回",
+      "url": "https://zh.wikisource.org/wiki/%E7%B4%85%E6%A8%93%E5%A4%A2",
+      "kind": "primary"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_daiyu",
+      "text": "《红楼梦》中的林黛玉参与诗社活动，并创作诗作。",
+      "type": "fact",
+      "sourceIds": [
+        "src_daiyu"
+      ],
+      "limits": "以原著前八十回的文学表达为主，不推断健康、创伤或感情命运。"
+    },
+    {
+      "id": "model_daiyu",
+      "text": "由公开作品侧面启发的原创解读：对表达有自己的尺度，愿意在安静中保留感受的细部。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；以原著前八十回的文学表达为主，不推断健康、创伤或感情命运。"
+    },
+    {
+      "id": "fact_baochai",
+      "text": "薛宝钗是《红楼梦》中参与大观园生活与诗社的人物。",
+      "type": "fact",
+      "sourceIds": [
+        "src_baochai"
+      ],
+      "limits": "稳妥不等于没有个人意愿，避免将人物化成道德样板。"
+    },
+    {
+      "id": "model_baochai",
+      "text": "由公开作品侧面启发的原创解读：留意处境与安排，愿意用清楚稳妥的方式回应共同需要。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；稳妥不等于没有个人意愿，避免将人物化成道德样板。"
+    },
+    {
+      "id": "fact_baoyu",
+      "text": "《红楼梦》写到贾宝玉与园中众人的交往和文学活动。",
+      "type": "fact",
+      "sourceIds": [
+        "src_baoyu"
+      ],
+      "limits": "只取关心与自主的文学侧面，不解读使用者的性别或感情关系。"
+    },
+    {
+      "id": "model_baoyu",
+      "text": "由公开作品侧面启发的原创解读：重视人真实的感受，也愿意为个人喜好保留不同于期待的空间。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；只取关心与自主的文学侧面，不解读使用者的性别或感情关系。"
+    },
+    {
+      "id": "fact_xifeng",
+      "text": "《红楼梦》中的王熙凤参与贾府事务管理。",
+      "type": "fact",
+      "sourceIds": [
+        "src_xifeng"
+      ],
+      "limits": "不美化操控或伤害行为；匹配仅涉及组织与表达偏好。"
+    },
+    {
+      "id": "model_xifeng",
+      "text": "由公开作品侧面启发的原创解读：愿意公开沟通、推动执行，把零散事务接成可运行的安排。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不美化操控或伤害行为；匹配仅涉及组织与表达偏好。"
+    },
+    {
+      "id": "fact_xiangyun",
+      "text": "史湘云参加《红楼梦》中的诗社与园中聚会。",
+      "type": "fact",
+      "sourceIds": [
+        "src_xiangyun"
+      ],
+      "limits": "活跃不意味着始终快乐，报告不推断现实家庭处境。"
+    },
+    {
+      "id": "model_xiangyun",
+      "text": "由公开作品侧面启发的原创解读：表达轻快，愿意参与，常能把共同经历变成自然的交流。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；活跃不意味着始终快乐，报告不推断现实家庭处境。"
+    },
+    {
+      "id": "fact_tanchun",
+      "text": "《红楼梦》写到探春参与管理并提出兴利除弊的安排。",
+      "type": "fact",
+      "sourceIds": [
+        "src_tanchun"
+      ],
+      "limits": "采用前八十回的相关情节，不将管理行为归为完整性格。"
+    },
+    {
+      "id": "model_tanchun",
+      "text": "由公开作品侧面启发的原创解读：喜欢让判断和安排连接起来，为改进找到具体的做法。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用前八十回的相关情节，不将管理行为归为完整性格。"
+    },
+    {
+      "id": "fact_xichun",
+      "text": "《红楼梦》中的惜春与绘画相关，并受托绘制大观园图景。",
+      "type": "fact",
+      "sourceIds": [
+        "src_xichun"
+      ],
+      "limits": "独处侧面不代表冷漠或应当疏离关系，不推断宗教选择。"
+    },
+    {
+      "id": "model_xichun",
+      "text": "由公开作品侧面启发的原创解读：更习惯收回到自己的空间，用观察与作品保留个人节奏。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；独处侧面不代表冷漠或应当疏离关系，不推断宗教选择。"
+    },
+    {
+      "id": "fact_pinger",
+      "text": "平儿在《红楼梦》中协助王熙凤处理事务，并与园中人物交往。",
+      "type": "fact",
+      "sourceIds": [
+        "src_pinger"
+      ],
+      "limits": "取其调停侧面，不把配合等同于没有边界或自我牺牲。"
+    },
+    {
+      "id": "model_pinger",
+      "text": "由公开作品侧面启发的原创解读：愿意听清双方的需要，再用务实的小安排缓和难处。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；取其调停侧面，不把配合等同于没有边界或自我牺牲。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "clear",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_daiyu",
+        "type": "name",
+        "origin": "src_daiyu",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_daiyu",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_baochai",
+        "type": "name",
+        "origin": "src_baochai",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_baochai",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_baoyu",
+        "type": "name",
+        "origin": "src_baoyu",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_baoyu",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_xifeng",
+        "type": "name",
+        "origin": "src_xifeng",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_xifeng",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_xiangyun",
+        "type": "name",
+        "origin": "src_xiangyun",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_xiangyun",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_tanchun",
+        "type": "name",
+        "origin": "src_tanchun",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_tanchun",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_xichun",
+        "type": "name",
+        "origin": "src_xichun",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_xichun",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_pinger",
+        "type": "name",
+        "origin": "src_pinger",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_pinger",
+        "type": "image",
+        "file": "assets/red-chamber.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "red-chamber",
+    "minutes": 4,
+    "title": "测测你最像哪位红楼梦人物",
+    "shortTitle": "大观园里的一面",
+    "category": "文学与魔法",
+    "color": "#aa6077",
+    "wash": "#f9eaf0",
+    "tag": "文学 · 相处",
+    "description": "从雅集到日常相处，在人物的细微侧面里，看见自己的回应方式。",
+    "stage": "《红楼梦》原著前八十回；不采用后四十回结局或影视演员形象。"
+  }
+}

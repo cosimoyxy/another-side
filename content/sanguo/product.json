@@ -1,0 +1,1413 @@
+{
+  "meta": {
+    "id": "sanguo",
+    "title": "测测你最像哪位三国人物",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "object-match",
+    "description": "如果和古人做队友，你会是运筹的军师，还是先迈步的行动派？",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": false
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "你刚加入一支筹办古城文化节的小队，首场活动还没有头绪，你会如何开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先试办一个小环节",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「你刚加入一支筹办古城文化节的小队，首场活动还没有头绪，你会如何开始？」，你选择了「先试办一个小环节」。"
+        },
+        {
+          "id": "c2",
+          "text": "先听完所有人的设想",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「你刚加入一支筹办古城文化节的小队，首场活动还没有头绪，你会如何开始？」，你选择了「先听完所有人的设想」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动组织一次试演",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「你刚加入一支筹办古城文化节的小队，首场活动还没有头绪，你会如何开始？」，你选择了「主动组织一次试演」。"
+        },
+        {
+          "id": "c4",
+          "text": "看一份往届方案再决定",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「你刚加入一支筹办古城文化节的小队，首场活动还没有头绪，你会如何开始？」，你选择了「看一份往届方案再决定」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "你收到两份相互矛盾的活动消息，准备怎样判断？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问一位熟悉现场的朋友",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「你收到两份相互矛盾的活动消息，准备怎样判断？」，你选择了「问一位熟悉现场的朋友」。"
+        },
+        {
+          "id": "c2",
+          "text": "追到原始通知并核对两方信息",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「你收到两份相互矛盾的活动消息，准备怎样判断？」，你选择了「追到原始通知并核对两方信息」。"
+        },
+        {
+          "id": "c3",
+          "text": "凭以往的直觉选可信的一份",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「你收到两份相互矛盾的活动消息，准备怎样判断？」，你选择了「凭以往的直觉选可信的一份」。"
+        },
+        {
+          "id": "c4",
+          "text": "对照时间、地点和联系人",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「你收到两份相互矛盾的活动消息，准备怎样判断？」，你选择了「对照时间、地点和联系人」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "一位伙伴没完成准备工作，还显得很沮丧，你最先会做什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先听听他的感受，再商量能承担的部分",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「一位伙伴没完成准备工作，还显得很沮丧，你最先会做什么？」，你选择了「先听听他的感受，再商量能承担的部分」。"
+        },
+        {
+          "id": "c2",
+          "text": "给他一份可直接照做的清单",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「一位伙伴没完成准备工作，还显得很沮丧，你最先会做什么？」，你选择了「给他一份可直接照做的清单」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问卡住的地方，一起调整任务",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「一位伙伴没完成准备工作，还显得很沮丧，你最先会做什么？」，你选择了「问问卡住的地方，一起调整任务」。"
+        },
+        {
+          "id": "c4",
+          "text": "先把缺口补上，确保活动能开场",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「一位伙伴没完成准备工作，还显得很沮丧，你最先会做什么？」，你选择了「先把缺口补上，确保活动能开场」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "大家建议文化节完全照搬成熟流程，你会怎样回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "熟悉流程可靠，先把执行做好",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「大家建议文化节完全照搬成熟流程，你会怎样回应？」，你选择了「熟悉流程可靠，先把执行做好」。"
+        },
+        {
+          "id": "c2",
+          "text": "加入一个符合本地特色的新环节",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「大家建议文化节完全照搬成熟流程，你会怎样回应？」，你选择了「加入一个符合本地特色的新环节」。"
+        },
+        {
+          "id": "c3",
+          "text": "保留框架，微调几个环节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「大家建议文化节完全照搬成熟流程，你会怎样回应？」，你选择了「保留框架，微调几个环节」。"
+        },
+        {
+          "id": "c4",
+          "text": "尝试新的组织方式，先用小场次验证",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「大家建议文化节完全照搬成熟流程，你会怎样回应？」，你选择了「尝试新的组织方式，先用小场次验证」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "活动开幕需要一位主持人，你通常怎样参与？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "愿意主持并回应现场提问",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「活动开幕需要一位主持人，你通常怎样参与？」，你选择了「愿意主持并回应现场提问」。"
+        },
+        {
+          "id": "c2",
+          "text": "写好主持稿，把舞台留给别人",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「活动开幕需要一位主持人，你通常怎样参与？」，你选择了「写好主持稿，把舞台留给别人」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动串联整场，让大家都参与进来",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「活动开幕需要一位主持人，你通常怎样参与？」，你选择了「主动串联整场，让大家都参与进来」。"
+        },
+        {
+          "id": "c4",
+          "text": "只介绍自己熟悉的一小段",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「活动开幕需要一位主持人，你通常怎样参与？」，你选择了「只介绍自己熟悉的一小段」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "文化节还有两周开幕，你负责的部分会怎样安排？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "记住几个必要节点，其余灵活做",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「文化节还有两周开幕，你负责的部分会怎样安排？」，你选择了「记住几个必要节点，其余灵活做」。"
+        },
+        {
+          "id": "c2",
+          "text": "排好日程，预留检查和备用方案",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「文化节还有两周开幕，你负责的部分会怎样安排？」，你选择了「排好日程，预留检查和备用方案」。"
+        },
+        {
+          "id": "c3",
+          "text": "先确定大方向，按现场情况推进",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「文化节还有两周开幕，你负责的部分会怎样安排？」，你选择了「先确定大方向，按现场情况推进」。"
+        },
+        {
+          "id": "c4",
+          "text": "拆分工作，给每段留好时间",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「文化节还有两周开幕，你负责的部分会怎样安排？」，你选择了「拆分工作，给每段留好时间」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "团队的讨论反复绕圈，离场地预约截止只剩一天，你倾向怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "承担联络工作，先把可用场地确认下来",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「团队的讨论反复绕圈，离场地预约截止只剩一天，你倾向怎么做？」，你选择了「承担联络工作，先把可用场地确认下来」。"
+        },
+        {
+          "id": "c2",
+          "text": "等关键成员表态后回应",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「团队的讨论反复绕圈，离场地预约截止只剩一天，你倾向怎么做？」，你选择了「等关键成员表态后回应」。"
+        },
+        {
+          "id": "c3",
+          "text": "提出一个可撤回的预约方案",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「团队的讨论反复绕圈，离场地预约截止只剩一天，你倾向怎么做？」，你选择了「提出一个可撤回的预约方案」。"
+        },
+        {
+          "id": "c4",
+          "text": "再确认大家真正担心什么",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「团队的讨论反复绕圈，离场地预约截止只剩一天，你倾向怎么做？」，你选择了「再确认大家真正担心什么」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "沙盘游戏里，对手忽然改变部署，你会先关注什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "现场气氛和自己的感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「沙盘游戏里，对手忽然改变部署，你会先关注什么？」，你选择了「现场气氛和自己的感觉」。"
+        },
+        {
+          "id": "c2",
+          "text": "改变前后的资源位置",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「沙盘游戏里，对手忽然改变部署，你会先关注什么？」，你选择了「改变前后的资源位置」。"
+        },
+        {
+          "id": "c3",
+          "text": "过去类似局面中有效的办法",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「沙盘游戏里，对手忽然改变部署，你会先关注什么？」，你选择了「过去类似局面中有效的办法」。"
+        },
+        {
+          "id": "c4",
+          "text": "比较几种动机，逐一排除不合线索的解释",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「沙盘游戏里，对手忽然改变部署，你会先关注什么？」，你选择了「比较几种动机，逐一排除不合线索的解释」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "小队刚赢下一场友谊赛，有人却因为失误躲开庆祝，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "私下询问他是否想聊一聊",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「小队刚赢下一场友谊赛，有人却因为失误躲开庆祝，你会？」，你选择了「私下询问他是否想聊一聊」。"
+        },
+        {
+          "id": "c2",
+          "text": "先完成收尾和物品清点",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「小队刚赢下一场友谊赛，有人却因为失误躲开庆祝，你会？」，你选择了「先完成收尾和物品清点」。"
+        },
+        {
+          "id": "c3",
+          "text": "陪他缓一会儿，让他知道自己仍是团队一员",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「小队刚赢下一场友谊赛，有人却因为失误躲开庆祝，你会？」，你选择了「陪他缓一会儿，让他知道自己仍是团队一员」。"
+        },
+        {
+          "id": "c4",
+          "text": "告诉他失误已不影响结果",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「小队刚赢下一场友谊赛，有人却因为失误躲开庆祝，你会？」，你选择了「告诉他失误已不影响结果」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "你发现自己的思路和团队惯例不同，下一步更可能是？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保留想法，等合适时机再提",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「你发现自己的思路和团队惯例不同，下一步更可能是？」，你选择了「保留想法，等合适时机再提」。"
+        },
+        {
+          "id": "c2",
+          "text": "做一个替代方案，让大家实际比较",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「你发现自己的思路和团队惯例不同，下一步更可能是？」，你选择了「做一个替代方案，让大家实际比较」。"
+        },
+        {
+          "id": "c3",
+          "text": "采用团队熟悉的办法",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「你发现自己的思路和团队惯例不同，下一步更可能是？」，你选择了「采用团队熟悉的办法」。"
+        },
+        {
+          "id": "c4",
+          "text": "说明新思路，争取一次小试验",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「你发现自己的思路和团队惯例不同，下一步更可能是？」，你选择了「说明新思路，争取一次小试验」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "你的提案被误解了，现场有十几个人，你会怎么说明？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "用一个例子带大家重新讨论",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「你的提案被误解了，现场有十几个人，你会怎么说明？」，你选择了「用一个例子带大家重新讨论」。"
+        },
+        {
+          "id": "c2",
+          "text": "请主持人帮忙澄清重点",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「你的提案被误解了，现场有十几个人，你会怎么说明？」，你选择了「请主持人帮忙澄清重点」。"
+        },
+        {
+          "id": "c3",
+          "text": "当场简洁说清原意",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「你的提案被误解了，现场有十几个人，你会怎么说明？」，你选择了「当场简洁说清原意」。"
+        },
+        {
+          "id": "c4",
+          "text": "会后写一份说明给相关人",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「你的提案被误解了，现场有十几个人，你会怎么说明？」，你选择了「会后写一份说明给相关人」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "队友临时提出一个新环节，你通常怎样接住？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "现场一起调整，不必先改整份计划",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「队友临时提出一个新环节，你通常怎样接住？」，你选择了「现场一起调整，不必先改整份计划」。"
+        },
+        {
+          "id": "c2",
+          "text": "修改分工和时间表再加入",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「队友临时提出一个新环节，你通常怎样接住？」，你选择了「修改分工和时间表再加入」。"
+        },
+        {
+          "id": "c3",
+          "text": "确认不影响主要事项就加入",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「队友临时提出一个新环节，你通常怎样接住？」，你选择了「确认不影响主要事项就加入」。"
+        },
+        {
+          "id": "c4",
+          "text": "核对依赖、物资和风险后再决定",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「队友临时提出一个新环节，你通常怎样接住？」，你选择了「核对依赖、物资和风险后再决定」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "一条新路线可能缩短送物资的时间，但现场还不熟，你更愿意？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "结伴探一小段再判断",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「一条新路线可能缩短送物资的时间，但现场还不熟，你更愿意？」，你选择了「结伴探一小段再判断」。"
+        },
+        {
+          "id": "c2",
+          "text": "先等熟悉的人说明情况",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「一条新路线可能缩短送物资的时间，但现场还不熟，你更愿意？」，你选择了「先等熟悉的人说明情况」。"
+        },
+        {
+          "id": "c3",
+          "text": "做好基本确认后带队试走",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「一条新路线可能缩短送物资的时间，但现场还不熟，你更愿意？」，你选择了「做好基本确认后带队试走」。"
+        },
+        {
+          "id": "c4",
+          "text": "观察别人走过后再跟进",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「一条新路线可能缩短送物资的时间，但现场还不熟，你更愿意？」，你选择了「观察别人走过后再跟进」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "想学习一种没接触过的传统技艺，你通常怎么入门？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "请师傅示范一遍再模仿",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「想学习一种没接触过的传统技艺，你通常怎么入门？」，你选择了「请师傅示范一遍再模仿」。"
+        },
+        {
+          "id": "c2",
+          "text": "比较几套方法，记录各自适用的条件",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「想学习一种没接触过的传统技艺，你通常怎么入门？」，你选择了「比较几套方法，记录各自适用的条件」。"
+        },
+        {
+          "id": "c3",
+          "text": "直接试手，慢慢找感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「想学习一种没接触过的传统技艺，你通常怎么入门？」，你选择了「直接试手，慢慢找感觉」。"
+        },
+        {
+          "id": "c4",
+          "text": "了解基本原理再练习",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「想学习一种没接触过的传统技艺，你通常怎么入门？」，你选择了「了解基本原理再练习」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "两位同伴争论分工，你被请来帮忙时更倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先让双方把委屈说清，再一起定分工",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「两位同伴争论分工，你被请来帮忙时更倾向？」，你选择了「先让双方把委屈说清，再一起定分工」。"
+        },
+        {
+          "id": "c2",
+          "text": "给出双方都能完成的任务方案",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「两位同伴争论分工，你被请来帮忙时更倾向？」，你选择了「给出双方都能完成的任务方案」。"
+        },
+        {
+          "id": "c3",
+          "text": "先了解各自难处再安排",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「两位同伴争论分工，你被请来帮忙时更倾向？」，你选择了「先了解各自难处再安排」。"
+        },
+        {
+          "id": "c4",
+          "text": "直接按进度重新分配工作",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「两位同伴争论分工，你被请来帮忙时更倾向？」，你选择了「直接按进度重新分配工作」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "如果可以给古城文化节设计一个主题，你更偏好？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "还原经典故事中的场景",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「如果可以给古城文化节设计一个主题，你更偏好？」，你选择了「还原经典故事中的场景」。"
+        },
+        {
+          "id": "c2",
+          "text": "用今天的问题重新解读古人",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「如果可以给古城文化节设计一个主题，你更偏好？」，你选择了「用今天的问题重新解读古人」。"
+        },
+        {
+          "id": "c3",
+          "text": "在传统场景里加入现代细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「如果可以给古城文化节设计一个主题，你更偏好？」，你选择了「在传统场景里加入现代细节」。"
+        },
+        {
+          "id": "c4",
+          "text": "创造一场跨时代的虚构对话",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「如果可以给古城文化节设计一个主题，你更偏好？」，你选择了「创造一场跨时代的虚构对话」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "小队发现了一个有意思的古城故事，你更愿意怎样分享？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "在下一次小队会上讲述",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「小队发现了一个有意思的古城故事，你更愿意怎样分享？」，你选择了「在下一次小队会上讲述」。"
+        },
+        {
+          "id": "c2",
+          "text": "整理成文字放进资料夹",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「小队发现了一个有意思的古城故事，你更愿意怎样分享？」，你选择了「整理成文字放进资料夹」。"
+        },
+        {
+          "id": "c3",
+          "text": "做一场面向游客的短分享",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「小队发现了一个有意思的古城故事，你更愿意怎样分享？」，你选择了「做一场面向游客的短分享」。"
+        },
+        {
+          "id": "c4",
+          "text": "先讲给两位熟悉的伙伴",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「小队发现了一个有意思的古城故事，你更愿意怎样分享？」，你选择了「先讲给两位熟悉的伙伴」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "一场持续三小时的沙盘游戏即将开始，你会怎样准备？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "浏览规则，准备最基本的资源",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「一场持续三小时的沙盘游戏即将开始，你会怎样准备？」，你选择了「浏览规则，准备最基本的资源」。"
+        },
+        {
+          "id": "c2",
+          "text": "检查规则细节，规划几条备用路线",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「一场持续三小时的沙盘游戏即将开始，你会怎样准备？」，你选择了「检查规则细节，规划几条备用路线」。"
+        },
+        {
+          "id": "c3",
+          "text": "先进入游戏，边玩边学",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「一场持续三小时的沙盘游戏即将开始，你会怎样准备？」，你选择了「先进入游戏，边玩边学」。"
+        },
+        {
+          "id": "c4",
+          "text": "列出阶段目标和资源分配",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「一场持续三小时的沙盘游戏即将开始，你会怎样准备？」，你选择了「列出阶段目标和资源分配」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "zhuge-liang",
+      "name": "诸葛亮",
+      "subtitle": "把远景拆成步骤",
+      "lead": "在复杂局面里寻找线索，再把方向化成可执行的安排。",
+      "contrast": "采用演义中的筹谋侧面，不把文学描写等同于历史人格。",
+      "insight": "把「把远景拆成步骤」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 40,
+        "analysis": 76,
+        "care": 48,
+        "freedom": 51,
+        "expression": 35,
+        "structure": 75
+      },
+      "sourceIds": [
+        "src_zhuge-liang"
+      ],
+      "claimIds": [
+        "fact_zhuge-liang",
+        "model_zhuge-liang"
+      ],
+      "fact": "《三国演义》中的诸葛亮参与谋划，并以军师形象进入故事。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "cao-cao",
+      "name": "曹操",
+      "subtitle": "让想法进入现实",
+      "lead": "既在意判断，也愿意推动变化，寻找能落地的办法。",
+      "contrast": "行动与统筹为编辑解释；匹配不涉及使用者的道德或权力观。",
+      "insight": "把「让想法进入现实」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 70,
+        "analysis": 65,
+        "care": 30,
+        "freedom": 68,
+        "expression": 66,
+        "structure": 59
+      },
+      "sourceIds": [
+        "src_cao-cao"
+      ],
+      "claimIds": [
+        "fact_cao-cao",
+        "model_cao-cao"
+      ],
+      "fact": "《三国演义》写到曹操组织势力、调动资源与参与军事竞争。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "liu-bei",
+      "name": "刘备",
+      "subtitle": "让伙伴愿意同行",
+      "lead": "用关系中的理解和回应，让共同目标有更多人参与。",
+      "contrast": "关系侧面不代表永远温和，也不是对政治行为的整体评价。",
+      "insight": "把「让伙伴愿意同行」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 43,
+        "analysis": 40,
+        "care": 75,
+        "freedom": 42,
+        "expression": 58,
+        "structure": 46
+      },
+      "sourceIds": [
+        "src_liu-bei"
+      ],
+      "claimIds": [
+        "fact_liu-bei",
+        "model_liu-bei"
+      ],
+      "fact": "《三国演义》以刘备、关羽与张飞的结义故事展开主要线索之一。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "guan-yu",
+      "name": "关羽",
+      "subtitle": "把承诺放在心上",
+      "lead": "偏好明确的立场和稳定的做事方式，在关键处守住承诺。",
+      "contrast": "取其承诺与坚持的文学意象，不鼓励固执或冒险。",
+      "insight": "把「把承诺放在心上」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 60,
+        "analysis": 37,
+        "care": 41,
+        "freedom": 24,
+        "expression": 35,
+        "structure": 65
+      },
+      "sourceIds": [
+        "src_guan-yu"
+      ],
+      "claimIds": [
+        "fact_guan-yu",
+        "model_guan-yu"
+      ],
+      "fact": "《三国演义》写到关羽离开曹操、寻找刘备的经历。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "zhang-fei",
+      "name": "张飞",
+      "subtitle": "先让现场动起来",
+      "lead": "直接回应当下，愿意表达，也常用行动打开停滞的局面。",
+      "contrast": "活跃表达是建模选择，不把暴躁或伤害行为作为正面特征。",
+      "insight": "把「先让现场动起来」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 76,
+        "analysis": 25,
+        "care": 46,
+        "freedom": 58,
+        "expression": 76,
+        "structure": 25
+      },
+      "sourceIds": [
+        "src_zhang-fei"
+      ],
+      "claimIds": [
+        "fact_zhang-fei",
+        "model_zhang-fei"
+      ],
+      "fact": "《三国演义》中的张飞参与桃园结义，并在长坂坡出场。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "zhou-yu",
+      "name": "周瑜",
+      "subtitle": "把配合做成章法",
+      "lead": "喜欢把信息、安排与公开沟通接起来，让合作更有节奏。",
+      "contrast": "不沿用被戏剧夸大的嫉妒标签；协调侧面是原创解读。",
+      "insight": "把「把配合做成章法」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 58,
+        "analysis": 68,
+        "care": 42,
+        "freedom": 43,
+        "expression": 73,
+        "structure": 70
+      },
+      "sourceIds": [
+        "src_zhou-yu"
+      ],
+      "claimIds": [
+        "fact_zhou-yu",
+        "model_zhou-yu"
+      ],
+      "fact": "《三国演义》写到周瑜参与赤壁之战的筹划与指挥。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "zhao-yun",
+      "name": "赵云",
+      "subtitle": "安静地把事做好",
+      "lead": "表达可以克制，行动却有支点，倾向把支持落到实际工作。",
+      "contrast": "只取故事中可靠行动的意象，不测量勇气或战斗能力。",
+      "insight": "把「安静地把事做好」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 68,
+        "analysis": 55,
+        "care": 58,
+        "freedom": 38,
+        "expression": 27,
+        "structure": 58
+      },
+      "sourceIds": [
+        "src_zhao-yun"
+      ],
+      "claimIds": [
+        "fact_zhao-yun",
+        "model_zhao-yun"
+      ],
+      "fact": "《三国演义》写到赵云在长坂坡救护刘备之子的情节。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "sun-quan",
+      "name": "孙权",
+      "subtitle": "给全局留余地",
+      "lead": "愿意观察、协调和安排，在多个需要之间寻找稳妥的节奏。",
+      "contrast": "稳妥是情境化解释，不意味着角色在所有阶段都谨慎。",
+      "insight": "把「给全局留余地」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 37,
+        "analysis": 63,
+        "care": 57,
+        "freedom": 34,
+        "expression": 53,
+        "structure": 64
+      },
+      "sourceIds": [
+        "src_sun-quan"
+      ],
+      "claimIds": [
+        "fact_sun-quan",
+        "model_sun-quan"
+      ],
+      "fact": "《三国演义》写到孙权接续经营江东，并参与联盟决策。",
+      "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。",
+      "accent": "#386c66",
+      "image": {
+        "file": "assets/sanguo.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_zhuge-liang",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    },
+    {
+      "id": "src_cao-cao",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    },
+    {
+      "id": "src_liu-bei",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    },
+    {
+      "id": "src_guan-yu",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    },
+    {
+      "id": "src_zhang-fei",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    },
+    {
+      "id": "src_zhou-yu",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    },
+    {
+      "id": "src_zhao-yun",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    },
+    {
+      "id": "src_sun-quan",
+      "checkedAt": "2026-10-11",
+      "title": "《三国演义》毛宗岗本",
+      "url": "https://zh.wikisource.org/wiki/%E4%B8%89%E5%9C%8B%E6%BC%94%E7%BE%A9",
+      "kind": "primary"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_zhuge-liang",
+      "text": "《三国演义》中的诸葛亮参与谋划，并以军师形象进入故事。",
+      "type": "fact",
+      "sourceIds": [
+        "src_zhuge-liang"
+      ],
+      "limits": "采用演义中的筹谋侧面，不把文学描写等同于历史人格。"
+    },
+    {
+      "id": "model_zhuge-liang",
+      "text": "由公开作品侧面启发的原创解读：在复杂局面里寻找线索，再把方向化成可执行的安排。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用演义中的筹谋侧面，不把文学描写等同于历史人格。"
+    },
+    {
+      "id": "fact_cao-cao",
+      "text": "《三国演义》写到曹操组织势力、调动资源与参与军事竞争。",
+      "type": "fact",
+      "sourceIds": [
+        "src_cao-cao"
+      ],
+      "limits": "行动与统筹为编辑解释；匹配不涉及使用者的道德或权力观。"
+    },
+    {
+      "id": "model_cao-cao",
+      "text": "由公开作品侧面启发的原创解读：既在意判断，也愿意推动变化，寻找能落地的办法。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；行动与统筹为编辑解释；匹配不涉及使用者的道德或权力观。"
+    },
+    {
+      "id": "fact_liu-bei",
+      "text": "《三国演义》以刘备、关羽与张飞的结义故事展开主要线索之一。",
+      "type": "fact",
+      "sourceIds": [
+        "src_liu-bei"
+      ],
+      "limits": "关系侧面不代表永远温和，也不是对政治行为的整体评价。"
+    },
+    {
+      "id": "model_liu-bei",
+      "text": "由公开作品侧面启发的原创解读：用关系中的理解和回应，让共同目标有更多人参与。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；关系侧面不代表永远温和，也不是对政治行为的整体评价。"
+    },
+    {
+      "id": "fact_guan-yu",
+      "text": "《三国演义》写到关羽离开曹操、寻找刘备的经历。",
+      "type": "fact",
+      "sourceIds": [
+        "src_guan-yu"
+      ],
+      "limits": "取其承诺与坚持的文学意象，不鼓励固执或冒险。"
+    },
+    {
+      "id": "model_guan-yu",
+      "text": "由公开作品侧面启发的原创解读：偏好明确的立场和稳定的做事方式，在关键处守住承诺。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；取其承诺与坚持的文学意象，不鼓励固执或冒险。"
+    },
+    {
+      "id": "fact_zhang-fei",
+      "text": "《三国演义》中的张飞参与桃园结义，并在长坂坡出场。",
+      "type": "fact",
+      "sourceIds": [
+        "src_zhang-fei"
+      ],
+      "limits": "活跃表达是建模选择，不把暴躁或伤害行为作为正面特征。"
+    },
+    {
+      "id": "model_zhang-fei",
+      "text": "由公开作品侧面启发的原创解读：直接回应当下，愿意表达，也常用行动打开停滞的局面。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；活跃表达是建模选择，不把暴躁或伤害行为作为正面特征。"
+    },
+    {
+      "id": "fact_zhou-yu",
+      "text": "《三国演义》写到周瑜参与赤壁之战的筹划与指挥。",
+      "type": "fact",
+      "sourceIds": [
+        "src_zhou-yu"
+      ],
+      "limits": "不沿用被戏剧夸大的嫉妒标签；协调侧面是原创解读。"
+    },
+    {
+      "id": "model_zhou-yu",
+      "text": "由公开作品侧面启发的原创解读：喜欢把信息、安排与公开沟通接起来，让合作更有节奏。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不沿用被戏剧夸大的嫉妒标签；协调侧面是原创解读。"
+    },
+    {
+      "id": "fact_zhao-yun",
+      "text": "《三国演义》写到赵云在长坂坡救护刘备之子的情节。",
+      "type": "fact",
+      "sourceIds": [
+        "src_zhao-yun"
+      ],
+      "limits": "只取故事中可靠行动的意象，不测量勇气或战斗能力。"
+    },
+    {
+      "id": "model_zhao-yun",
+      "text": "由公开作品侧面启发的原创解读：表达可以克制，行动却有支点，倾向把支持落到实际工作。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；只取故事中可靠行动的意象，不测量勇气或战斗能力。"
+    },
+    {
+      "id": "fact_sun-quan",
+      "text": "《三国演义》写到孙权接续经营江东，并参与联盟决策。",
+      "type": "fact",
+      "sourceIds": [
+        "src_sun-quan"
+      ],
+      "limits": "稳妥是情境化解释，不意味着角色在所有阶段都谨慎。"
+    },
+    {
+      "id": "model_sun-quan",
+      "text": "由公开作品侧面启发的原创解读：愿意观察、协调和安排，在多个需要之间寻找稳妥的节奏。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；稳妥是情境化解释，不意味着角色在所有阶段都谨慎。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "clear",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_zhuge-liang",
+        "type": "name",
+        "origin": "src_zhuge-liang",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_zhuge-liang",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_cao-cao",
+        "type": "name",
+        "origin": "src_cao-cao",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_cao-cao",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_liu-bei",
+        "type": "name",
+        "origin": "src_liu-bei",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_liu-bei",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_guan-yu",
+        "type": "name",
+        "origin": "src_guan-yu",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_guan-yu",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_zhang-fei",
+        "type": "name",
+        "origin": "src_zhang-fei",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_zhang-fei",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_zhou-yu",
+        "type": "name",
+        "origin": "src_zhou-yu",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_zhou-yu",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_zhao-yun",
+        "type": "name",
+        "origin": "src_zhao-yun",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_zhao-yun",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_sun-quan",
+        "type": "name",
+        "origin": "src_sun-quan",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_sun-quan",
+        "type": "image",
+        "file": "assets/sanguo.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "sanguo",
+    "minutes": 4,
+    "title": "测测你最像哪位三国人物",
+    "shortTitle": "三国里的另一面",
+    "category": "历史与诗意",
+    "color": "#386c66",
+    "wash": "#e7f1ed",
+    "tag": "历史 · 演义",
+    "description": "如果和古人做队友，你会是运筹的军师，还是先迈步的行动派？",
+    "stage": "《三国演义》毛宗岗本；文学形象，区别于历史人物研究。"
+  }
+}

@@ -1,0 +1,2687 @@
+{
+  "meta": {
+    "id": "harry-potter",
+    "title": "测测你最像哪位哈利波特角色",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.1.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.1.0",
+    "kind": "object-match",
+    "description": "24道原创生活情境题，对照20位哈利波特角色的解释性行为原型，生成有答案依据的个性化报告与结果卡。",
+    "disclaimer": "非官方同好娱乐测评，与作品权利人无合作关系；不是心理诊断或科学人格测量。",
+    "userStudyValidated": false,
+    "requiresHumanReview": true
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "信息不全时，是等待更稳妥的时机，还是先用行动推动局面。",
+      "highCopy": "你愿意先迈出一步，再根据反馈调整。",
+      "lowCopy": "你倾向先观察局势，再选择行动时机。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对未知，是倚重经验和感受，还是主动查证、拆解问题。",
+      "highCopy": "你偏好把线索查清，理解事情如何运转。",
+      "lowCopy": "你更常依靠经验和当下感受寻找方向。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "解决任务",
+      "highLabel": "照顾感受",
+      "description": "在支持别人时，优先处理事情本身，还是先照顾对方的感受。",
+      "highCopy": "你往往先接住人的感受，再处理事情。",
+      "lowCopy": "你倾向用解决实际问题来表达支持。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "另辟路径",
+      "description": "已有约定与个人判断发生摩擦时，是优先沿用惯例，还是尝试新路径。",
+      "highCopy": "你愿意检验惯例，寻找自己的做法。",
+      "lowCopy": "你更愿意借助成熟做法减少不确定性。",
+      "weight": 1
+    },
+    {
+      "id": "ambition",
+      "name": "目标偏好",
+      "lowLabel": "体验过程",
+      "highLabel": "追求成果",
+      "description": "选择投入方向时，更重视过程体验，还是可衡量的成果与成长。",
+      "highCopy": "你喜欢有清晰成果的挑战，也在意进步。",
+      "lowCopy": "你更看重体验本身，不急于用成绩定义它。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "表达想法或参与群体时，是偏向安静的小范围交流，还是公开带动气氛。",
+      "highCopy": "你愿意把想法说出来，让互动发生。",
+      "lowCopy": "你更习惯安静表达，给自己留出空间。",
+      "weight": 1
+    },
+    {
+      "id": "loyalty",
+      "name": "关系取舍",
+      "lowLabel": "统一标准",
+      "highLabel": "优先熟人",
+      "description": "资源或立场发生冲突时，是对所有人用同一标准，还是优先照应熟悉的人。",
+      "highCopy": "你重视已经建立的关系与共同经历。",
+      "lowCopy": "你倾向用一致标准来处理关系中的取舍。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "面对时间和任务，是临场调整，还是提前分解、安排步骤。",
+      "highCopy": "你习惯提前安排，让事情有序推进。",
+      "lowCopy": "你愿意留出弹性，根据现场情况调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "第一次参加陌生活动，大家还在等别人开口，你通常会怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先问一个简单问题，试着打开交流。",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "在陌生活动中，你会用一个小问题推动交流。"
+        },
+        {
+          "id": "c2",
+          "text": "先观察大家如何互动，等有把握再参与。",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "在陌生活动中，你先观察互动方式，再决定何时加入。"
+        },
+        {
+          "id": "c3",
+          "text": "主动提出一个大家可以一起尝试的小活动。",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "在陌生活动中，你愿意主动发起一次共同尝试。"
+        },
+        {
+          "id": "c4",
+          "text": "等有人带头，再接上自己熟悉的话题。",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "在陌生活动中，你愿意跟随已有的话题逐步加入。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "朋友转来一个听起来很新奇、但来源不明的说法，你会怎么处理？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "结合自己的经验，先形成一个暂时的看法。",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对新奇说法，你先结合自己的经验形成暂时看法。"
+        },
+        {
+          "id": "c2",
+          "text": "追查原始出处，比较证据和不同解释。",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对新奇说法，你会追查原始出处并比较证据。"
+        },
+        {
+          "id": "c3",
+          "text": "只把它当趣闻，聊一聊就过去了。",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "对来源不明的新奇说法，你选择把它当趣闻而不下结论。"
+        },
+        {
+          "id": "c4",
+          "text": "找一个可靠渠道，看看是否有对应的信息。",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对新奇说法，你会寻找一个可靠渠道核对。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "朋友因为一次小失误很沮丧，来找你倾诉，你通常先做什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先听他把感受说完，再一起想办法。",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "朋友因失误沮丧时，你先倾听感受，再一起处理问题。"
+        },
+        {
+          "id": "c2",
+          "text": "先确认最紧急的困难，再简短安慰。",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "朋友因失误沮丧时，你先确认困难，再表达安慰。"
+        },
+        {
+          "id": "c3",
+          "text": "先问他现在最需要陪伴还是建议。",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "朋友因失误沮丧时，你先询问他需要哪一种支持。"
+        },
+        {
+          "id": "c4",
+          "text": "帮他列出补救步骤，让问题尽快解决。",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "朋友因失误沮丧时，你先帮助他安排补救步骤。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "团队一直沿用的流程让你觉得不太方便，你更可能怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先按现有流程做，熟悉后再评价。",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对不方便的惯例，你选择先熟悉现有流程。"
+        },
+        {
+          "id": "c2",
+          "text": "提出替代流程，和大家讨论试行。",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对不方便的惯例，你愿意提出替代方案并讨论试行。"
+        },
+        {
+          "id": "c3",
+          "text": "只在允许的范围内做一点小调整。",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对不方便的惯例，你在既有范围内做小调整。"
+        },
+        {
+          "id": "c4",
+          "text": "先做一个低风险的新版本，用效果说明。",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对不方便的惯例，你会先尝试低风险的新做法。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "ambition",
+      "prompt": "选一个可以坚持数月的兴趣项目，什么最吸引你？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "明显学会一项新技能，看到自己进步。",
+          "effects": {
+            "ambition": 1
+          },
+          "evidence": "选择长期兴趣时，你希望学会技能并看见进步。"
+        },
+        {
+          "id": "c2",
+          "text": "它能让我放松，过程有趣就很好。",
+          "effects": {
+            "ambition": -3
+          },
+          "evidence": "选择长期兴趣时，你优先考虑放松与过程的乐趣。"
+        },
+        {
+          "id": "c3",
+          "text": "做出拿得出手的作品，挑战更高目标。",
+          "effects": {
+            "ambition": 3
+          },
+          "evidence": "选择长期兴趣时，你希望完成作品并挑战更高目标。"
+        },
+        {
+          "id": "c4",
+          "text": "认识新的人，积累有意思的经历。",
+          "effects": {
+            "ambition": -1
+          },
+          "evidence": "选择长期兴趣时，你看重新的连接和经历。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "expression",
+      "prompt": "聚会上出现你很熟悉的话题，你通常会怎样参与？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "别人问到我时，再补充自己的看法。",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "在聚会上，你倾向受邀后再补充自己的看法。"
+        },
+        {
+          "id": "c2",
+          "text": "讲个相关故事，邀请更多人一起聊。",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "在聚会上，你愿意用故事带动更多人参与。"
+        },
+        {
+          "id": "c3",
+          "text": "听大家聊，离开后再和熟人单独交流。",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "在熟悉话题的聚会上，你更愿意倾听并私下交流。"
+        },
+        {
+          "id": "c4",
+          "text": "自然加入讨论，把自己的见闻分享出来。",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "在聚会上，你愿意主动分享自己的见闻。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "loyalty",
+      "prompt": "两个能力相近的人同时邀请你合作，其中一个是老朋友，你如何决定？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "愿意为朋友留出机会，一起补齐不足。",
+          "effects": {
+            "loyalty": 3
+          },
+          "evidence": "选择合作伙伴时，你愿意为朋友保留共同成长的机会。"
+        },
+        {
+          "id": "c2",
+          "text": "主要看项目合适度，友情只作次要参考。",
+          "effects": {
+            "loyalty": -1
+          },
+          "evidence": "选择合作伙伴时，你以项目合适度为主，友情为辅。"
+        },
+        {
+          "id": "c3",
+          "text": "条件相近时优先朋友，因为已有默契。",
+          "effects": {
+            "loyalty": 1
+          },
+          "evidence": "合作条件相近时，你会优先考虑已有默契的朋友。"
+        },
+        {
+          "id": "c4",
+          "text": "只比较合作条件，两个人用同一套标准。",
+          "effects": {
+            "loyalty": -3
+          },
+          "evidence": "选择合作伙伴时，你优先使用统一的合作标准。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "structure",
+      "prompt": "周末要出门办三件事，你更接近哪种安排方式？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "出门后看状态和路况，顺路完成即可。",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "处理周末事务时，你倾向根据现场情况灵活安排。"
+        },
+        {
+          "id": "c2",
+          "text": "提前排好路线，预留一点机动时间。",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "处理周末事务时，你会提前安排路线和机动时间。"
+        },
+        {
+          "id": "c3",
+          "text": "记住要做什么，大致知道先去哪。",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "处理周末事务时，你保留一个大致顺序。"
+        },
+        {
+          "id": "c4",
+          "text": "确认时间、材料与路线，准备备用方案。",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "处理周末事务时，你会核对细节并准备备用方案。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "action",
+      "prompt": "你想报名一个有点难、但风险可控的新体验，最像你的反应是？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先报名入门场次，边试边判断是否继续。",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对有难度的新体验，你愿意用入门尝试获得反馈。"
+        },
+        {
+          "id": "c2",
+          "text": "先看几次别人的体验，再决定报不报名。",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对有难度的新体验，你愿意先观察别人的经历。"
+        },
+        {
+          "id": "c3",
+          "text": "先锁定机会，主动做好必要准备。",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对有难度的新体验，你愿意主动抓住机会并准备。"
+        },
+        {
+          "id": "c4",
+          "text": "等找到熟悉的伙伴，再一起报名。",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对有难度的新体验，你偏好和熟悉的伙伴一起开始。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "analysis",
+      "prompt": "一道难题暂时卡住了你，你更习惯用什么方式突破？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "试试过去成功过的办法，观察反馈。",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "卡在难题时，你会先尝试过去成功过的办法。"
+        },
+        {
+          "id": "c2",
+          "text": "查资料、做对照，把关键假设逐一验证。",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "卡在难题时，你会查资料并逐一验证关键假设。"
+        },
+        {
+          "id": "c3",
+          "text": "换个环境，等新的感觉或联想出现。",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "卡在难题时，你会换环境，给联想留出空间。"
+        },
+        {
+          "id": "c4",
+          "text": "把问题拆成几块，逐个找可能的原因。",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "卡在难题时，你会拆分问题并逐个寻找原因。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "care",
+      "prompt": "你负责的小组有人进度明显落后，你首先会做什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先减轻对方压力，再协商大家都能承担的节奏。",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "小组进度落后时，你先减轻压力，再协商可承担的节奏。"
+        },
+        {
+          "id": "c2",
+          "text": "确认卡在哪一步，给他一个具体解决办法。",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "小组进度落后时，你先定位困难并提供具体办法。"
+        },
+        {
+          "id": "c3",
+          "text": "私下问问遇到了什么，兼顾状态和任务。",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "小组进度落后时，你会私下询问困难并兼顾状态。"
+        },
+        {
+          "id": "c4",
+          "text": "重新分配任务，先确保整体按时完成。",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "小组进度落后时，你先通过任务调整保障完成。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "freedom",
+      "prompt": "朋友们都喜欢一个热门去处，你却对别的地方更感兴趣，你会怎么选？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "跟大家去热门地方，共同体验更方便。",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对集体偏好，你倾向一起体验大家熟悉的选择。"
+        },
+        {
+          "id": "c2",
+          "text": "说明自己的兴趣，提议分一段时间探索。",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对集体偏好，你会表达自己的兴趣并寻找折中。"
+        },
+        {
+          "id": "c3",
+          "text": "这次跟随大家，下次再提出自己的想法。",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对集体偏好，你愿意先跟随，再寻找表达机会。"
+        },
+        {
+          "id": "c4",
+          "text": "选择自己想去的地方，再与朋友分享发现。",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对集体偏好，你愿意保留自己的探索路线。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "ambition",
+      "prompt": "一件事情已经做得不错，你还有空余时间，通常会如何使用？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "找出一个可以提升的地方，再磨一轮。",
+          "effects": {
+            "ambition": 1
+          },
+          "evidence": "事情已经做得不错时，你仍愿意针对一个方面提升。"
+        },
+        {
+          "id": "c2",
+          "text": "到这里就好，去享受别的事情。",
+          "effects": {
+            "ambition": -3
+          },
+          "evidence": "事情已经做得不错时，你愿意把时间留给其他体验。"
+        },
+        {
+          "id": "c3",
+          "text": "对照更高标准，尝试把它做到更出色。",
+          "effects": {
+            "ambition": 3
+          },
+          "evidence": "事情已经做得不错时，你会主动对照更高标准。"
+        },
+        {
+          "id": "c4",
+          "text": "做一点自己喜欢的细节，不必提高标准。",
+          "effects": {
+            "ambition": -1
+          },
+          "evidence": "事情已经做得不错时，你偏好完善有趣的细节。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "expression",
+      "prompt": "你有一个新点子，想听听别人的反馈，你更喜欢怎样提出？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "等合适的时机，在小范围内试着说。",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "提出新点子时，你偏好选择时机在小范围交流。"
+        },
+        {
+          "id": "c2",
+          "text": "做个小演示，主动邀请大家讨论。",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "提出新点子时，你愿意用演示主动发起讨论。"
+        },
+        {
+          "id": "c3",
+          "text": "写下来，先发给一位信任的人。",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "提出新点子时，你偏好先写给一位信任的人。"
+        },
+        {
+          "id": "c4",
+          "text": "直接在小组里讲，听听大家的即时反应。",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "提出新点子时，你愿意在小组里直接听取反应。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "loyalty",
+      "prompt": "熟悉的朋友和陌生人发生争执，双方情况都还没弄清楚，你会怎么处理？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先确保朋友有支持，再一起厘清事实。",
+          "effects": {
+            "loyalty": 3
+          },
+          "evidence": "处理争执时，你先提供关系中的支持，再一起查清事实。"
+        },
+        {
+          "id": "c2",
+          "text": "先维持公平的沟通，让双方都能解释。",
+          "effects": {
+            "loyalty": -1
+          },
+          "evidence": "处理争执时，你优先让双方都有公平解释的机会。"
+        },
+        {
+          "id": "c3",
+          "text": "先陪朋友冷静下来，再了解另一方。",
+          "effects": {
+            "loyalty": 1
+          },
+          "evidence": "处理争执时，你先照应朋友，再了解另一方。"
+        },
+        {
+          "id": "c4",
+          "text": "先分别了解事情经过，再判断立场。",
+          "effects": {
+            "loyalty": -3
+          },
+          "evidence": "处理争执时，你选择先了解双方经过，再判断立场。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "structure",
+      "prompt": "准备一场需要你组织的小型活动，你通常怎样开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先确定大方向，到现场再安排细节。",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "组织活动时，你偏好先定方向，再临场安排细节。"
+        },
+        {
+          "id": "c2",
+          "text": "分配任务、排好时间，让大家提前知道。",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "组织活动时，你会提前分工并安排时间。"
+        },
+        {
+          "id": "c3",
+          "text": "列出必要事项，其他部分留给现场发挥。",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "组织活动时，你会列出必要事项并保留发挥空间。"
+        },
+        {
+          "id": "c4",
+          "text": "把流程与可能的意外写清，提前核对一遍。",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "组织活动时，你会核对流程并为意外预留安排。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "action",
+      "prompt": "讨论停在原地，大家已经说了不少想法，你最可能做什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "提议试一个小步骤，让结果帮助判断。",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "讨论停滞时，你会提议用一个小步骤获得反馈。"
+        },
+        {
+          "id": "c2",
+          "text": "再听一轮，确认目前真正的分歧。",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "讨论停滞时，你会先确认真正的分歧。"
+        },
+        {
+          "id": "c3",
+          "text": "主动承担第一步，约好回头检视效果。",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "讨论停滞时，你愿意承担第一步并约定检视效果。"
+        },
+        {
+          "id": "c4",
+          "text": "补充一个顾虑，等大家形成共识。",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "讨论停滞时，你会补充顾虑并等待共识。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "analysis",
+      "prompt": "你准备学一个完全陌生的小技能，通常从哪里开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "找个熟悉的人示范，照着做几次。",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "学习陌生技能时，你偏好先看示范再模仿练习。"
+        },
+        {
+          "id": "c2",
+          "text": "整理系统资料，比较方法再开始练习。",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "学习陌生技能时，你会比较系统资料再开始练习。"
+        },
+        {
+          "id": "c3",
+          "text": "跟着感觉玩一玩，发现什么就学什么。",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "学习陌生技能时，你愿意从自由尝试与感觉开始。"
+        },
+        {
+          "id": "c4",
+          "text": "先读入门说明，理解几个基本原理。",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "学习陌生技能时，你会先理解基本说明与原理。"
+        }
+      ]
+    },
+    {
+      "id": "q19",
+      "dimension": "care",
+      "prompt": "聚会临时改变计划，一位同伴明显不太开心，你倾向怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先照顾他的失落感，再一起找舒服的安排。",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "聚会改计划时，你先照顾感受，再一起调整安排。"
+        },
+        {
+          "id": "c2",
+          "text": "告诉他实际有哪些可选方案。",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "聚会改计划时，你用具体可选方案帮助同伴。"
+        },
+        {
+          "id": "c3",
+          "text": "问清他的顾虑，看能否调整一部分。",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "聚会改计划时，你会询问顾虑并尝试局部调整。"
+        },
+        {
+          "id": "c4",
+          "text": "先把新计划落实，再处理其他问题。",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "聚会改计划时，你先落实新安排，再处理其他问题。"
+        }
+      ]
+    },
+    {
+      "id": "q20",
+      "dimension": "freedom",
+      "prompt": "做一份没有固定格式的作品，别人建议你采用最常见的模板，你会怎样？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "用成熟模板，把内容做好就行。",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "制作开放格式的作品时，你偏好采用成熟模板。"
+        },
+        {
+          "id": "c2",
+          "text": "保留必要结构，加入自己的表达方法。",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "制作开放格式的作品时，你会加入自己的表达方式。"
+        },
+        {
+          "id": "c3",
+          "text": "以模板为底，只改动少量细节。",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "制作开放格式的作品时，你会基于模板局部调整。"
+        },
+        {
+          "id": "c4",
+          "text": "尝试一套新的形式，即使要多摸索一会儿。",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "制作开放格式的作品时，你愿意探索新的形式。"
+        }
+      ]
+    },
+    {
+      "id": "q21",
+      "dimension": "ambition",
+      "prompt": "回顾过去一个月，哪一种收获最让你满足？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "完成阶段目标，能力比之前更进一步。",
+          "effects": {
+            "ambition": 1
+          },
+          "evidence": "回顾一个月的收获时，你看重阶段目标与能力进步。"
+        },
+        {
+          "id": "c2",
+          "text": "过了几段舒服、有意思的日子。",
+          "effects": {
+            "ambition": -3
+          },
+          "evidence": "回顾一个月的收获时，你最看重舒服而有趣的体验。"
+        },
+        {
+          "id": "c3",
+          "text": "突破原有水平，做出能代表自己的成果。",
+          "effects": {
+            "ambition": 3
+          },
+          "evidence": "回顾一个月的收获时，你看重突破与代表性的成果。"
+        },
+        {
+          "id": "c4",
+          "text": "留下新的经历，知道自己喜欢什么。",
+          "effects": {
+            "ambition": -1
+          },
+          "evidence": "回顾一个月的收获时，你看重新经历与兴趣发现。"
+        }
+      ]
+    },
+    {
+      "id": "q22",
+      "dimension": "expression",
+      "prompt": "小组想找人向大家介绍共同完成的成果，你会如何回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "愿意讲自己负责的小部分。",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "介绍小组成果时，你愿意讲自己熟悉的一部分。"
+        },
+        {
+          "id": "c2",
+          "text": "愿意主持整个分享，让每个人都有参与感。",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "介绍小组成果时，你愿意主持并带动大家参与。"
+        },
+        {
+          "id": "c3",
+          "text": "愿意准备内容，希望别人负责台前介绍。",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "介绍小组成果时，你偏好准备内容并留在幕后。"
+        },
+        {
+          "id": "c4",
+          "text": "可以负责主要介绍，顺便回答问题。",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "介绍小组成果时，你愿意承担介绍与答问。"
+        }
+      ]
+    },
+    {
+      "id": "q23",
+      "dimension": "loyalty",
+      "prompt": "你只有一份可分享的学习资源，两个人都需要，你通常怎么分配？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先帮助长期同行的伙伴，再为其他人找替代。",
+          "effects": {
+            "loyalty": 3
+          },
+          "evidence": "分配有限资源时，你先照应长期伙伴，再寻找替代。"
+        },
+        {
+          "id": "c2",
+          "text": "优先最急需的人，不管彼此熟不熟。",
+          "effects": {
+            "loyalty": -1
+          },
+          "evidence": "分配有限资源时，你优先考虑需要程度。"
+        },
+        {
+          "id": "c3",
+          "text": "需要相近时，优先曾经互相帮助的人。",
+          "effects": {
+            "loyalty": 1
+          },
+          "evidence": "需要相近时，你会优先照应曾互相帮助的人。"
+        },
+        {
+          "id": "c4",
+          "text": "按事先公开的标准决定，避免私人偏好。",
+          "effects": {
+            "loyalty": -3
+          },
+          "evidence": "分配有限资源时，你偏好事先公开的统一标准。"
+        }
+      ]
+    },
+    {
+      "id": "q24",
+      "dimension": "structure",
+      "prompt": "一个离截止日期还有两周的任务，你更可能如何推进？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "等状态合适时集中完成，中途保留弹性。",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对两周后的截止日期，你偏好有状态时集中完成。"
+        },
+        {
+          "id": "c2",
+          "text": "拆成几个节点，分次完成。",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对两周后的截止日期，你会拆分节点并分次完成。"
+        },
+        {
+          "id": "c3",
+          "text": "心里记着时间，想到时就做一点。",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对两周后的截止日期，你会按当下情况逐步推进。"
+        },
+        {
+          "id": "c4",
+          "text": "排进日程，提前完成并留时间检查。",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对两周后的截止日期，你会提前安排完成与检查。"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 1.3,
+    "lowSeparationThreshold": 4,
+    "weakMatchThreshold": 28,
+    "rounding": "nearest integer; no half values occur with this question configuration",
+    "evidenceStrategy": "Choose observed strongest axes, cite distinct selected answers; no invented evidence"
+  },
+  "profiles": [
+    {
+      "id": "harry",
+      "name": "哈利·波特",
+      "englishName": "Harry Potter",
+      "subtitle": "先迈步的守护者",
+      "lead": "重视同伴，也愿意在未知面前采取行动。",
+      "contrast": "不把英雄情节推断为日常中的冲动或拯救责任。",
+      "insight": "可以把「先迈步的守护者」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 72,
+        "analysis": 43,
+        "care": 53,
+        "freedom": 65,
+        "ambition": 47,
+        "expression": 49,
+        "loyalty": 71,
+        "structure": 34
+      },
+      "sourceIds": [
+        "src_harry"
+      ],
+      "claimIds": [
+        "fact_harry",
+        "model_harry"
+      ],
+      "fact": "哈利与朋友共同面对危险，并擅长防御魔法。",
+      "stage": "系列学校时期，尤其第3—7部",
+      "accent": "#b89659",
+      "image": {
+        "file": "assets/harry-potter/harry.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "hermione",
+      "name": "赫敏·格兰杰",
+      "englishName": "Hermione Granger",
+      "subtitle": "把线索变成答案的人",
+      "lead": "求知、准备与问题解决，在她的故事中反复出现。",
+      "contrast": "不把她简化为只会守规矩，也不推断现实智力。",
+      "insight": "可以把「把线索变成答案的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 57,
+        "analysis": 76,
+        "care": 52,
+        "freedom": 47,
+        "ambition": 65,
+        "expression": 46,
+        "loyalty": 59,
+        "structure": 74
+      },
+      "sourceIds": [
+        "src_hermione"
+      ],
+      "claimIds": [
+        "fact_hermione",
+        "model_hermione"
+      ],
+      "fact": "赫敏热爱阅读，善于解决问题，也为家养小精灵权益行动。",
+      "stage": "第3—7部，保留她会为重要目的改变惯例的成长",
+      "accent": "#719083",
+      "image": {
+        "file": "assets/harry-potter/hermione.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "ron",
+      "name": "罗恩·韦斯莱",
+      "englishName": "Ron Weasley",
+      "subtitle": "愿意陪你走下去的人",
+      "lead": "把关系与共同经历放在重要的位置。",
+      "contrast": "承认嫉妒与退缩片段；不是永远稳定的陪伴。",
+      "insight": "可以把「愿意陪你走下去的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 52,
+        "analysis": 39,
+        "care": 58,
+        "freedom": 44,
+        "ambition": 43,
+        "expression": 61,
+        "loyalty": 73,
+        "structure": 37
+      },
+      "sourceIds": [
+        "src_ron"
+      ],
+      "claimIds": [
+        "fact_ron",
+        "model_ron"
+      ],
+      "fact": "罗恩是哈利与赫敏的好友，具有勇气与忠诚，也擅长巫师棋。",
+      "stage": "第1—7部的综合阶段",
+      "accent": "#8593ad",
+      "image": {
+        "file": "assets/harry-potter/ron.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "ginny",
+      "name": "金妮·韦斯莱",
+      "englishName": "Ginny Weasley",
+      "subtitle": "有自己节奏的行动派",
+      "lead": "从自己的兴趣出发，在实践中建立独立的声音。",
+      "contrast": "不把运动能力与外向程度画等号；后者为创作解释。",
+      "insight": "可以把「有自己节奏的行动派」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 70,
+        "analysis": 40,
+        "care": 48,
+        "freedom": 58,
+        "ambition": 64,
+        "expression": 65,
+        "loyalty": 58,
+        "structure": 44
+      },
+      "sourceIds": [
+        "src_ginny"
+      ],
+      "claimIds": [
+        "fact_ginny",
+        "model_ginny"
+      ],
+      "fact": "金妮成长为熟练的魁地奇球员，并参与抵抗伏地魔。",
+      "stage": "第5—7部；不采用一年级的羞怯作为主原型",
+      "accent": "#b77780",
+      "image": {
+        "file": "assets/harry-potter/ginny.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "neville",
+      "name": "纳威·隆巴顿",
+      "englishName": "Neville Longbottom",
+      "subtitle": "慢慢长出力量的人",
+      "lead": "从安静的投入出发，在重要时刻站稳立场。",
+      "contrast": "行动坐标为日常节奏，不能否定危机中的勇敢。",
+      "insight": "可以把「慢慢长出力量的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 54,
+        "analysis": 46,
+        "care": 66,
+        "freedom": 43,
+        "ambition": 41,
+        "expression": 31,
+        "loyalty": 64,
+        "structure": 51
+      },
+      "sourceIds": [
+        "src_neville"
+      ],
+      "claimIds": [
+        "fact_neville",
+        "model_neville"
+      ],
+      "fact": "纳威热爱草药学，多次为正确的事挺身而出。",
+      "stage": "第5—7部的成长阶段",
+      "accent": "#b89659",
+      "image": {
+        "file": "assets/harry-potter/neville.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "luna",
+      "name": "卢娜·洛夫古德",
+      "englishName": "Luna Lovegood",
+      "subtitle": "给世界留一扇窗的人",
+      "lead": "保留独特的感受，也对他人保持温柔。",
+      "contrast": "探索方式偏经验不表示愚笨；对未经证实的信念保留意见。",
+      "insight": "可以把「给世界留一扇窗的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 42,
+        "analysis": 38,
+        "care": 65,
+        "freedom": 76,
+        "ambition": 29,
+        "expression": 37,
+        "loyalty": 51,
+        "structure": 29
+      },
+      "sourceIds": [
+        "src_luna"
+      ],
+      "claimIds": [
+        "fact_luna",
+        "model_luna"
+      ],
+      "fact": "卢娜有独特兴趣与个人风格，是勇敢、友善且忠诚的朋友。",
+      "stage": "第5—7部",
+      "accent": "#719083",
+      "image": {
+        "file": "assets/harry-potter/luna.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "draco",
+      "name": "德拉科·马尔福",
+      "englishName": "Draco Malfoy",
+      "subtitle": "在期待中寻找立场的人",
+      "lead": "在意成果、处境与圈子，也面临外部期待的压力。",
+      "contrast": "匹配只涉及偏好组合，不指认霸凌、偏见或道德品质。",
+      "insight": "可以把「在期待中寻找立场的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 38,
+        "analysis": 52,
+        "care": 31,
+        "freedom": 32,
+        "ambition": 73,
+        "expression": 58,
+        "loyalty": 59,
+        "structure": 56
+      },
+      "sourceIds": [
+        "src_draco"
+      ],
+      "claimIds": [
+        "fact_draco",
+        "model_draco"
+      ],
+      "fact": "德拉科享受权力与地位，在家庭压力下其立场产生动摇。",
+      "stage": "第6—7部，保留矛盾与犹豫",
+      "accent": "#8593ad",
+      "image": {
+        "file": "assets/harry-potter/draco.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "snape",
+      "name": "西弗勒斯·斯内普",
+      "englishName": "Severus Snape",
+      "subtitle": "把复杂留在幕后的人",
+      "lead": "重视专业与克制，不急于把一切展示出来。",
+      "contrast": "专业与克制是解释；不美化伤害行为或推断隐藏创伤。",
+      "insight": "可以把「把复杂留在幕后的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 43,
+        "analysis": 73,
+        "care": 30,
+        "freedom": 42,
+        "ambition": 61,
+        "expression": 25,
+        "loyalty": 69,
+        "structure": 68
+      },
+      "sourceIds": [
+        "src_snape"
+      ],
+      "claimIds": [
+        "fact_snape",
+        "model_snape"
+      ],
+      "fact": "斯内普精于魔药和大脑封闭术，同时有严厉且不公平的教学行为。",
+      "stage": "第1—7部成年教师阶段",
+      "accent": "#b77780",
+      "image": {
+        "file": "assets/harry-potter/snape.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "dumbledore",
+      "name": "阿不思·邓布利多",
+      "englishName": "Albus Dumbledore",
+      "subtitle": "看见更远处的人",
+      "lead": "尝试理解全局，并为长远方向留下空间。",
+      "contrast": "不采用前传或晚年传闻混写；全局视角为解释性概括。",
+      "insight": "可以把「看见更远处的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 43,
+        "analysis": 68,
+        "care": 48,
+        "freedom": 62,
+        "ambition": 52,
+        "expression": 44,
+        "loyalty": 41,
+        "structure": 62
+      },
+      "sourceIds": [
+        "src_dumbledore"
+      ],
+      "claimIds": [
+        "fact_dumbledore",
+        "model_dumbledore"
+      ],
+      "fact": "邓布利多任校长并创立凤凰社，拥有广泛魔法研究与发明能力。",
+      "stage": "第1—6部校长阶段",
+      "accent": "#b89659",
+      "image": {
+        "file": "assets/harry-potter/dumbledore.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "mcgonagall",
+      "name": "米勒娃·麦格",
+      "englishName": "Minerva McGonagall",
+      "subtitle": "把原则落实的人",
+      "lead": "靠清楚的标准和扎实的安排，保护重要的事。",
+      "contrast": "严格不等于冷漠；规划程度是原创坐标。",
+      "insight": "可以把「把原则落实的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 62,
+        "analysis": 62,
+        "care": 44,
+        "freedom": 29,
+        "ambition": 56,
+        "expression": 35,
+        "loyalty": 43,
+        "structure": 77
+      },
+      "sourceIds": [
+        "src_mcgonagall"
+      ],
+      "claimIds": [
+        "fact_mcgonagall",
+        "model_mcgonagall"
+      ],
+      "fact": "麦格严格而公正，会在不公或危险面前保护学生。",
+      "stage": "第1—7部教师阶段",
+      "accent": "#719083",
+      "image": {
+        "file": "assets/harry-potter/mcgonagall.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "sirius",
+      "name": "小天狼星·布莱克",
+      "englishName": "Sirius Black",
+      "subtitle": "不替别人活的人",
+      "lead": "珍惜自己选择的关系，也不愿被既定期待困住。",
+      "contrast": "不使用少年时期的霸凌作为正面特征；自由有现实代价。",
+      "insight": "可以把「不替别人活的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 70,
+        "analysis": 46,
+        "care": 45,
+        "freedom": 74,
+        "ambition": 38,
+        "expression": 57,
+        "loyalty": 72,
+        "structure": 28
+      },
+      "sourceIds": [
+        "src_sirius"
+      ],
+      "claimIds": [
+        "fact_sirius",
+        "model_sirius"
+      ],
+      "fact": "小天狼星反抗家族路线，与朋友建立深厚关系，后任哈利教父。",
+      "stage": "第3—5部成年阶段",
+      "accent": "#8593ad",
+      "image": {
+        "file": "assets/harry-potter/sirius.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "lupin",
+      "name": "莱姆斯·卢平",
+      "englishName": "Remus Lupin",
+      "subtitle": "让人安心的引路者",
+      "lead": "用耐心、理解和可执行的方法帮助别人。",
+      "contrast": "不推断使用者有与角色相同的身体状况或人生经历。",
+      "insight": "可以把「让人安心的引路者」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 36,
+        "analysis": 62,
+        "care": 70,
+        "freedom": 41,
+        "ambition": 35,
+        "expression": 28,
+        "loyalty": 56,
+        "structure": 60
+      },
+      "sourceIds": [
+        "src_lupin"
+      ],
+      "claimIds": [
+        "fact_lupin",
+        "model_lupin"
+      ],
+      "fact": "卢平是实际、善良而优秀的教师，教哈利施展守护神咒。",
+      "stage": "第3—5部教师与凤凰社阶段",
+      "accent": "#b77780",
+      "image": {
+        "file": "assets/harry-potter/lupin.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "hagrid",
+      "name": "鲁伯·海格",
+      "englishName": "Rubeus Hagrid",
+      "subtitle": "愿意接纳不同的人",
+      "lead": "重视陪伴与照料，为不被理解的事物留位置。",
+      "contrast": "不把接纳等同于忽视风险；未知生物的风险另属故事事实。",
+      "insight": "可以把「愿意接纳不同的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 53,
+        "analysis": 30,
+        "care": 76,
+        "freedom": 51,
+        "ambition": 30,
+        "expression": 56,
+        "loyalty": 68,
+        "structure": 31
+      },
+      "sourceIds": [
+        "src_hagrid"
+      ],
+      "claimIds": [
+        "fact_hagrid",
+        "model_hagrid"
+      ],
+      "fact": "海格照料各类神奇动物，对哈利也有长辈般的关怀。",
+      "stage": "第1—7部",
+      "accent": "#b89659",
+      "image": {
+        "file": "assets/harry-potter/hagrid.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "molly",
+      "name": "莫莉·韦斯莱",
+      "englishName": "Molly Weasley",
+      "subtitle": "把温暖变成日常的人",
+      "lead": "把关心落实到照顾、安排与长久的支持里。",
+      "contrast": "照顾偏好不代表性别、家庭角色或应承担的责任。",
+      "insight": "可以把「把温暖变成日常的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 53,
+        "analysis": 35,
+        "care": 74,
+        "freedom": 28,
+        "ambition": 37,
+        "expression": 55,
+        "loyalty": 76,
+        "structure": 64
+      },
+      "sourceIds": [
+        "src_molly"
+      ],
+      "claimIds": [
+        "fact_molly",
+        "model_molly"
+      ],
+      "fact": "莫莉照顾家庭并慷慨接纳哈利，也会勇敢保护家人。",
+      "stage": "第1—7部成年阶段",
+      "accent": "#719083",
+      "image": {
+        "file": "assets/harry-potter/molly.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "arthur",
+      "name": "亚瑟·韦斯莱",
+      "englishName": "Arthur Weasley",
+      "subtitle": "对小事保持好奇的人",
+      "lead": "好奇普通事物的运作方式，也珍惜平凡的陪伴。",
+      "contrast": "好奇不等于全知；目标偏好是创作解释。",
+      "insight": "可以把「对小事保持好奇的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 38,
+        "analysis": 59,
+        "care": 63,
+        "freedom": 57,
+        "ambition": 28,
+        "expression": 50,
+        "loyalty": 61,
+        "structure": 48
+      },
+      "sourceIds": [
+        "src_arthur"
+      ],
+      "claimIds": [
+        "fact_arthur",
+        "model_arthur"
+      ],
+      "fact": "亚瑟爱研究麻瓜物件，是勤恳而关爱家庭的父亲。",
+      "stage": "第2—7部成年阶段",
+      "accent": "#8593ad",
+      "image": {
+        "file": "assets/harry-potter/arthur.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "fred",
+      "name": "弗雷德·韦斯莱",
+      "englishName": "Fred Weasley",
+      "subtitle": "让无聊发生变化的人",
+      "lead": "敢于试新形式，让自己的点子真正出现在现场。",
+      "contrast": "双胞胎差异证据较弱；模型靠近，不能强称精准区分。",
+      "insight": "可以把「让无聊发生变化的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 72,
+        "analysis": 46,
+        "care": 43,
+        "freedom": 75,
+        "ambition": 59,
+        "expression": 77,
+        "loyalty": 58,
+        "structure": 30
+      },
+      "sourceIds": [
+        "src_fred"
+      ],
+      "claimIds": [
+        "fact_fred",
+        "model_fred"
+      ],
+      "fact": "弗雷德与乔治开发恶作剧产品并开设笑话商店。",
+      "stage": "第4—6部的发明与创业时期",
+      "accent": "#b77780",
+      "image": {
+        "file": "assets/harry-potter/fred.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "george",
+      "name": "乔治·韦斯莱",
+      "englishName": "George Weasley",
+      "subtitle": "把点子做成共同乐趣的人",
+      "lead": "用创造与互动，把一个点子变成共同经历。",
+      "contrast": "双胞胎向量的细小差异属于编辑假设，应常披露接近候选。",
+      "insight": "可以把「把点子做成共同乐趣的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 62,
+        "analysis": 50,
+        "care": 53,
+        "freedom": 71,
+        "ambition": 56,
+        "expression": 68,
+        "loyalty": 65,
+        "structure": 36
+      },
+      "sourceIds": [
+        "src_george"
+      ],
+      "claimIds": [
+        "fact_george",
+        "model_george"
+      ],
+      "fact": "乔治与弗雷德合作开发恶作剧产品并经营笑话商店。",
+      "stage": "第4—6部，与弗雷德使用相同阶段",
+      "accent": "#b89659",
+      "image": {
+        "file": "assets/harry-potter/george.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "cedric",
+      "name": "塞德里克·迪戈里",
+      "englishName": "Cedric Diggory",
+      "subtitle": "愿意公平地赢的人",
+      "lead": "追求成果，同时重视对所有人的共同标准。",
+      "contrast": "成就不等于现实竞争能力；不能推断任何人的善恶。",
+      "insight": "可以把「愿意公平地赢的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 57,
+        "analysis": 53,
+        "care": 53,
+        "freedom": 35,
+        "ambition": 67,
+        "expression": 49,
+        "loyalty": 29,
+        "structure": 65
+      },
+      "sourceIds": [
+        "src_cedric"
+      ],
+      "claimIds": [
+        "fact_cedric",
+        "model_cedric"
+      ],
+      "fact": "塞德里克是优秀的魁地奇球员与三强赛勇士，有公平比赛的表现。",
+      "stage": "第3—4部学生阶段",
+      "accent": "#719083",
+      "image": {
+        "file": "assets/harry-potter/cedric.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "tonks",
+      "name": "尼法朵拉·唐克斯",
+      "englishName": "Nymphadora Tonks",
+      "subtitle": "认真又有趣的同行者",
+      "lead": "可以认真承担任务，也愿意轻松表达自己。",
+      "contrast": "不把外表变化推断为身份或身体特征；轻松表达属解释。",
+      "insight": "可以把「认真又有趣的同行者」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 63,
+        "analysis": 42,
+        "care": 61,
+        "freedom": 66,
+        "ambition": 49,
+        "expression": 72,
+        "loyalty": 57,
+        "structure": 39
+      },
+      "sourceIds": [
+        "src_tonks"
+      ],
+      "claimIds": [
+        "fact_tonks",
+        "model_tonks"
+      ],
+      "fact": "唐克斯是优秀傲罗与凤凰社成员，有多变的个人风格。",
+      "stage": "第5—7部成年阶段",
+      "accent": "#8593ad",
+      "image": {
+        "file": "assets/harry-potter/tonks.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    },
+    {
+      "id": "dobby",
+      "name": "多比",
+      "englishName": "Dobby",
+      "subtitle": "为自由保留勇气的人",
+      "lead": "愿意为珍惜的人行动，也重视自己选择的自由。",
+      "contrast": "关系偏好不代表服从或自我牺牲义务；不鼓励伤害自己。",
+      "insight": "可以把「为自由保留勇气的人」当作一次观察邀请：回想最近的一个真实选择，看看这个侧面是否适合当下的你。",
+      "vector": {
+        "action": 66,
+        "analysis": 29,
+        "care": 65,
+        "freedom": 68,
+        "ambition": 24,
+        "expression": 43,
+        "loyalty": 74,
+        "structure": 35
+      },
+      "sourceIds": [
+        "src_dobby"
+      ],
+      "claimIds": [
+        "fact_dobby",
+        "model_dobby"
+      ],
+      "fact": "多比争取自由，并多次为哈利与朋友提供帮助。",
+      "stage": "第2—7部，重点为获得自由后的阶段",
+      "accent": "#b77780",
+      "image": {
+        "file": "assets/harry-potter/dobby.jpg",
+        "cols": 1,
+        "rows": 1,
+        "index": 0
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_harry",
+      "title": "官方人物档案：Harry Potter",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/harry-potter",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_hermione",
+      "title": "官方人物档案：Hermione Granger",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/hermione-granger",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_ron",
+      "title": "官方人物档案：Ron Weasley",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/ron-weasley",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_ginny",
+      "title": "官方人物档案：Ginny Weasley",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/ginny-weasley",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_neville",
+      "title": "官方人物档案：Neville Longbottom",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/neville-longbottom",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_luna",
+      "title": "官方人物档案：Luna Lovegood",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/luna-lovegood",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_draco",
+      "title": "官方人物档案：Draco Malfoy",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/draco-malfoy",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_snape",
+      "title": "官方人物档案：Severus Snape",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/severus-snape",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_dumbledore",
+      "title": "官方人物档案：Albus Dumbledore",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/albus-dumbledore",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_mcgonagall",
+      "title": "官方人物档案：Minerva McGonagall",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/minerva-mcgonagall",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_sirius",
+      "title": "官方人物档案：Sirius Black",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/sirius-black",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_lupin",
+      "title": "官方人物档案：Remus Lupin",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/remus-lupin",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_hagrid",
+      "title": "官方人物档案：Rubeus Hagrid",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/rubeus-hagrid",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_molly",
+      "title": "官方人物档案：Molly Weasley",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/molly-weasley",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_arthur",
+      "title": "官方人物档案：Arthur Weasley",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/arthur-weasley",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_fred",
+      "title": "官方人物档案：Fred Weasley",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/fred-weasley",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_george",
+      "title": "官方人物档案：George Weasley",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/george-weasley",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_cedric",
+      "title": "官方人物档案：Cedric Diggory",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/cedric-diggory",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_tonks",
+      "title": "官方人物档案：Nymphadora Tonks",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/nymphadora-tonks-fact-file",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_dobby",
+      "title": "官方人物档案：Dobby",
+      "url": "https://www.harrypotter.com/fact-file/characters-and-pets/dobby",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "src_terms",
+      "title": "HarryPotter.com 使用条款",
+      "url": "https://www.harrypotter.com/terms/terms-row",
+      "kind": "official",
+      "checkedAt": "2026-10-10"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_harry",
+      "text": "哈利与朋友共同面对危险，并擅长防御魔法。",
+      "type": "fact",
+      "sourceIds": [
+        "src_harry"
+      ],
+      "limits": "仅采用系列学校时期，尤其第3—7部；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_harry",
+      "text": "哈利·波特的原型：重视同伴，也愿意在未知面前采取行动。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_harry"
+      ],
+      "limits": "不把英雄情节推断为日常中的冲动或拯救责任。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_hermione",
+      "text": "赫敏热爱阅读，善于解决问题，也为家养小精灵权益行动。",
+      "type": "fact",
+      "sourceIds": [
+        "src_hermione"
+      ],
+      "limits": "仅采用第3—7部，保留她会为重要目的改变惯例的成长；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_hermione",
+      "text": "赫敏·格兰杰的原型：求知、准备与问题解决，在她的故事中反复出现。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_hermione"
+      ],
+      "limits": "不把她简化为只会守规矩，也不推断现实智力。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_ron",
+      "text": "罗恩是哈利与赫敏的好友，具有勇气与忠诚，也擅长巫师棋。",
+      "type": "fact",
+      "sourceIds": [
+        "src_ron"
+      ],
+      "limits": "仅采用第1—7部的综合阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_ron",
+      "text": "罗恩·韦斯莱的原型：把关系与共同经历放在重要的位置。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_ron"
+      ],
+      "limits": "承认嫉妒与退缩片段；不是永远稳定的陪伴。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_ginny",
+      "text": "金妮成长为熟练的魁地奇球员，并参与抵抗伏地魔。",
+      "type": "fact",
+      "sourceIds": [
+        "src_ginny"
+      ],
+      "limits": "仅采用第5—7部；不采用一年级的羞怯作为主原型；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_ginny",
+      "text": "金妮·韦斯莱的原型：从自己的兴趣出发，在实践中建立独立的声音。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_ginny"
+      ],
+      "limits": "不把运动能力与外向程度画等号；后者为创作解释。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_neville",
+      "text": "纳威热爱草药学，多次为正确的事挺身而出。",
+      "type": "fact",
+      "sourceIds": [
+        "src_neville"
+      ],
+      "limits": "仅采用第5—7部的成长阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_neville",
+      "text": "纳威·隆巴顿的原型：从安静的投入出发，在重要时刻站稳立场。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_neville"
+      ],
+      "limits": "行动坐标为日常节奏，不能否定危机中的勇敢。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_luna",
+      "text": "卢娜有独特兴趣与个人风格，是勇敢、友善且忠诚的朋友。",
+      "type": "fact",
+      "sourceIds": [
+        "src_luna"
+      ],
+      "limits": "仅采用第5—7部；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_luna",
+      "text": "卢娜·洛夫古德的原型：保留独特的感受，也对他人保持温柔。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_luna"
+      ],
+      "limits": "探索方式偏经验不表示愚笨；对未经证实的信念保留意见。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_draco",
+      "text": "德拉科享受权力与地位，在家庭压力下其立场产生动摇。",
+      "type": "fact",
+      "sourceIds": [
+        "src_draco"
+      ],
+      "limits": "仅采用第6—7部，保留矛盾与犹豫；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_draco",
+      "text": "德拉科·马尔福的原型：在意成果、处境与圈子，也面临外部期待的压力。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_draco"
+      ],
+      "limits": "匹配只涉及偏好组合，不指认霸凌、偏见或道德品质。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_snape",
+      "text": "斯内普精于魔药和大脑封闭术，同时有严厉且不公平的教学行为。",
+      "type": "fact",
+      "sourceIds": [
+        "src_snape"
+      ],
+      "limits": "仅采用第1—7部成年教师阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_snape",
+      "text": "西弗勒斯·斯内普的原型：重视专业与克制，不急于把一切展示出来。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_snape"
+      ],
+      "limits": "专业与克制是解释；不美化伤害行为或推断隐藏创伤。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_dumbledore",
+      "text": "邓布利多任校长并创立凤凰社，拥有广泛魔法研究与发明能力。",
+      "type": "fact",
+      "sourceIds": [
+        "src_dumbledore"
+      ],
+      "limits": "仅采用第1—6部校长阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_dumbledore",
+      "text": "阿不思·邓布利多的原型：尝试理解全局，并为长远方向留下空间。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_dumbledore"
+      ],
+      "limits": "不采用前传或晚年传闻混写；全局视角为解释性概括。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_mcgonagall",
+      "text": "麦格严格而公正，会在不公或危险面前保护学生。",
+      "type": "fact",
+      "sourceIds": [
+        "src_mcgonagall"
+      ],
+      "limits": "仅采用第1—7部教师阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_mcgonagall",
+      "text": "米勒娃·麦格的原型：靠清楚的标准和扎实的安排，保护重要的事。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_mcgonagall"
+      ],
+      "limits": "严格不等于冷漠；规划程度是原创坐标。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_sirius",
+      "text": "小天狼星反抗家族路线，与朋友建立深厚关系，后任哈利教父。",
+      "type": "fact",
+      "sourceIds": [
+        "src_sirius"
+      ],
+      "limits": "仅采用第3—5部成年阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_sirius",
+      "text": "小天狼星·布莱克的原型：珍惜自己选择的关系，也不愿被既定期待困住。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_sirius"
+      ],
+      "limits": "不使用少年时期的霸凌作为正面特征；自由有现实代价。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_lupin",
+      "text": "卢平是实际、善良而优秀的教师，教哈利施展守护神咒。",
+      "type": "fact",
+      "sourceIds": [
+        "src_lupin"
+      ],
+      "limits": "仅采用第3—5部教师与凤凰社阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_lupin",
+      "text": "莱姆斯·卢平的原型：用耐心、理解和可执行的方法帮助别人。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_lupin"
+      ],
+      "limits": "不推断使用者有与角色相同的身体状况或人生经历。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_hagrid",
+      "text": "海格照料各类神奇动物，对哈利也有长辈般的关怀。",
+      "type": "fact",
+      "sourceIds": [
+        "src_hagrid"
+      ],
+      "limits": "仅采用第1—7部；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_hagrid",
+      "text": "鲁伯·海格的原型：重视陪伴与照料，为不被理解的事物留位置。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_hagrid"
+      ],
+      "limits": "不把接纳等同于忽视风险；未知生物的风险另属故事事实。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_molly",
+      "text": "莫莉照顾家庭并慷慨接纳哈利，也会勇敢保护家人。",
+      "type": "fact",
+      "sourceIds": [
+        "src_molly"
+      ],
+      "limits": "仅采用第1—7部成年阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_molly",
+      "text": "莫莉·韦斯莱的原型：把关心落实到照顾、安排与长久的支持里。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_molly"
+      ],
+      "limits": "照顾偏好不代表性别、家庭角色或应承担的责任。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_arthur",
+      "text": "亚瑟爱研究麻瓜物件，是勤恳而关爱家庭的父亲。",
+      "type": "fact",
+      "sourceIds": [
+        "src_arthur"
+      ],
+      "limits": "仅采用第2—7部成年阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_arthur",
+      "text": "亚瑟·韦斯莱的原型：好奇普通事物的运作方式，也珍惜平凡的陪伴。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_arthur"
+      ],
+      "limits": "好奇不等于全知；目标偏好是创作解释。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_fred",
+      "text": "弗雷德与乔治开发恶作剧产品并开设笑话商店。",
+      "type": "fact",
+      "sourceIds": [
+        "src_fred"
+      ],
+      "limits": "仅采用第4—6部的发明与创业时期；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_fred",
+      "text": "弗雷德·韦斯莱的原型：敢于试新形式，让自己的点子真正出现在现场。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_fred"
+      ],
+      "limits": "双胞胎差异证据较弱；模型靠近，不能强称精准区分。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_george",
+      "text": "乔治与弗雷德合作开发恶作剧产品并经营笑话商店。",
+      "type": "fact",
+      "sourceIds": [
+        "src_george"
+      ],
+      "limits": "仅采用第4—6部，与弗雷德使用相同阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_george",
+      "text": "乔治·韦斯莱的原型：用创造与互动，把一个点子变成共同经历。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_george"
+      ],
+      "limits": "双胞胎向量的细小差异属于编辑假设，应常披露接近候选。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_cedric",
+      "text": "塞德里克是优秀的魁地奇球员与三强赛勇士，有公平比赛的表现。",
+      "type": "fact",
+      "sourceIds": [
+        "src_cedric"
+      ],
+      "limits": "仅采用第3—4部学生阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_cedric",
+      "text": "塞德里克·迪戈里的原型：追求成果，同时重视对所有人的共同标准。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_cedric"
+      ],
+      "limits": "成就不等于现实竞争能力；不能推断任何人的善恶。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_tonks",
+      "text": "唐克斯是优秀傲罗与凤凰社成员，有多变的个人风格。",
+      "type": "fact",
+      "sourceIds": [
+        "src_tonks"
+      ],
+      "limits": "仅采用第5—7部成年阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_tonks",
+      "text": "尼法朵拉·唐克斯的原型：可以认真承担任务，也愿意轻松表达自己。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_tonks"
+      ],
+      "limits": "不把外表变化推断为身份或身体特征；轻松表达属解释。 八维精确数值为原创设计，来源不证明数值。"
+    },
+    {
+      "id": "fact_dobby",
+      "text": "多比争取自由，并多次为哈利与朋友提供帮助。",
+      "type": "fact",
+      "sourceIds": [
+        "src_dobby"
+      ],
+      "limits": "仅采用第2—7部，重点为获得自由后的阶段；不复制原文、剧照或台词。"
+    },
+    {
+      "id": "model_dobby",
+      "text": "多比的原型：愿意为珍惜的人行动，也重视自己选择的自由。",
+      "type": "interpretation",
+      "sourceIds": [
+        "src_dobby"
+      ],
+      "limits": "关系偏好不代表服从或自我牺牲义务；不鼓励伤害自己。 八维精确数值为原创设计，来源不证明数值。"
+    }
+  ],
+  "rights": {
+    "status": "review",
+    "commercialUse": false,
+    "notes": "名称/宣传用途无授权证明，保持REVIEW。用户在2026-10-10明确要求仅与一两个朋友分享并无需展开此流程；依用户优先规则执行非商业朋友体验部署，不把该要求记录为IP许可。",
+    "assets": [
+      {
+        "id": "title_names",
+        "type": "作品和角色名称",
+        "origin": "Harry Potter / J.K. Rowling / Warner Bros.",
+        "basis": "用于原创情境测评中的作品评论式人物对照；未取得外部授权，适用范围仍待复核。",
+        "status": "review",
+        "owner": "相关权利人",
+        "allowedUse": "草稿与用户要求的朋友非商业体验；不宣称已获IP许可",
+        "proof": "用户本会话明确要求分享给一两位朋友并要求不展开权利流程",
+        "reviewer": "Codex，非法律审查"
+      },
+      {
+        "id": "marketing_names",
+        "type": "营销关键词",
+        "origin": "第三方作品及人物名称",
+        "basis": "仅交付待审营销草稿，不发帖或投流；发布宣传需要另行复核。",
+        "status": "review",
+        "owner": "相关权利人",
+        "allowedUse": "本地草稿",
+        "proof": "未授权公开营销",
+        "reviewer": "Codex"
+      },
+      {
+        "id": "original_copy",
+        "type": "题库/算法/报告原创文字",
+        "origin": "本工程原创",
+        "basis": "本次为用户编写；事实由官方资料支持，角色精确坐标为明确标识的创作。",
+        "status": "clear",
+        "owner": "本工程创作者",
+        "allowedUse": "工程运行",
+        "proof": "scripts/create_product.py",
+        "reviewer": "Codex"
+      },
+      {
+        "id": "geometry",
+        "type": "SVG / CSS / Canvas 图形",
+        "origin": "本工程原创通用星图、月相与纸张几何图形",
+        "basis": "程序绘制通用几何图案，无角色肖像、电影画面、学院纹章或官方标志。",
+        "status": "clear",
+        "owner": "本工程创作者",
+        "allowedUse": "页面与结果卡",
+        "proof": "web/art.svg / web/app.js",
+        "reviewer": "Codex"
+      },
+      {
+        "id": "fonts",
+        "type": "字体",
+        "origin": "访问者系统字体",
+        "basis": "仅调用系统已安装字体，不复制字体文件。",
+        "status": "clear",
+        "owner": "系统字体各自权利人",
+        "allowedUse": "系统渲染",
+        "proof": "web/style.css",
+        "reviewer": "Codex"
+      },
+      {
+        "id": "name_harry",
+        "type": "name",
+        "origin": "src_harry",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_hermione",
+        "type": "name",
+        "origin": "src_hermione",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_ron",
+        "type": "name",
+        "origin": "src_ron",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_ginny",
+        "type": "name",
+        "origin": "src_ginny",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_neville",
+        "type": "name",
+        "origin": "src_neville",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_luna",
+        "type": "name",
+        "origin": "src_luna",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_draco",
+        "type": "name",
+        "origin": "src_draco",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_snape",
+        "type": "name",
+        "origin": "src_snape",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_dumbledore",
+        "type": "name",
+        "origin": "src_dumbledore",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_mcgonagall",
+        "type": "name",
+        "origin": "src_mcgonagall",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_sirius",
+        "type": "name",
+        "origin": "src_sirius",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_lupin",
+        "type": "name",
+        "origin": "src_lupin",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_hagrid",
+        "type": "name",
+        "origin": "src_hagrid",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_molly",
+        "type": "name",
+        "origin": "src_molly",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_arthur",
+        "type": "name",
+        "origin": "src_arthur",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_fred",
+        "type": "name",
+        "origin": "src_fred",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_george",
+        "type": "name",
+        "origin": "src_george",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_cedric",
+        "type": "name",
+        "origin": "src_cedric",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_tonks",
+        "type": "name",
+        "origin": "src_tonks",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "name_dobby",
+        "type": "name",
+        "origin": "src_dobby",
+        "basis": "第三方作品角色的评论式提及；本地审查稿，正式公开用途与宣传权限未核实。",
+        "owner": "相应作品权利方",
+        "status": "review"
+      },
+      {
+        "id": "portrait_harry",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/harry-potter",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/harry.jpg"
+      },
+      {
+        "id": "portrait_hermione",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/hermione-granger",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/hermione.jpg"
+      },
+      {
+        "id": "portrait_ron",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/ron-weasley",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/ron.jpg"
+      },
+      {
+        "id": "portrait_ginny",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/ginny-weasley",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/ginny.jpg"
+      },
+      {
+        "id": "portrait_neville",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/neville-longbottom",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/neville.jpg"
+      },
+      {
+        "id": "portrait_luna",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/luna-lovegood",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/luna.jpg"
+      },
+      {
+        "id": "portrait_draco",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/draco-malfoy",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/draco.jpg"
+      },
+      {
+        "id": "portrait_snape",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/severus-snape",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/snape.jpg"
+      },
+      {
+        "id": "portrait_dumbledore",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/albus-dumbledore",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/dumbledore.jpg"
+      },
+      {
+        "id": "portrait_mcgonagall",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/minerva-mcgonagall",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/mcgonagall.jpg"
+      },
+      {
+        "id": "portrait_sirius",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/sirius-black",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/sirius.jpg"
+      },
+      {
+        "id": "portrait_lupin",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/remus-lupin",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/lupin.jpg"
+      },
+      {
+        "id": "portrait_hagrid",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/rubeus-hagrid",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/hagrid.jpg"
+      },
+      {
+        "id": "portrait_molly",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/molly-weasley",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/molly.jpg"
+      },
+      {
+        "id": "portrait_arthur",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/arthur-weasley",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/arthur.jpg"
+      },
+      {
+        "id": "portrait_fred",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/fred-weasley",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/fred.jpg"
+      },
+      {
+        "id": "portrait_george",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/george-weasley",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/george.jpg"
+      },
+      {
+        "id": "portrait_cedric",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/cedric-diggory",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/cedric.jpg"
+      },
+      {
+        "id": "portrait_tonks",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/nymphadora-tonks-fact-file",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/tonks.jpg"
+      },
+      {
+        "id": "portrait_dobby",
+        "type": "image",
+        "origin": "https://www.harrypotter.com/fact-file/characters-and-pets/dobby",
+        "basis": "Official publicly viewable fact-file image; no redistribution license verified. Local review draft only.",
+        "owner": "Warner Bros. / Wizarding World / respective rights holders",
+        "status": "review",
+        "file": "assets/harry-potter/dobby.jpg"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "你在这些情境中的选择，更接近以下角色的一个侧面。",
+    "footer": "每个人都会在不同情境里变化。这是人物对照与自我探索，不定义你，也不判断善恶。"
+  },
+  "releaseDecision": {
+    "scope": "一两位朋友的非商业体验",
+    "userAuthorized": true,
+    "rightsVerified": false,
+    "marketingPublicationAuthorized": false
+  },
+  "changeLog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-10-10",
+      "change": "初版24题、20角色、8轴；原创界面、报告、结果卡和营销草稿"
+    }
+  ],
+  "presentation": {
+    "slug": "harry-potter",
+    "minutes": 5,
+    "title": "测测你最像哪位哈利波特角色",
+    "shortTitle": "魔法世界的同频者",
+    "category": "文学与魔法",
+    "color": "#685894",
+    "wash": "#eeeafa",
+    "tag": "魔法 · 角色",
+    "description": "二十四个日常选择，遇见二十位魔法人物里与你偏好相近的一位。",
+    "stage": "原著学校及成年人物阶段按人物分别注明；配图来自官方电影人物档案。"
+  }
+}

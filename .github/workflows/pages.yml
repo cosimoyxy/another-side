@@ -1,0 +1,47 @@
+name: Publish Another Side to GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check tested artifact hashes and JavaScript syntax
+        run: |
+          node --check web/app.js
+          node --check web/data.js
+          node --check web/scoring.js
+          python3 - <<'PY'
+          import hashlib, json
+          from pathlib import Path
+          release = json.loads(Path('release.json').read_text())
+          for name, expected in release['files'].items():
+              assert hashlib.sha256((Path('web') / name).read_bytes()).hexdigest() == expected, name
+          products = [json.loads(p.read_text()) for p in Path('content').glob('*/product.json')]
+          assert len(products) == release['products'] == 10
+          assert sum(len(p['questions']) for p in products) == release['questions'] == 186
+          assert sum(len(p['profiles']) for p in products) == release['profiles'] == 92
+          for p in products:
+              for person in p['profiles']:
+                  assert (Path('web') / person['image']['file']).is_file()
+          print('Verified all runtime files; 10 quizzes / 186 questions / 92 pictured results')
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: web
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

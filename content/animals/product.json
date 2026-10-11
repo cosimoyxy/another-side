@@ -1,0 +1,1397 @@
+{
+  "meta": {
+    "id": "animals",
+    "title": "如果性格是一只动物，你会是谁",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "archetype",
+    "description": "好奇的赤狐、安静的仓鸮，还是温暖的金毛？从日常偏好遇见你的动物意象。",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": false
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "你和朋友第一次参加森林主题的户外活动，来到集合点后通常会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先试一个简单环节",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「你和朋友第一次参加森林主题的户外活动，来到集合点后通常会？」，你选择了「先试一个简单环节」。"
+        },
+        {
+          "id": "c2",
+          "text": "先观察环境和大家的状态",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「你和朋友第一次参加森林主题的户外活动，来到集合点后通常会？」，你选择了「先观察环境和大家的状态」。"
+        },
+        {
+          "id": "c3",
+          "text": "确认规则后主动加入第一轮",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「你和朋友第一次参加森林主题的户外活动，来到集合点后通常会？」，你选择了「确认规则后主动加入第一轮」。"
+        },
+        {
+          "id": "c4",
+          "text": "听完介绍再选择活动",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「你和朋友第一次参加森林主题的户外活动，来到集合点后通常会？」，你选择了「听完介绍再选择活动」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "两位朋友对同一段徒步路线的描述不同，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问一个去过的熟人",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「两位朋友对同一段徒步路线的描述不同，你会？」，你选择了「问一个去过的熟人」。"
+        },
+        {
+          "id": "c2",
+          "text": "查原始路线资料，确认不同描述的条件",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「两位朋友对同一段徒步路线的描述不同，你会？」，你选择了「查原始路线资料，确认不同描述的条件」。"
+        },
+        {
+          "id": "c3",
+          "text": "选择更符合自己印象的说法",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「两位朋友对同一段徒步路线的描述不同，你会？」，你选择了「选择更符合自己印象的说法」。"
+        },
+        {
+          "id": "c4",
+          "text": "对照距离、天气和出发点",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「两位朋友对同一段徒步路线的描述不同，你会？」，你选择了「对照距离、天气和出发点」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "活动里一位伙伴很安静，还没融入大家，你会先？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先尊重他的节奏，让他知道安静也能被接纳",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「活动里一位伙伴很安静，还没融入大家，你会先？」，你选择了「先尊重他的节奏，让他知道安静也能被接纳」。"
+        },
+        {
+          "id": "c2",
+          "text": "向他介绍活动的具体玩法",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「活动里一位伙伴很安静，还没融入大家，你会先？」，你选择了「向他介绍活动的具体玩法」。"
+        },
+        {
+          "id": "c3",
+          "text": "私下问问他是否想一起加入",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「活动里一位伙伴很安静，还没融入大家，你会先？」，你选择了「私下问问他是否想一起加入」。"
+        },
+        {
+          "id": "c4",
+          "text": "给他一个明确的参与任务",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「活动里一位伙伴很安静，还没融入大家，你会先？」，你选择了「给他一个明确的参与任务」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "大家每次周末都去同一家店，你这次更倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "继续去熟悉的店，省心舒服",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「大家每次周末都去同一家店，你这次更倾向？」，你选择了「继续去熟悉的店，省心舒服」。"
+        },
+        {
+          "id": "c2",
+          "text": "换一家附近的新店体验",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「大家每次周末都去同一家店，你这次更倾向？」，你选择了「换一家附近的新店体验」。"
+        },
+        {
+          "id": "c3",
+          "text": "还是去那里，尝试新的东西",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「大家每次周末都去同一家店，你这次更倾向？」，你选择了「还是去那里，尝试新的东西」。"
+        },
+        {
+          "id": "c4",
+          "text": "探索没去过的地方，设计不同的周末",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「大家每次周末都去同一家店，你这次更倾向？」，你选择了「探索没去过的地方，设计不同的周末」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "朋友聚会里轮到你介绍最近的兴趣，你更喜欢？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "向大家讲讲经历并回应问题",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「朋友聚会里轮到你介绍最近的兴趣，你更喜欢？」，你选择了「向大家讲讲经历并回应问题」。"
+        },
+        {
+          "id": "c2",
+          "text": "把作品给大家看，少说一点",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「朋友聚会里轮到你介绍最近的兴趣，你更喜欢？」，你选择了「把作品给大家看，少说一点」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动发起交流，让每个人都能分享",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「朋友聚会里轮到你介绍最近的兴趣，你更喜欢？」，你选择了「主动发起交流，让每个人都能分享」。"
+        },
+        {
+          "id": "c4",
+          "text": "只和身边的一两个人聊",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「朋友聚会里轮到你介绍最近的兴趣，你更喜欢？」，你选择了「只和身边的一两个人聊」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "安排一个自由的周末，你通常会怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "想好一件主要的事，其余随意",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「安排一个自由的周末，你通常会怎么做？」，你选择了「想好一件主要的事，其余随意」。"
+        },
+        {
+          "id": "c2",
+          "text": "提前确认路线、预约与备用计划",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「安排一个自由的周末，你通常会怎么做？」，你选择了「提前确认路线、预约与备用计划」。"
+        },
+        {
+          "id": "c3",
+          "text": "不先排活动，看当下心情",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「安排一个自由的周末，你通常会怎么做？」，你选择了「不先排活动，看当下心情」。"
+        },
+        {
+          "id": "c4",
+          "text": "定好几个时间点和活动",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「安排一个自由的周末，你通常会怎么做？」，你选择了「定好几个时间点和活动」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "大家想组织一次野餐，却一直停留在聊天，你会怎样回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "主动定一个可调整的时间并准备第一项",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「大家想组织一次野餐，却一直停留在聊天，你会怎样回应？」，你选择了「主动定一个可调整的时间并准备第一项」。"
+        },
+        {
+          "id": "c2",
+          "text": "等有人发起明确的安排",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「大家想组织一次野餐，却一直停留在聊天，你会怎样回应？」，你选择了「等有人发起明确的安排」。"
+        },
+        {
+          "id": "c3",
+          "text": "提出一个很容易实现的小方案",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「大家想组织一次野餐，却一直停留在聊天，你会怎样回应？」，你选择了「提出一个很容易实现的小方案」。"
+        },
+        {
+          "id": "c4",
+          "text": "先确认每个人是否真的有空",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「大家想组织一次野餐，却一直停留在聊天，你会怎样回应？」，你选择了「先确认每个人是否真的有空」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "你想知道家中的植物为什么状态变差，通常会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先凭直觉换个位置试试",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「你想知道家中的植物为什么状态变差，通常会？」，你选择了「先凭直觉换个位置试试」。"
+        },
+        {
+          "id": "c2",
+          "text": "比较光照、浇水和最近的变化",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「你想知道家中的植物为什么状态变差，通常会？」，你选择了「比较光照、浇水和最近的变化」。"
+        },
+        {
+          "id": "c3",
+          "text": "请有经验的朋友看一眼",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「你想知道家中的植物为什么状态变差，通常会？」，你选择了「请有经验的朋友看一眼」。"
+        },
+        {
+          "id": "c4",
+          "text": "记录条件，逐项排除可能原因",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「你想知道家中的植物为什么状态变差，通常会？」，你选择了「记录条件，逐项排除可能原因」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "朋友做的作品出了差错，心情明显不好，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问他最在意的地方是什么",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「朋友做的作品出了差错，心情明显不好，你倾向？」，你选择了「问他最在意的地方是什么」。"
+        },
+        {
+          "id": "c2",
+          "text": "先帮他修好具体问题",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「朋友做的作品出了差错，心情明显不好，你倾向？」，你选择了「先帮他修好具体问题」。"
+        },
+        {
+          "id": "c3",
+          "text": "先听听他的失落，再一起商量怎么处理",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「朋友做的作品出了差错，心情明显不好，你倾向？」，你选择了「先听听他的失落，再一起商量怎么处理」。"
+        },
+        {
+          "id": "c4",
+          "text": "给一个能立刻尝试的改法",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「朋友做的作品出了差错，心情明显不好，你倾向？」，你选择了「给一个能立刻尝试的改法」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "做手工时有一份很好用的标准说明，你会怎样使用？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保留方法，改一点颜色或细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「做手工时有一份很好用的标准说明，你会怎样使用？」，你选择了「保留方法，改一点颜色或细节」。"
+        },
+        {
+          "id": "c2",
+          "text": "尝试自己的方法，看看能做出什么",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「做手工时有一份很好用的标准说明，你会怎样使用？」，你选择了「尝试自己的方法，看看能做出什么」。"
+        },
+        {
+          "id": "c3",
+          "text": "照着说明做，把基本效果做好",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「做手工时有一份很好用的标准说明，你会怎样使用？」，你选择了「照着说明做，把基本效果做好」。"
+        },
+        {
+          "id": "c4",
+          "text": "用说明作基础，加入自己的设计",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「做手工时有一份很好用的标准说明，你会怎样使用？」，你选择了「用说明作基础，加入自己的设计」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "你发现一个有趣的生活小技巧，通常会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "做个演示，邀请大家一起分享经验",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「你发现一个有趣的生活小技巧，通常会？」，你选择了「做个演示，邀请大家一起分享经验」。"
+        },
+        {
+          "id": "c2",
+          "text": "告诉一位可能用得上的朋友",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「你发现一个有趣的生活小技巧，通常会？」，你选择了「告诉一位可能用得上的朋友」。"
+        },
+        {
+          "id": "c3",
+          "text": "发到小组，请大家试试",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「你发现一个有趣的生活小技巧，通常会？」，你选择了「发到小组，请大家试试」。"
+        },
+        {
+          "id": "c4",
+          "text": "先记在自己的笔记里",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「你发现一个有趣的生活小技巧，通常会？」，你选择了「先记在自己的笔记里」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "需要准备一次朋友野餐，你更可能从哪里开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先备主要东西，其他现场补上",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「需要准备一次朋友野餐，你更可能从哪里开始？」，你选择了「先备主要东西，其他现场补上」。"
+        },
+        {
+          "id": "c2",
+          "text": "列好清单，提前分配任务",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「需要准备一次朋友野餐，你更可能从哪里开始？」，你选择了「列好清单，提前分配任务」。"
+        },
+        {
+          "id": "c3",
+          "text": "凭经验收拾常用物品",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「需要准备一次朋友野餐，你更可能从哪里开始？」，你选择了「凭经验收拾常用物品」。"
+        },
+        {
+          "id": "c4",
+          "text": "核对数量、时间和不同天气的备用安排",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「需要准备一次朋友野餐，你更可能从哪里开始？」，你选择了「核对数量、时间和不同天气的备用安排」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "发现自己对一个新兴趣有点好奇，你一般怎样开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "试上十分钟看是否喜欢",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「发现自己对一个新兴趣有点好奇，你一般怎样开始？」，你选择了「试上十分钟看是否喜欢」。"
+        },
+        {
+          "id": "c2",
+          "text": "先看看，等兴趣稳定一点",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「发现自己对一个新兴趣有点好奇，你一般怎样开始？」，你选择了「先看看，等兴趣稳定一点」。"
+        },
+        {
+          "id": "c3",
+          "text": "准备基本工具，当天就做第一轮",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「发现自己对一个新兴趣有点好奇，你一般怎样开始？」，你选择了「准备基本工具，当天就做第一轮」。"
+        },
+        {
+          "id": "c4",
+          "text": "听熟悉的人介绍后再决定",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「发现自己对一个新兴趣有点好奇，你一般怎样开始？」，你选择了「听熟悉的人介绍后再决定」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "选择一种没玩过的桌游时，你更喜欢怎样入门？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "跟着朋友做几轮",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「选择一种没玩过的桌游时，你更喜欢怎样入门？」，你选择了「跟着朋友做几轮」。"
+        },
+        {
+          "id": "c2",
+          "text": "弄清规则之间的关系，再试不同策略",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「选择一种没玩过的桌游时，你更喜欢怎样入门？」，你选择了「弄清规则之间的关系，再试不同策略」。"
+        },
+        {
+          "id": "c3",
+          "text": "直接玩一局找感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「选择一种没玩过的桌游时，你更喜欢怎样入门？」，你选择了「直接玩一局找感觉」。"
+        },
+        {
+          "id": "c4",
+          "text": "先读清基本规则",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「选择一种没玩过的桌游时，你更喜欢怎样入门？」，你选择了「先读清基本规则」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "野餐时有人因为计划变化有点不开心，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先照顾他的感受，再共同找舒服的安排",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「野餐时有人因为计划变化有点不开心，你会？」，你选择了「先照顾他的感受，再共同找舒服的安排」。"
+        },
+        {
+          "id": "c2",
+          "text": "说明现在有哪些可选方案",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「野餐时有人因为计划变化有点不开心，你会？」，你选择了「说明现在有哪些可选方案」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问是否能照顾他的一部分需求",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「野餐时有人因为计划变化有点不开心，你会？」，你选择了「问问是否能照顾他的一部分需求」。"
+        },
+        {
+          "id": "c4",
+          "text": "先安排好新的时间和地点",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「野餐时有人因为计划变化有点不开心，你会？」，你选择了「先安排好新的时间和地点」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "小组的一项惯例和你的使用习惯不太一致，你通常？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先适应大家的惯例",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「小组的一项惯例和你的使用习惯不太一致，你通常？」，你选择了「先适应大家的惯例」。"
+        },
+        {
+          "id": "c2",
+          "text": "说明需要，提出可以试的新办法",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「小组的一项惯例和你的使用习惯不太一致，你通常？」，你选择了「说明需要，提出可以试的新办法」。"
+        },
+        {
+          "id": "c3",
+          "text": "在不影响别人的地方做小调整",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「小组的一项惯例和你的使用习惯不太一致，你通常？」，你选择了「在不影响别人的地方做小调整」。"
+        },
+        {
+          "id": "c4",
+          "text": "设计一个不同方案，邀请大家实际比较",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「小组的一项惯例和你的使用习惯不太一致，你通常？」，你选择了「设计一个不同方案，邀请大家实际比较」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "一场合作活动结束后需要分享感受，你更倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "在现场完整讲出自己的体验",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「一场合作活动结束后需要分享感受，你更倾向？」，你选择了「在现场完整讲出自己的体验」。"
+        },
+        {
+          "id": "c2",
+          "text": "写下来，之后再发给组织者",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「一场合作活动结束后需要分享感受，你更倾向？」，你选择了「写下来，之后再发给组织者」。"
+        },
+        {
+          "id": "c3",
+          "text": "主持一轮交流，把大家的感受串起来",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「一场合作活动结束后需要分享感受，你更倾向？」，你选择了「主持一轮交流，把大家的感受串起来」。"
+        },
+        {
+          "id": "c4",
+          "text": "只说自己最熟悉的一小部分",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「一场合作活动结束后需要分享感受，你更倾向？」，你选择了「只说自己最熟悉的一小部分」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "面对还有两周才截止的小任务，你通常怎样推进？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "想到时做一点，保持弹性",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「面对还有两周才截止的小任务，你通常怎样推进？」，你选择了「想到时做一点，保持弹性」。"
+        },
+        {
+          "id": "c2",
+          "text": "排进日程，提前完成并留时间检查",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「面对还有两周才截止的小任务，你通常怎样推进？」，你选择了「排进日程，提前完成并留时间检查」。"
+        },
+        {
+          "id": "c3",
+          "text": "状态好时集中完成",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「面对还有两周才截止的小任务，你通常怎样推进？」，你选择了「状态好时集中完成」。"
+        },
+        {
+          "id": "c4",
+          "text": "拆成几个节点逐次完成",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「面对还有两周才截止的小任务，你通常怎样推进？」，你选择了「拆成几个节点逐次完成」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "fox",
+      "name": "赤狐",
+      "subtitle": "好奇的路径探索者",
+      "lead": "喜欢寻找新方法，让好奇在具体尝试中拥有自己的路径。",
+      "contrast": "不宣称狐狸狡猾，也不把动物习性直接投射到现实人格。",
+      "insight": "把「好奇的路径探索者」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 67,
+        "analysis": 58,
+        "care": 35,
+        "freedom": 77,
+        "expression": 53,
+        "structure": 35
+      },
+      "sourceIds": [
+        "src_fox"
+      ],
+      "claimIds": [
+        "fact_fox",
+        "model_fox"
+      ],
+      "fact": "「赤狐」在这里是原创的人格意象，不是动物行为学结论。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "owl",
+      "name": "仓鸮",
+      "subtitle": "安静的线索收藏家",
+      "lead": "愿意安静观察、仔细比较，用清楚的安排保存自己的发现。",
+      "contrast": "不把鸟类与现实智力等级联系起来；匹配无智商含义。",
+      "insight": "把「安静的线索收藏家」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 26,
+        "analysis": 77,
+        "care": 38,
+        "freedom": 42,
+        "expression": 23,
+        "structure": 74
+      },
+      "sourceIds": [
+        "src_owl"
+      ],
+      "claimIds": [
+        "fact_owl",
+        "model_owl"
+      ],
+      "fact": "「仓鸮」在这里是原创的观察与查证意象。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "dog",
+      "name": "金毛犬",
+      "subtitle": "温暖的共同参与者",
+      "lead": "愿意公开参与，也重视身边人的感受，让共同经历更容易发生。",
+      "contrast": "不暗示服从或讨好义务，关心需要保留自己的边界。",
+      "insight": "把「温暖的共同参与者」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 60,
+        "analysis": 30,
+        "care": 77,
+        "freedom": 35,
+        "expression": 73,
+        "structure": 52
+      },
+      "sourceIds": [
+        "src_dog"
+      ],
+      "claimIds": [
+        "fact_dog",
+        "model_dog"
+      ],
+      "fact": "「金毛犬」在这里是原创的陪伴与互动意象。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "cat",
+      "name": "黑猫",
+      "subtitle": "自主的安静创作者",
+      "lead": "更愿意按照自己的习惯探索，保留安静表达与个人空间。",
+      "contrast": "不以动物颜色推断命运，不把独处说成冷漠或孤独。",
+      "insight": "把「自主的安静创作者」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 36,
+        "analysis": 56,
+        "care": 42,
+        "freedom": 78,
+        "expression": 25,
+        "structure": 31
+      },
+      "sourceIds": [
+        "src_cat"
+      ],
+      "claimIds": [
+        "fact_cat",
+        "model_cat"
+      ],
+      "fact": "「黑猫」在这里是原创的自主与独处意象。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "bear",
+      "name": "北极熊",
+      "subtitle": "稳稳的日常支点",
+      "lead": "偏好不着急的节奏和稳定安排，用持续存在提供支持。",
+      "contrast": "意象不描述真实北极熊是否温顺，也不鼓励接触野生动物。",
+      "insight": "把「稳稳的日常支点」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 29,
+        "analysis": 37,
+        "care": 63,
+        "freedom": 25,
+        "expression": 26,
+        "structure": 68
+      },
+      "sourceIds": [
+        "src_bear"
+      ],
+      "claimIds": [
+        "fact_bear",
+        "model_bear"
+      ],
+      "fact": "「北极熊」在这里是原创的稳定与陪伴意象。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "otter",
+      "name": "水獭",
+      "subtitle": "让相聚流动起来的人",
+      "lead": "喜欢动手体验和自然交流，愿意把好玩的想法带进共同生活。",
+      "contrast": "活跃原型不意味着始终开心，也不测量社交技巧。",
+      "insight": "把「让相聚流动起来的人」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 76,
+        "analysis": 28,
+        "care": 64,
+        "freedom": 67,
+        "expression": 77,
+        "structure": 26
+      },
+      "sourceIds": [
+        "src_otter"
+      ],
+      "claimIds": [
+        "fact_otter",
+        "model_otter"
+      ],
+      "fact": "「水獭」在这里是原创的体验与互动意象。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "wolf",
+      "name": "灰狼",
+      "subtitle": "有步骤的行动伙伴",
+      "lead": "愿意行动，也为行动安排清楚步骤，让合作有稳定的节奏。",
+      "contrast": "不使用支配等级神话解释人格，不判断领导潜力或攻击性。",
+      "insight": "把「有步骤的行动伙伴」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 73,
+        "analysis": 62,
+        "care": 41,
+        "freedom": 33,
+        "expression": 37,
+        "structure": 75
+      },
+      "sourceIds": [
+        "src_wolf"
+      ],
+      "claimIds": [
+        "fact_wolf",
+        "model_wolf"
+      ],
+      "fact": "「灰狼」在这里是原创的行动与协作意象。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "deer",
+      "name": "花鹿",
+      "subtitle": "细心的关系倾听者",
+      "lead": "更习惯温和回应，愿意先听清感受，再选择适合的支持方式。",
+      "contrast": "温和不等于胆小，不据此推断使用者的健康、创伤或关系处境。",
+      "insight": "把「细心的关系倾听者」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 28,
+        "analysis": 47,
+        "care": 78,
+        "freedom": 48,
+        "expression": 27,
+        "structure": 47
+      },
+      "sourceIds": [
+        "src_deer"
+      ],
+      "claimIds": [
+        "fact_deer",
+        "model_deer"
+      ],
+      "fact": "「花鹿」在这里是原创的感受与倾听意象。",
+      "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。",
+      "accent": "#9d687e",
+      "image": {
+        "file": "assets/animals.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_fox",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    },
+    {
+      "id": "src_owl",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    },
+    {
+      "id": "src_dog",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    },
+    {
+      "id": "src_cat",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    },
+    {
+      "id": "src_bear",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    },
+    {
+      "id": "src_otter",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    },
+    {
+      "id": "src_wolf",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    },
+    {
+      "id": "src_deer",
+      "checkedAt": "2026-10-11",
+      "title": "另一面：原创动物意象设定",
+      "url": "urn:another-side:original:animal-archetypes:1.0.0",
+      "kind": "original"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_fox",
+      "text": "「赤狐」在这里是原创的人格意象，不是动物行为学结论。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "不宣称狐狸狡猾，也不把动物习性直接投射到现实人格。"
+    },
+    {
+      "id": "model_fox",
+      "text": "由公开作品侧面启发的原创解读：喜欢寻找新方法，让好奇在具体尝试中拥有自己的路径。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不宣称狐狸狡猾，也不把动物习性直接投射到现实人格。"
+    },
+    {
+      "id": "fact_owl",
+      "text": "「仓鸮」在这里是原创的观察与查证意象。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "不把鸟类与现实智力等级联系起来；匹配无智商含义。"
+    },
+    {
+      "id": "model_owl",
+      "text": "由公开作品侧面启发的原创解读：愿意安静观察、仔细比较，用清楚的安排保存自己的发现。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不把鸟类与现实智力等级联系起来；匹配无智商含义。"
+    },
+    {
+      "id": "fact_dog",
+      "text": "「金毛犬」在这里是原创的陪伴与互动意象。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "不暗示服从或讨好义务，关心需要保留自己的边界。"
+    },
+    {
+      "id": "model_dog",
+      "text": "由公开作品侧面启发的原创解读：愿意公开参与，也重视身边人的感受，让共同经历更容易发生。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不暗示服从或讨好义务，关心需要保留自己的边界。"
+    },
+    {
+      "id": "fact_cat",
+      "text": "「黑猫」在这里是原创的自主与独处意象。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "不以动物颜色推断命运，不把独处说成冷漠或孤独。"
+    },
+    {
+      "id": "model_cat",
+      "text": "由公开作品侧面启发的原创解读：更愿意按照自己的习惯探索，保留安静表达与个人空间。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不以动物颜色推断命运，不把独处说成冷漠或孤独。"
+    },
+    {
+      "id": "fact_bear",
+      "text": "「北极熊」在这里是原创的稳定与陪伴意象。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "意象不描述真实北极熊是否温顺，也不鼓励接触野生动物。"
+    },
+    {
+      "id": "model_bear",
+      "text": "由公开作品侧面启发的原创解读：偏好不着急的节奏和稳定安排，用持续存在提供支持。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；意象不描述真实北极熊是否温顺，也不鼓励接触野生动物。"
+    },
+    {
+      "id": "fact_otter",
+      "text": "「水獭」在这里是原创的体验与互动意象。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "活跃原型不意味着始终开心，也不测量社交技巧。"
+    },
+    {
+      "id": "model_otter",
+      "text": "由公开作品侧面启发的原创解读：喜欢动手体验和自然交流，愿意把好玩的想法带进共同生活。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；活跃原型不意味着始终开心，也不测量社交技巧。"
+    },
+    {
+      "id": "fact_wolf",
+      "text": "「灰狼」在这里是原创的行动与协作意象。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "不使用支配等级神话解释人格，不判断领导潜力或攻击性。"
+    },
+    {
+      "id": "model_wolf",
+      "text": "由公开作品侧面启发的原创解读：愿意行动，也为行动安排清楚步骤，让合作有稳定的节奏。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不使用支配等级神话解释人格，不判断领导潜力或攻击性。"
+    },
+    {
+      "id": "fact_deer",
+      "text": "「花鹿」在这里是原创的感受与倾听意象。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "温和不等于胆小，不据此推断使用者的健康、创伤或关系处境。"
+    },
+    {
+      "id": "model_deer",
+      "text": "由公开作品侧面启发的原创解读：更习惯温和回应，愿意先听清感受，再选择适合的支持方式。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；温和不等于胆小，不据此推断使用者的健康、创伤或关系处境。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "clear",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_fox",
+        "type": "name",
+        "origin": "src_fox",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_fox",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_owl",
+        "type": "name",
+        "origin": "src_owl",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_owl",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_dog",
+        "type": "name",
+        "origin": "src_dog",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_dog",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_cat",
+        "type": "name",
+        "origin": "src_cat",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_cat",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_bear",
+        "type": "name",
+        "origin": "src_bear",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_bear",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_otter",
+        "type": "name",
+        "origin": "src_otter",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_otter",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_wolf",
+        "type": "name",
+        "origin": "src_wolf",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_wolf",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_deer",
+        "type": "name",
+        "origin": "src_deer",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_deer",
+        "type": "image",
+        "file": "assets/animals.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "animals",
+    "minutes": 4,
+    "title": "如果性格是一只动物，你会是谁",
+    "shortTitle": "你的动物人格图鉴",
+    "category": "动物人格",
+    "color": "#9d687e",
+    "wash": "#f9ebf2",
+    "tag": "原创 · 自我探索",
+    "description": "好奇的赤狐、安静的仓鸮，还是温暖的金毛？从日常偏好遇见你的动物意象。",
+    "stage": "八种原创人格意象；不宣称属于动物行为学或实证心理分类。"
+  }
+}

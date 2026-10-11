@@ -1,0 +1,1413 @@
+{
+  "meta": {
+    "id": "ghibli",
+    "title": "你最像哪位吉卜力电影人物",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "object-match",
+    "description": "搬进一座小镇，做一件自己的作品，在日常选择中遇见故事里的你。",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": true
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "假如你搬进一座陌生小镇，准备认识新环境，你通常会怎样开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先走一条短街，认识附近店铺",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「假如你搬进一座陌生小镇，准备认识新环境，你通常会怎样开始？」，你选择了「先走一条短街，认识附近店铺」。"
+        },
+        {
+          "id": "c2",
+          "text": "先在住处观察一段时间",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「假如你搬进一座陌生小镇，准备认识新环境，你通常会怎样开始？」，你选择了「先在住处观察一段时间」。"
+        },
+        {
+          "id": "c3",
+          "text": "确认基本方向后主动探索几个地方",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「假如你搬进一座陌生小镇，准备认识新环境，你通常会怎样开始？」，你选择了「确认基本方向后主动探索几个地方」。"
+        },
+        {
+          "id": "c4",
+          "text": "听邻居介绍后再慢慢逛",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「假如你搬进一座陌生小镇，准备认识新环境，你通常会怎样开始？」，你选择了「听邻居介绍后再慢慢逛」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "你在小镇里听见一则奇怪的传说，通常会怎么理解？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问问熟悉当地的邻居",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「你在小镇里听见一则奇怪的传说，通常会怎么理解？」，你选择了「问问熟悉当地的邻居」。"
+        },
+        {
+          "id": "c2",
+          "text": "找不同记录，分清观察、猜测与转述",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「你在小镇里听见一则奇怪的传说，通常会怎么理解？」，你选择了「找不同记录，分清观察、猜测与转述」。"
+        },
+        {
+          "id": "c3",
+          "text": "先保留故事带来的感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「你在小镇里听见一则奇怪的传说，通常会怎么理解？」，你选择了「先保留故事带来的感觉」。"
+        },
+        {
+          "id": "c4",
+          "text": "核对传说中的地点和时间",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「你在小镇里听见一则奇怪的传说，通常会怎么理解？」，你选择了「核对传说中的地点和时间」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "新认识的邻居显得拘谨，你会怎样帮助他融入？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先按他舒服的节奏相处，让他不必急着表现",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「新认识的邻居显得拘谨，你会怎样帮助他融入？」，你选择了「先按他舒服的节奏相处，让他不必急着表现」。"
+        },
+        {
+          "id": "c2",
+          "text": "邀请他一起完成一件小事",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「新认识的邻居显得拘谨，你会怎样帮助他融入？」，你选择了「邀请他一起完成一件小事」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问他对这里有哪些不适应",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「新认识的邻居显得拘谨，你会怎样帮助他融入？」，你选择了「问问他对这里有哪些不适应」。"
+        },
+        {
+          "id": "c4",
+          "text": "给他说明生活里实用的信息",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「新认识的邻居显得拘谨，你会怎样帮助他融入？」，你选择了「给他说明生活里实用的信息」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "做一件手工作品时，老师给了成熟模板，你会怎么选择？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "认真照着做，掌握基本手艺",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「做一件手工作品时，老师给了成熟模板，你会怎么选择？」，你选择了「认真照着做，掌握基本手艺」。"
+        },
+        {
+          "id": "c2",
+          "text": "保留必要结构，换一个个人主题",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「做一件手工作品时，老师给了成熟模板，你会怎么选择？」，你选择了「保留必要结构，换一个个人主题」。"
+        },
+        {
+          "id": "c3",
+          "text": "在模板上加一点自己的细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「做一件手工作品时，老师给了成熟模板，你会怎么选择？」，你选择了「在模板上加一点自己的细节」。"
+        },
+        {
+          "id": "c4",
+          "text": "尝试新的形式，边做边寻找方法",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「做一件手工作品时，老师给了成熟模板，你会怎么选择？」，你选择了「尝试新的形式，边做边寻找方法」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "小镇聚会邀请你介绍自己，你更喜欢？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "向大家分享一项自己的兴趣",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「小镇聚会邀请你介绍自己，你更喜欢？」，你选择了「向大家分享一项自己的兴趣」。"
+        },
+        {
+          "id": "c2",
+          "text": "写一张介绍卡，少说几句",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「小镇聚会邀请你介绍自己，你更喜欢？」，你选择了「写一张介绍卡，少说几句」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动打开话题，邀请大家彼此认识",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「小镇聚会邀请你介绍自己，你更喜欢？」，你选择了「主动打开话题，邀请大家彼此认识」。"
+        },
+        {
+          "id": "c4",
+          "text": "只和身边的几个人聊天",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「小镇聚会邀请你介绍自己，你更喜欢？」，你选择了「只和身边的几个人聊天」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "准备周末开小摊，你通常如何安排？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "记住几个必要事项，剩下随情况做",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「准备周末开小摊，你通常如何安排？」，你选择了「记住几个必要事项，剩下随情况做」。"
+        },
+        {
+          "id": "c2",
+          "text": "核对时间、数量和备用物品，提前试摆",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「准备周末开小摊，你通常如何安排？」，你选择了「核对时间、数量和备用物品，提前试摆」。"
+        },
+        {
+          "id": "c3",
+          "text": "备好主要物品，现场再灵活调整",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「准备周末开小摊，你通常如何安排？」，你选择了「备好主要物品，现场再灵活调整」。"
+        },
+        {
+          "id": "c4",
+          "text": "列清单，分开安排制作和布置",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「准备周末开小摊，你通常如何安排？」，你选择了「列清单，分开安排制作和布置」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "你想开一个小小的周末兴趣摊位，想法刚出现时会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "约一次小试摆，取得真实反馈",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「你想开一个小小的周末兴趣摊位，想法刚出现时会？」，你选择了「约一次小试摆，取得真实反馈」。"
+        },
+        {
+          "id": "c2",
+          "text": "看看其他摊位怎么准备",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「你想开一个小小的周末兴趣摊位，想法刚出现时会？」，你选择了「看看其他摊位怎么准备」。"
+        },
+        {
+          "id": "c3",
+          "text": "试做一件作品给朋友看",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「你想开一个小小的周末兴趣摊位，想法刚出现时会？」，你选择了「试做一件作品给朋友看」。"
+        },
+        {
+          "id": "c4",
+          "text": "先想清自己想做成什么样",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「你想开一个小小的周末兴趣摊位，想法刚出现时会？」，你选择了「先想清自己想做成什么样」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "一件老家具的用途不明，你最可能怎么探索？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "根据外形和手感猜一猜",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「一件老家具的用途不明，你最可能怎么探索？」，你选择了「根据外形和手感猜一猜」。"
+        },
+        {
+          "id": "c2",
+          "text": "观察结构、材料和使用痕迹",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「一件老家具的用途不明，你最可能怎么探索？」，你选择了「观察结构、材料和使用痕迹」。"
+        },
+        {
+          "id": "c3",
+          "text": "请熟悉旧物的人介绍",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「一件老家具的用途不明，你最可能怎么探索？」，你选择了「请熟悉旧物的人介绍」。"
+        },
+        {
+          "id": "c4",
+          "text": "比较同类物件的记录，再确认推测",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「一件老家具的用途不明，你最可能怎么探索？」，你选择了「比较同类物件的记录，再确认推测」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "朋友的小摊第一天没有客人，很失落，你会先？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问问他最难受的是哪一部分",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「朋友的小摊第一天没有客人，很失落，你会先？」，你选择了「问问他最难受的是哪一部分」。"
+        },
+        {
+          "id": "c2",
+          "text": "找出摊位和商品能调整的地方",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「朋友的小摊第一天没有客人，很失落，你会先？」，你选择了「找出摊位和商品能调整的地方」。"
+        },
+        {
+          "id": "c3",
+          "text": "陪他缓一会儿，再一起想明天怎么做",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「朋友的小摊第一天没有客人，很失落，你会先？」，你选择了「陪他缓一会儿，再一起想明天怎么做」。"
+        },
+        {
+          "id": "c4",
+          "text": "给一个容易实行的新点子",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「朋友的小摊第一天没有客人，很失落，你会先？」，你选择了「给一个容易实行的新点子」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "小镇节庆的安排每年都相同，你更想怎样参与？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "在一个老环节里做小改动",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「小镇节庆的安排每年都相同，你更想怎样参与？」，你选择了「在一个老环节里做小改动」。"
+        },
+        {
+          "id": "c2",
+          "text": "设计新的参与方式，先试一次小场次",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「小镇节庆的安排每年都相同，你更想怎样参与？」，你选择了「设计新的参与方式，先试一次小场次」。"
+        },
+        {
+          "id": "c3",
+          "text": "把熟悉的环节完成好",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「小镇节庆的安排每年都相同，你更想怎样参与？」，你选择了「把熟悉的环节完成好」。"
+        },
+        {
+          "id": "c4",
+          "text": "加入反映新居民故事的活动",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「小镇节庆的安排每年都相同，你更想怎样参与？」，你选择了「加入反映新居民故事的活动」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "你写完了故事册中的一小段，想让人读到时会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "组织一次小朗读会，邀请邻居一起交流",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「你写完了故事册中的一小段，想让人读到时会？」，你选择了「组织一次小朗读会，邀请邻居一起交流」。"
+        },
+        {
+          "id": "c2",
+          "text": "发给一位信任的朋友",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「你写完了故事册中的一小段，想让人读到时会？」，你选择了「发给一位信任的朋友」。"
+        },
+        {
+          "id": "c3",
+          "text": "在小组里读给大家听",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「你写完了故事册中的一小段，想让人读到时会？」，你选择了「在小组里读给大家听」。"
+        },
+        {
+          "id": "c4",
+          "text": "先留在个人笔记里",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「你写完了故事册中的一小段，想让人读到时会？」，你选择了「先留在个人笔记里」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "故事册还有两周完成，你倾向怎么推进？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "按灵感写，集中做喜欢的部分",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「故事册还有两周完成，你倾向怎么推进？」，你选择了「按灵感写，集中做喜欢的部分」。"
+        },
+        {
+          "id": "c2",
+          "text": "按采访、整理和编辑分阶段完成",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「故事册还有两周完成，你倾向怎么推进？」，你选择了「按采访、整理和编辑分阶段完成」。"
+        },
+        {
+          "id": "c3",
+          "text": "想到就补一点，临近时整理",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「故事册还有两周完成，你倾向怎么推进？」，你选择了「想到就补一点，临近时整理」。"
+        },
+        {
+          "id": "c4",
+          "text": "排好每段日程，并留出核对与修改时间",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「故事册还有两周完成，你倾向怎么推进？」，你选择了「排好每段日程，并留出核对与修改时间」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "朋友们想一起做一本小镇故事册，却迟迟没行动，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先采访一个人，做一页小样",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「朋友们想一起做一本小镇故事册，却迟迟没行动，你会？」，你选择了「先采访一个人，做一页小样」。"
+        },
+        {
+          "id": "c2",
+          "text": "先听大家真正想写什么",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「朋友们想一起做一本小镇故事册，却迟迟没行动，你会？」，你选择了「先听大家真正想写什么」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动约第一次采集，推动第一版",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「朋友们想一起做一本小镇故事册，却迟迟没行动，你会？」，你选择了「主动约第一次采集，推动第一版」。"
+        },
+        {
+          "id": "c4",
+          "text": "等擅长写作的人提出方案",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「朋友们想一起做一本小镇故事册，却迟迟没行动，你会？」，你选择了「等擅长写作的人提出方案」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "想学习一种新手艺，你更喜欢哪种开始方式？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "跟着熟悉的人做一遍",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「想学习一种新手艺，你更喜欢哪种开始方式？」，你选择了「跟着熟悉的人做一遍」。"
+        },
+        {
+          "id": "c2",
+          "text": "比较几种方法，记录哪种适合自己",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「想学习一种新手艺，你更喜欢哪种开始方式？」，你选择了「比较几种方法，记录哪种适合自己」。"
+        },
+        {
+          "id": "c3",
+          "text": "自己试，慢慢找感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「想学习一种新手艺，你更喜欢哪种开始方式？」，你选择了「自己试，慢慢找感觉」。"
+        },
+        {
+          "id": "c4",
+          "text": "先理解工具和操作原理",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「想学习一种新手艺，你更喜欢哪种开始方式？」，你选择了「先理解工具和操作原理」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "故事册里的受访者不想谈某段经历，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先尊重他的感受，让他决定讲到哪里",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「故事册里的受访者不想谈某段经历，你倾向？」，你选择了「先尊重他的感受，让他决定讲到哪里」。"
+        },
+        {
+          "id": "c2",
+          "text": "告诉他有哪些别的话题可选",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「故事册里的受访者不想谈某段经历，你倾向？」，你选择了「告诉他有哪些别的话题可选」。"
+        },
+        {
+          "id": "c3",
+          "text": "问他希望哪些内容被保留",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「故事册里的受访者不想谈某段经历，你倾向？」，你选择了「问他希望哪些内容被保留」。"
+        },
+        {
+          "id": "c4",
+          "text": "直接换个问题，确保采访完成",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「故事册里的受访者不想谈某段经历，你倾向？」，你选择了「直接换个问题，确保采访完成」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "要布置新住处的一扇窗，你最偏好？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "用经典、实用的布置",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「要布置新住处的一扇窗，你最偏好？」，你选择了「用经典、实用的布置」。"
+        },
+        {
+          "id": "c2",
+          "text": "把植物、作品和旧物组合起来",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「要布置新住处的一扇窗，你最偏好？」，你选择了「把植物、作品和旧物组合起来」。"
+        },
+        {
+          "id": "c3",
+          "text": "在常见布置里加喜欢的颜色",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「要布置新住处的一扇窗，你最偏好？」，你选择了「在常见布置里加喜欢的颜色」。"
+        },
+        {
+          "id": "c4",
+          "text": "按自己的观察习惯创造一个特别角落",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「要布置新住处的一扇窗，你最偏好？」，你选择了「按自己的观察习惯创造一个特别角落」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "你发现一个很美的地方，通常怎样分享？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "在聚会时分享照片和经历",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「你发现一个很美的地方，通常怎样分享？」，你选择了「在聚会时分享照片和经历」。"
+        },
+        {
+          "id": "c2",
+          "text": "画下来或写进日记",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「你发现一个很美的地方，通常怎样分享？」，你选择了「画下来或写进日记」。"
+        },
+        {
+          "id": "c3",
+          "text": "约一次同行，带大家一起看和聊",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「你发现一个很美的地方，通常怎样分享？」，你选择了「约一次同行，带大家一起看和聊」。"
+        },
+        {
+          "id": "c4",
+          "text": "告诉几个熟悉的朋友",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「你发现一个很美的地方，通常怎样分享？」，你选择了「告诉几个熟悉的朋友」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "一天的行程突然被雨打乱，你会怎样重新安排？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "完成主要事项，其余灵活调整",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「一天的行程突然被雨打乱，你会怎样重新安排？」，你选择了「完成主要事项，其余灵活调整」。"
+        },
+        {
+          "id": "c2",
+          "text": "确认各项是否受影响，再安排室内备选",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「一天的行程突然被雨打乱，你会怎样重新安排？」，你选择了「确认各项是否受影响，再安排室内备选」。"
+        },
+        {
+          "id": "c3",
+          "text": "跟着当下心情换一个活动",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「一天的行程突然被雨打乱，你会怎样重新安排？」，你选择了「跟着当下心情换一个活动」。"
+        },
+        {
+          "id": "c4",
+          "text": "重新排一下时间与路线",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「一天的行程突然被雨打乱，你会怎样重新安排？」，你选择了「重新排一下时间与路线」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "chihiro",
+      "name": "荻野千寻",
+      "subtitle": "在陌生里长出自己的步调",
+      "lead": "愿意照顾眼前的需要，也会在一次次具体行动中适应变化。",
+      "contrast": "采用电影中的适应与行动侧面，不声称能预测现实成长轨迹。",
+      "insight": "把「在陌生里长出自己的步调」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 56,
+        "analysis": 42,
+        "care": 71,
+        "freedom": 48,
+        "expression": 35,
+        "structure": 58
+      },
+      "sourceIds": [
+        "src_chihiro"
+      ],
+      "claimIds": [
+        "fact_chihiro",
+        "model_chihiro"
+      ],
+      "fact": "千寻是电影《千与千寻》（2001）的主角。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "haku",
+      "name": "白龙",
+      "subtitle": "安静地给出支持",
+      "lead": "倾向先看清局面，再以克制而具体的方式帮助同行者。",
+      "contrast": "不解释使用者的身份记忆或情感命运，只匹配答题偏好。",
+      "insight": "把「安静地给出支持」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 43,
+        "analysis": 66,
+        "care": 65,
+        "freedom": 47,
+        "expression": 24,
+        "structure": 70
+      },
+      "sourceIds": [
+        "src_haku"
+      ],
+      "claimIds": [
+        "fact_haku",
+        "model_haku"
+      ],
+      "fact": "白龙是电影《千与千寻》（2001）中的重要人物。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "kiki",
+      "name": "琪琪",
+      "subtitle": "把第一次变成一次开始",
+      "lead": "愿意走出去试一试，也在自己的兴趣与日常配合中寻找节奏。",
+      "contrast": "仅采用这部电影版本，成长意象不代表职业适合度或成功预测。",
+      "insight": "把「把第一次变成一次开始」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 70,
+        "analysis": 37,
+        "care": 58,
+        "freedom": 69,
+        "expression": 66,
+        "structure": 40
+      },
+      "sourceIds": [
+        "src_kiki"
+      ],
+      "claimIds": [
+        "fact_kiki",
+        "model_kiki"
+      ],
+      "fact": "琪琪是电影《魔女宅急便》（1989）的主角。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "sophie",
+      "name": "苏菲",
+      "subtitle": "让关心成为稳定的力量",
+      "lead": "习惯以持续照料和具体安排回应需要，为相处建立一个支点。",
+      "contrast": "不以外貌、年龄变化或恋爱解读使用者，只取做事侧面。",
+      "insight": "把「让关心成为稳定的力量」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 41,
+        "analysis": 48,
+        "care": 76,
+        "freedom": 34,
+        "expression": 31,
+        "structure": 71
+      },
+      "sourceIds": [
+        "src_sophie"
+      ],
+      "claimIds": [
+        "fact_sophie",
+        "model_sophie"
+      ],
+      "fact": "苏菲是电影《哈尔的移动城堡》（2004）的主要人物。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "howl",
+      "name": "哈尔",
+      "subtitle": "给美与自由留一扇窗",
+      "lead": "有自己的表达与想象空间，愿意探索新的形式和可能。",
+      "contrast": "不美化逃避责任；采用电影形象，不混写原著不同设定。",
+      "insight": "把「给美与自由留一扇窗」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 45,
+        "analysis": 46,
+        "care": 37,
+        "freedom": 78,
+        "expression": 72,
+        "structure": 28
+      },
+      "sourceIds": [
+        "src_howl"
+      ],
+      "claimIds": [
+        "fact_howl",
+        "model_howl"
+      ],
+      "fact": "哈尔是电影《哈尔的移动城堡》（2004）中的魔法师。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "san",
+      "name": "珊",
+      "subtitle": "认真回应自己选择的世界",
+      "lead": "直接回应自己珍惜的事物，也愿意保留独立立场与个人路径。",
+      "contrast": "不将作品冲突或伤害行为用于解释使用者，保留情境限制。",
+      "insight": "把「认真回应自己选择的世界」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 74,
+        "analysis": 34,
+        "care": 47,
+        "freedom": 67,
+        "expression": 38,
+        "structure": 35
+      },
+      "sourceIds": [
+        "src_san"
+      ],
+      "claimIds": [
+        "fact_san",
+        "model_san"
+      ],
+      "fact": "珊是电影《幽灵公主》（1997）中的重要人物。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "ashitaka",
+      "name": "阿席达卡",
+      "subtitle": "在不同声音之间看清楚",
+      "lead": "愿意理解不同处境，再把观察和行动接起来，寻找共同的出口。",
+      "contrast": "调解视角是原创解读，不给使用者安上救世或牺牲义务。",
+      "insight": "把「在不同声音之间看清楚」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 63,
+        "analysis": 63,
+        "care": 73,
+        "freedom": 47,
+        "expression": 40,
+        "structure": 61
+      },
+      "sourceIds": [
+        "src_ashitaka"
+      ],
+      "claimIds": [
+        "fact_ashitaka",
+        "model_ashitaka"
+      ],
+      "fact": "阿席达卡是电影《幽灵公主》（1997）的主角之一。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "shizuku",
+      "name": "月岛雫",
+      "subtitle": "给灵感一份认真投入",
+      "lead": "珍惜自己的想象，也愿意通过持续整理与练习让它变成作品。",
+      "contrast": "以电影中的写作探索为灵感，不宣称可以判断文学天赋。",
+      "insight": "把「给灵感一份认真投入」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 42,
+        "analysis": 63,
+        "care": 54,
+        "freedom": 72,
+        "expression": 37,
+        "structure": 67
+      },
+      "sourceIds": [
+        "src_shizuku"
+      ],
+      "claimIds": [
+        "fact_shizuku",
+        "model_shizuku"
+      ],
+      "fact": "月岛雫是电影《侧耳倾听》（1995）的主角。",
+      "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。",
+      "accent": "#548777",
+      "image": {
+        "file": "assets/ghibli.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_chihiro",
+      "checkedAt": "2026-10-11",
+      "title": "吉卜力官方：《千与千寻》",
+      "url": "https://www.ghibli.jp/works/chihiro/",
+      "kind": "official"
+    },
+    {
+      "id": "src_haku",
+      "checkedAt": "2026-10-11",
+      "title": "吉卜力官方：《千与千寻》",
+      "url": "https://www.ghibli.jp/works/chihiro/",
+      "kind": "official"
+    },
+    {
+      "id": "src_kiki",
+      "checkedAt": "2026-10-11",
+      "title": "吉卜力官方：《魔女宅急便》",
+      "url": "https://www.ghibli.jp/works/majo/",
+      "kind": "official"
+    },
+    {
+      "id": "src_sophie",
+      "checkedAt": "2026-10-11",
+      "title": "GKIDS：《哈尔的移动城堡》",
+      "url": "https://gkids.com/films/howls-moving-castle/",
+      "kind": "official"
+    },
+    {
+      "id": "src_howl",
+      "checkedAt": "2026-10-11",
+      "title": "GKIDS：《哈尔的移动城堡》",
+      "url": "https://gkids.com/films/howls-moving-castle/",
+      "kind": "official"
+    },
+    {
+      "id": "src_san",
+      "checkedAt": "2026-10-11",
+      "title": "GKIDS：《幽灵公主》",
+      "url": "https://gkids.com/films/princess-mononoke/",
+      "kind": "official"
+    },
+    {
+      "id": "src_ashitaka",
+      "checkedAt": "2026-10-11",
+      "title": "GKIDS：《幽灵公主》",
+      "url": "https://gkids.com/films/princess-mononoke/",
+      "kind": "official"
+    },
+    {
+      "id": "src_shizuku",
+      "checkedAt": "2026-10-11",
+      "title": "GKIDS：《侧耳倾听》",
+      "url": "https://gkids.com/films/whisper-of-the-heart/",
+      "kind": "official"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_chihiro",
+      "text": "千寻是电影《千与千寻》（2001）的主角。",
+      "type": "fact",
+      "sourceIds": [
+        "src_chihiro"
+      ],
+      "limits": "采用电影中的适应与行动侧面，不声称能预测现实成长轨迹。"
+    },
+    {
+      "id": "model_chihiro",
+      "text": "由公开作品侧面启发的原创解读：愿意照顾眼前的需要，也会在一次次具体行动中适应变化。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用电影中的适应与行动侧面，不声称能预测现实成长轨迹。"
+    },
+    {
+      "id": "fact_haku",
+      "text": "白龙是电影《千与千寻》（2001）中的重要人物。",
+      "type": "fact",
+      "sourceIds": [
+        "src_haku"
+      ],
+      "limits": "不解释使用者的身份记忆或情感命运，只匹配答题偏好。"
+    },
+    {
+      "id": "model_haku",
+      "text": "由公开作品侧面启发的原创解读：倾向先看清局面，再以克制而具体的方式帮助同行者。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不解释使用者的身份记忆或情感命运，只匹配答题偏好。"
+    },
+    {
+      "id": "fact_kiki",
+      "text": "琪琪是电影《魔女宅急便》（1989）的主角。",
+      "type": "fact",
+      "sourceIds": [
+        "src_kiki"
+      ],
+      "limits": "仅采用这部电影版本，成长意象不代表职业适合度或成功预测。"
+    },
+    {
+      "id": "model_kiki",
+      "text": "由公开作品侧面启发的原创解读：愿意走出去试一试，也在自己的兴趣与日常配合中寻找节奏。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；仅采用这部电影版本，成长意象不代表职业适合度或成功预测。"
+    },
+    {
+      "id": "fact_sophie",
+      "text": "苏菲是电影《哈尔的移动城堡》（2004）的主要人物。",
+      "type": "fact",
+      "sourceIds": [
+        "src_sophie"
+      ],
+      "limits": "不以外貌、年龄变化或恋爱解读使用者，只取做事侧面。"
+    },
+    {
+      "id": "model_sophie",
+      "text": "由公开作品侧面启发的原创解读：习惯以持续照料和具体安排回应需要，为相处建立一个支点。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不以外貌、年龄变化或恋爱解读使用者，只取做事侧面。"
+    },
+    {
+      "id": "fact_howl",
+      "text": "哈尔是电影《哈尔的移动城堡》（2004）中的魔法师。",
+      "type": "fact",
+      "sourceIds": [
+        "src_howl"
+      ],
+      "limits": "不美化逃避责任；采用电影形象，不混写原著不同设定。"
+    },
+    {
+      "id": "model_howl",
+      "text": "由公开作品侧面启发的原创解读：有自己的表达与想象空间，愿意探索新的形式和可能。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不美化逃避责任；采用电影形象，不混写原著不同设定。"
+    },
+    {
+      "id": "fact_san",
+      "text": "珊是电影《幽灵公主》（1997）中的重要人物。",
+      "type": "fact",
+      "sourceIds": [
+        "src_san"
+      ],
+      "limits": "不将作品冲突或伤害行为用于解释使用者，保留情境限制。"
+    },
+    {
+      "id": "model_san",
+      "text": "由公开作品侧面启发的原创解读：直接回应自己珍惜的事物，也愿意保留独立立场与个人路径。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不将作品冲突或伤害行为用于解释使用者，保留情境限制。"
+    },
+    {
+      "id": "fact_ashitaka",
+      "text": "阿席达卡是电影《幽灵公主》（1997）的主角之一。",
+      "type": "fact",
+      "sourceIds": [
+        "src_ashitaka"
+      ],
+      "limits": "调解视角是原创解读，不给使用者安上救世或牺牲义务。"
+    },
+    {
+      "id": "model_ashitaka",
+      "text": "由公开作品侧面启发的原创解读：愿意理解不同处境，再把观察和行动接起来，寻找共同的出口。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；调解视角是原创解读，不给使用者安上救世或牺牲义务。"
+    },
+    {
+      "id": "fact_shizuku",
+      "text": "月岛雫是电影《侧耳倾听》（1995）的主角。",
+      "type": "fact",
+      "sourceIds": [
+        "src_shizuku"
+      ],
+      "limits": "以电影中的写作探索为灵感，不宣称可以判断文学天赋。"
+    },
+    {
+      "id": "model_shizuku",
+      "text": "由公开作品侧面启发的原创解读：珍惜自己的想象，也愿意通过持续整理与练习让它变成作品。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；以电影中的写作探索为灵感，不宣称可以判断文学天赋。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "review",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_chihiro",
+        "type": "name",
+        "origin": "src_chihiro",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_chihiro",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_haku",
+        "type": "name",
+        "origin": "src_haku",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_haku",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_kiki",
+        "type": "name",
+        "origin": "src_kiki",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_kiki",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_sophie",
+        "type": "name",
+        "origin": "src_sophie",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_sophie",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_howl",
+        "type": "name",
+        "origin": "src_howl",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_howl",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_san",
+        "type": "name",
+        "origin": "src_san",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_san",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_ashitaka",
+        "type": "name",
+        "origin": "src_ashitaka",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_ashitaka",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_shizuku",
+        "type": "name",
+        "origin": "src_shizuku",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_shizuku",
+        "type": "image",
+        "file": "assets/ghibli.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "ghibli",
+    "minutes": 4,
+    "title": "你最像哪位吉卜力电影人物",
+    "shortTitle": "把自己放进一帧故事",
+    "category": "动漫与电影",
+    "color": "#548777",
+    "wash": "#e8f4ee",
+    "tag": "电影 · 生活",
+    "description": "搬进一座小镇，做一件自己的作品，在日常选择中遇见故事里的你。",
+    "stage": "五部电影版本：千与千寻、魔女宅急便、哈尔的移动城堡、幽灵公主、侧耳倾听。"
+  }
+}

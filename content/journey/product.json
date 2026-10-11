@@ -1,0 +1,1413 @@
+{
+  "meta": {
+    "id": "journey",
+    "title": "西游路上，你最像谁",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "object-match",
+    "description": "面对岔路、同行者和旅途里的变化，你会带着怎样的节奏出发？",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": false
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "假如你加入一支远行小队，第一天走到陌生岔路口，你会如何参与决定？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "结伴探一小段再回报",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「假如你加入一支远行小队，第一天走到陌生岔路口，你会如何参与决定？」，你选择了「结伴探一小段再回报」。"
+        },
+        {
+          "id": "c2",
+          "text": "先观察道路，听大家的判断",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「假如你加入一支远行小队，第一天走到陌生岔路口，你会如何参与决定？」，你选择了「先观察道路，听大家的判断」。"
+        },
+        {
+          "id": "c3",
+          "text": "确认基本安全后主动探路",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「假如你加入一支远行小队，第一天走到陌生岔路口，你会如何参与决定？」，你选择了「确认基本安全后主动探路」。"
+        },
+        {
+          "id": "c4",
+          "text": "等熟悉路线的人给建议",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「假如你加入一支远行小队，第一天走到陌生岔路口，你会如何参与决定？」，你选择了「等熟悉路线的人给建议」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "路边有人讲了一则奇闻，你会怎样看待？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问同行者是否听说过",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「路边有人讲了一则奇闻，你会怎样看待？」，你选择了「问同行者是否听说过」。"
+        },
+        {
+          "id": "c2",
+          "text": "寻找原始记录，并区分见闻与转述",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「路边有人讲了一则奇闻，你会怎样看待？」，你选择了「寻找原始记录，并区分见闻与转述」。"
+        },
+        {
+          "id": "c3",
+          "text": "先按自己的感受理解故事",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「路边有人讲了一则奇闻，你会怎样看待？」，你选择了「先按自己的感受理解故事」。"
+        },
+        {
+          "id": "c4",
+          "text": "核对故事中的时间和地点",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「路边有人讲了一则奇闻，你会怎样看待？」，你选择了「核对故事中的时间和地点」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "同行者因为走得慢有点不好意思，你会首先怎样回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "告诉他不用和别人比，再一起找舒服的节奏",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「同行者因为走得慢有点不好意思，你会首先怎样回应？」，你选择了「告诉他不用和别人比，再一起找舒服的节奏」。"
+        },
+        {
+          "id": "c2",
+          "text": "帮他减轻行李负担",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「同行者因为走得慢有点不好意思，你会首先怎样回应？」，你选择了「帮他减轻行李负担」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问哪里累，商量休息点",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「同行者因为走得慢有点不好意思，你会首先怎样回应？」，你选择了「问问哪里累，商量休息点」。"
+        },
+        {
+          "id": "c4",
+          "text": "调整行程，把任务分配清楚",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「同行者因为走得慢有点不好意思，你会首先怎样回应？」，你选择了「调整行程，把任务分配清楚」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "远行有一套大家熟悉的路线，你会怎样选择？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "沿成熟路线，稳定走完",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「远行有一套大家熟悉的路线，你会怎样选择？」，你选择了「沿成熟路线，稳定走完」。"
+        },
+        {
+          "id": "c2",
+          "text": "选一段不同路线体验新风景",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「远行有一套大家熟悉的路线，你会怎样选择？」，你选择了「选一段不同路线体验新风景」。"
+        },
+        {
+          "id": "c3",
+          "text": "主线不变，增加一处小停留",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「远行有一套大家熟悉的路线，你会怎样选择？」，你选择了「主线不变，增加一处小停留」。"
+        },
+        {
+          "id": "c4",
+          "text": "提出新的组合路线，先确认可行性",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「远行有一套大家熟悉的路线，你会怎样选择？」，你选择了「提出新的组合路线，先确认可行性」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "小队到了新住处，需要向主人介绍大家，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "愿意介绍团队并回应问题",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「小队到了新住处，需要向主人介绍大家，你倾向？」，你选择了「愿意介绍团队并回应问题」。"
+        },
+        {
+          "id": "c2",
+          "text": "让更熟悉社交的伙伴介绍",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「小队到了新住处，需要向主人介绍大家，你倾向？」，你选择了「让更熟悉社交的伙伴介绍」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动打开话题，让双方都轻松参与",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「小队到了新住处，需要向主人介绍大家，你倾向？」，你选择了「主动打开话题，让双方都轻松参与」。"
+        },
+        {
+          "id": "c4",
+          "text": "只介绍自己的名字和职责",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「小队到了新住处，需要向主人介绍大家，你倾向？」，你选择了「只介绍自己的名字和职责」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "要准备连续几天的旅途行李，你通常怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "凭经验带齐常用物品",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「要准备连续几天的旅途行李，你通常怎么做？」，你选择了「凭经验带齐常用物品」。"
+        },
+        {
+          "id": "c2",
+          "text": "按天气、补给和备用情况逐项核对",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「要准备连续几天的旅途行李，你通常怎么做？」，你选择了「按天气、补给和备用情况逐项核对」。"
+        },
+        {
+          "id": "c3",
+          "text": "准备最必要的物品，其他随路调整",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「要准备连续几天的旅途行李，你通常怎么做？」，你选择了「准备最必要的物品，其他随路调整」。"
+        },
+        {
+          "id": "c4",
+          "text": "按每天的需要列清单",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「要准备连续几天的旅途行李，你通常怎么做？」，你选择了「按每天的需要列清单」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "队伍一直在商量是否拜访附近村落，却迟迟没行动，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "主动去取得第一手信息，再回来商量",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「队伍一直在商量是否拜访附近村落，却迟迟没行动，你会？」，你选择了「主动去取得第一手信息，再回来商量」。"
+        },
+        {
+          "id": "c2",
+          "text": "等队长做出决定",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「队伍一直在商量是否拜访附近村落，却迟迟没行动，你会？」，你选择了「等队长做出决定」。"
+        },
+        {
+          "id": "c3",
+          "text": "提议先询问入口处的人",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「队伍一直在商量是否拜访附近村落，却迟迟没行动，你会？」，你选择了「提议先询问入口处的人」。"
+        },
+        {
+          "id": "c4",
+          "text": "再听听每个人的顾虑",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「队伍一直在商量是否拜访附近村落，却迟迟没行动，你会？」，你选择了「再听听每个人的顾虑」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "一件随身物品突然不见了，你更可能从哪里查起？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "凭印象去最像遗落的地方",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「一件随身物品突然不见了，你更可能从哪里查起？」，你选择了「凭印象去最像遗落的地方」。"
+        },
+        {
+          "id": "c2",
+          "text": "按最近经过的位置回溯",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「一件随身物品突然不见了，你更可能从哪里查起？」，你选择了「按最近经过的位置回溯」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问谁最后见过它",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「一件随身物品突然不见了，你更可能从哪里查起？」，你选择了「问问谁最后见过它」。"
+        },
+        {
+          "id": "c4",
+          "text": "列时间线并逐项排除可能地点",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「一件随身物品突然不见了，你更可能从哪里查起？」，你选择了「列时间线并逐项排除可能地点」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "队伍遇到一位迷路的游客，你更倾向怎样帮助？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问清他最担心的事情",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「队伍遇到一位迷路的游客，你更倾向怎样帮助？」，你选择了「问清他最担心的事情」。"
+        },
+        {
+          "id": "c2",
+          "text": "直接指出可用的返程路线",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「队伍遇到一位迷路的游客，你更倾向怎样帮助？」，你选择了「直接指出可用的返程路线」。"
+        },
+        {
+          "id": "c3",
+          "text": "先让他安心，再陪他联系需要的人",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「队伍遇到一位迷路的游客，你更倾向怎样帮助？」，你选择了「先让他安心，再陪他联系需要的人」。"
+        },
+        {
+          "id": "c4",
+          "text": "帮他查看地图和交通信息",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「队伍遇到一位迷路的游客，你更倾向怎样帮助？」，你选择了「帮他查看地图和交通信息」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "旅途中要做一件纪念作品，大家都选传统形式，你更愿意？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "保留传统样式，加入一个个人细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「旅途中要做一件纪念作品，大家都选传统形式，你更愿意？」，你选择了「保留传统样式，加入一个个人细节」。"
+        },
+        {
+          "id": "c2",
+          "text": "试一种从没做过的表现形式",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「旅途中要做一件纪念作品，大家都选传统形式，你更愿意？」，你选择了「试一种从没做过的表现形式」。"
+        },
+        {
+          "id": "c3",
+          "text": "用传统形式认真完成",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「旅途中要做一件纪念作品，大家都选传统形式，你更愿意？」，你选择了「用传统形式认真完成」。"
+        },
+        {
+          "id": "c4",
+          "text": "把当地元素和自己的兴趣结合",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「旅途中要做一件纪念作品，大家都选传统形式，你更愿意？」，你选择了「把当地元素和自己的兴趣结合」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "想把路上的趣事告诉朋友，你更喜欢？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "做一段生动讲述，邀请大家一起交流",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「想把路上的趣事告诉朋友，你更喜欢？」，你选择了「做一段生动讲述，邀请大家一起交流」。"
+        },
+        {
+          "id": "c2",
+          "text": "发给一两个熟悉的人",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「想把路上的趣事告诉朋友，你更喜欢？」，你选择了「发给一两个熟悉的人」。"
+        },
+        {
+          "id": "c3",
+          "text": "在聚会时讲给大家听",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「想把路上的趣事告诉朋友，你更喜欢？」，你选择了「在聚会时讲给大家听」。"
+        },
+        {
+          "id": "c4",
+          "text": "写进日记，之后再分享",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「想把路上的趣事告诉朋友，你更喜欢？」，你选择了「写进日记，之后再分享」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "第二天的路程忽然变化，你会怎样调整？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "到了现场再看情况",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「第二天的路程忽然变化，你会怎样调整？」，你选择了「到了现场再看情况」。"
+        },
+        {
+          "id": "c2",
+          "text": "重新安排路段和休息点",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「第二天的路程忽然变化，你会怎样调整？」，你选择了「重新安排路段和休息点」。"
+        },
+        {
+          "id": "c3",
+          "text": "确定出发时间，其余保持弹性",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「第二天的路程忽然变化，你会怎样调整？」，你选择了「确定出发时间，其余保持弹性」。"
+        },
+        {
+          "id": "c4",
+          "text": "检查补给、时间余量和备选住宿",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「第二天的路程忽然变化，你会怎样调整？」，你选择了「检查补给、时间余量和备选住宿」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "同行者想学一门旅途技能，大家还没安排练习，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "约一次简短的尝试",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「同行者想学一门旅途技能，大家还没安排练习，你倾向？」，你选择了「约一次简短的尝试」。"
+        },
+        {
+          "id": "c2",
+          "text": "先看大家有没有兴趣",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「同行者想学一门旅途技能，大家还没安排练习，你倾向？」，你选择了「先看大家有没有兴趣」。"
+        },
+        {
+          "id": "c3",
+          "text": "准备材料并组织第一轮练习",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「同行者想学一门旅途技能，大家还没安排练习，你倾向？」，你选择了「准备材料并组织第一轮练习」。"
+        },
+        {
+          "id": "c4",
+          "text": "等有人找到合适教材",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「同行者想学一门旅途技能，大家还没安排练习，你倾向？」，你选择了「等有人找到合适教材」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "要选一种从未吃过的当地食物，你会怎样决定？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "听摊主或伙伴推荐",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「要选一种从未吃过的当地食物，你会怎样决定？」，你选择了「听摊主或伙伴推荐」。"
+        },
+        {
+          "id": "c2",
+          "text": "比较材料、保存条件和自己的需求",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「要选一种从未吃过的当地食物，你会怎样决定？」，你选择了「比较材料、保存条件和自己的需求」。"
+        },
+        {
+          "id": "c3",
+          "text": "看外观和闻到的味道",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「要选一种从未吃过的当地食物，你会怎样决定？」，你选择了「看外观和闻到的味道」。"
+        },
+        {
+          "id": "c4",
+          "text": "问清材料和制作方法",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「要选一种从未吃过的当地食物，你会怎样决定？」，你选择了「问清材料和制作方法」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "一位伙伴和大家闹了别扭，晚上独自坐着，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先陪一会儿，让他按自己的节奏开口",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「一位伙伴和大家闹了别扭，晚上独自坐着，你会？」，你选择了「先陪一会儿，让他按自己的节奏开口」。"
+        },
+        {
+          "id": "c2",
+          "text": "把明天的安排告诉他",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「一位伙伴和大家闹了别扭，晚上独自坐着，你会？」，你选择了「把明天的安排告诉他」。"
+        },
+        {
+          "id": "c3",
+          "text": "私下问他愿不愿意聊",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「一位伙伴和大家闹了别扭，晚上独自坐着，你会？」，你选择了「私下问他愿不愿意聊」。"
+        },
+        {
+          "id": "c4",
+          "text": "先处理第二天的准备工作",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「一位伙伴和大家闹了别扭，晚上独自坐着，你会？」，你选择了「先处理第二天的准备工作」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "一项团队惯例让你觉得不适合今天的情况，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先继续照做，避免打乱节奏",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「一项团队惯例让你觉得不适合今天的情况，你会？」，你选择了「先继续照做，避免打乱节奏」。"
+        },
+        {
+          "id": "c2",
+          "text": "解释原因，提出可试的新办法",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「一项团队惯例让你觉得不适合今天的情况，你会？」，你选择了「解释原因，提出可试的新办法」。"
+        },
+        {
+          "id": "c3",
+          "text": "做小范围调整，保持整体惯例",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「一项团队惯例让你觉得不适合今天的情况，你会？」，你选择了「做小范围调整，保持整体惯例」。"
+        },
+        {
+          "id": "c4",
+          "text": "带一个替代方案，请大家体验后比较",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「一项团队惯例让你觉得不适合今天的情况，你会？」，你选择了「带一个替代方案，请大家体验后比较」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "晚间围坐休息，有人提议轮流讲故事，你会怎样参与？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "完整讲一段，回应大家的问题",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「晚间围坐休息，有人提议轮流讲故事，你会怎样参与？」，你选择了「完整讲一段，回应大家的问题」。"
+        },
+        {
+          "id": "c2",
+          "text": "安静听，记下喜欢的片段",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「晚间围坐休息，有人提议轮流讲故事，你会怎样参与？」，你选择了「安静听，记下喜欢的片段」。"
+        },
+        {
+          "id": "c3",
+          "text": "主持故事接龙，让每个人都有机会",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「晚间围坐休息，有人提议轮流讲故事，你会怎样参与？」，你选择了「主持故事接龙，让每个人都有机会」。"
+        },
+        {
+          "id": "c4",
+          "text": "讲一个简短的小故事",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「晚间围坐休息，有人提议轮流讲故事，你会怎样参与？」，你选择了「讲一个简短的小故事」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "每天结束旅途时，你更常怎样收尾？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "简单收好东西，记住明天方向",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「每天结束旅途时，你更常怎样收尾？」，你选择了「简单收好东西，记住明天方向」。"
+        },
+        {
+          "id": "c2",
+          "text": "整理记录、核对物品并排好次日步骤",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「每天结束旅途时，你更常怎样收尾？」，你选择了「整理记录、核对物品并排好次日步骤」。"
+        },
+        {
+          "id": "c3",
+          "text": "先休息，有需要再整理",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「每天结束旅途时，你更常怎样收尾？」，你选择了「先休息，有需要再整理」。"
+        },
+        {
+          "id": "c4",
+          "text": "检查行李，确认第二天安排",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「每天结束旅途时，你更常怎样收尾？」，你选择了「检查行李，确认第二天安排」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "wukong",
+      "name": "孙悟空",
+      "subtitle": "给道路开一条新线",
+      "lead": "不满足于一直照旧，愿意先试、再找出适合眼前处境的方法。",
+      "contrast": "采用明代小说人物，不采用影视或游戏造型；不鼓励冲动冒险。",
+      "insight": "把「给道路开一条新线」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 76,
+        "analysis": 48,
+        "care": 42,
+        "freedom": 77,
+        "expression": 66,
+        "structure": 28
+      },
+      "sourceIds": [
+        "src_wukong"
+      ],
+      "claimIds": [
+        "fact_wukong",
+        "model_wukong"
+      ],
+      "fact": "《西游记》中的孙悟空保护取经队伍，并善于变化。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "sanzang",
+      "name": "唐僧",
+      "subtitle": "把方向放在心上",
+      "lead": "愿意稳定同行，在安排与关心之间守住一个长期方向。",
+      "contrast": "原型不是宗教身份测量，也不把坚持等同于拒绝调整。",
+      "insight": "把「把方向放在心上」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 35,
+        "analysis": 44,
+        "care": 74,
+        "freedom": 28,
+        "expression": 37,
+        "structure": 70
+      },
+      "sourceIds": [
+        "src_sanzang"
+      ],
+      "claimIds": [
+        "fact_sanzang",
+        "model_sanzang"
+      ],
+      "fact": "《西游记》写到唐僧西行求取经书。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "bajie",
+      "name": "猪八戒",
+      "subtitle": "让同行多一点轻松",
+      "lead": "表达直接，重视当下体验，也愿意给相处增加一点松弛感。",
+      "contrast": "不以体形、贪食或懒惰给使用者贴标签，只保留互动侧面。",
+      "insight": "把「让同行多一点轻松」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 49,
+        "analysis": 28,
+        "care": 59,
+        "freedom": 50,
+        "expression": 75,
+        "structure": 27
+      },
+      "sourceIds": [
+        "src_bajie"
+      ],
+      "claimIds": [
+        "fact_bajie",
+        "model_bajie"
+      ],
+      "fact": "猪八戒是《西游记》中取经队伍的成员之一。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "wujing",
+      "name": "沙悟净",
+      "subtitle": "把陪伴落实到日常",
+      "lead": "倾向安静承担、稳定配合，用持续做事表达支持。",
+      "contrast": "可靠侧面是原创提炼，承认人物并非完全没有复杂经历。",
+      "insight": "把「把陪伴落实到日常」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 46,
+        "analysis": 40,
+        "care": 65,
+        "freedom": 25,
+        "expression": 24,
+        "structure": 72
+      },
+      "sourceIds": [
+        "src_wujing"
+      ],
+      "claimIds": [
+        "fact_wujing",
+        "model_wujing"
+      ],
+      "fact": "沙悟净加入《西游记》的取经队伍，参与西行。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "white-horse",
+      "name": "白龙马",
+      "subtitle": "不喧哗的同行者",
+      "lead": "不一定站在话题中心，仍能以自己的节奏完成重要的部分。",
+      "contrast": "只取安静同行的故事意象，不暗示服从或承担他人的义务。",
+      "insight": "把「不喧哗的同行者」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 33,
+        "analysis": 34,
+        "care": 47,
+        "freedom": 33,
+        "expression": 22,
+        "structure": 58
+      },
+      "sourceIds": [
+        "src_white-horse"
+      ],
+      "claimIds": [
+        "fact_white-horse",
+        "model_white-horse"
+      ],
+      "fact": "《西游记》写到龙子化为白马，成为唐僧的坐骑。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "guanyin",
+      "name": "观音",
+      "subtitle": "给困境留一条出口",
+      "lead": "关心他人的处境，也愿意把理解化成可执行的支持。",
+      "contrast": "文学人物匹配不讨论信仰高低，也不承诺现实中的拯救能力。",
+      "insight": "把「给困境留一条出口」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 38,
+        "analysis": 66,
+        "care": 77,
+        "freedom": 50,
+        "expression": 40,
+        "structure": 67
+      },
+      "sourceIds": [
+        "src_guanyin"
+      ],
+      "claimIds": [
+        "fact_guanyin",
+        "model_guanyin"
+      ],
+      "fact": "观音在《西游记》中引导取经安排，并多次出场。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "erlang",
+      "name": "二郎神",
+      "subtitle": "用判断支撑行动",
+      "lead": "偏好清楚地判断局面，准备好步骤，再把行动执行出来。",
+      "contrast": "仅采用小说侧面，不把较量胜负用于解释现实中的强弱。",
+      "insight": "把「用判断支撑行动」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 67,
+        "analysis": 67,
+        "care": 32,
+        "freedom": 39,
+        "expression": 35,
+        "structure": 75
+      },
+      "sourceIds": [
+        "src_erlang"
+      ],
+      "claimIds": [
+        "fact_erlang",
+        "model_erlang"
+      ],
+      "fact": "二郎神在《西游记》中与孙悟空交锋，并展示变化本领。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "bull-king",
+      "name": "牛魔王",
+      "subtitle": "按自己的节奏回应",
+      "lead": "独立立场与公开表达较突出，愿意直接回应眼前的变化。",
+      "contrast": "只匹配行为偏好，不把角色冲突、伤害或善恶移到使用者身上。",
+      "insight": "把「按自己的节奏回应」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 65,
+        "analysis": 32,
+        "care": 32,
+        "freedom": 65,
+        "expression": 69,
+        "structure": 43
+      },
+      "sourceIds": [
+        "src_bull-king"
+      ],
+      "claimIds": [
+        "fact_bull-king",
+        "model_bull-king"
+      ],
+      "fact": "牛魔王在《西游记》的火焰山相关情节中出场。",
+      "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。",
+      "accent": "#a46c22",
+      "image": {
+        "file": "assets/journey.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_wukong",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    },
+    {
+      "id": "src_sanzang",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    },
+    {
+      "id": "src_bajie",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    },
+    {
+      "id": "src_wujing",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    },
+    {
+      "id": "src_white-horse",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    },
+    {
+      "id": "src_guanyin",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    },
+    {
+      "id": "src_erlang",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    },
+    {
+      "id": "src_bull-king",
+      "checkedAt": "2026-10-11",
+      "title": "《西游记》原著",
+      "url": "https://zh.wikisource.org/wiki/%E8%A5%BF%E9%81%8A%E8%A8%98",
+      "kind": "primary"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_wukong",
+      "text": "《西游记》中的孙悟空保护取经队伍，并善于变化。",
+      "type": "fact",
+      "sourceIds": [
+        "src_wukong"
+      ],
+      "limits": "采用明代小说人物，不采用影视或游戏造型；不鼓励冲动冒险。"
+    },
+    {
+      "id": "model_wukong",
+      "text": "由公开作品侧面启发的原创解读：不满足于一直照旧，愿意先试、再找出适合眼前处境的方法。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用明代小说人物，不采用影视或游戏造型；不鼓励冲动冒险。"
+    },
+    {
+      "id": "fact_sanzang",
+      "text": "《西游记》写到唐僧西行求取经书。",
+      "type": "fact",
+      "sourceIds": [
+        "src_sanzang"
+      ],
+      "limits": "原型不是宗教身份测量，也不把坚持等同于拒绝调整。"
+    },
+    {
+      "id": "model_sanzang",
+      "text": "由公开作品侧面启发的原创解读：愿意稳定同行，在安排与关心之间守住一个长期方向。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；原型不是宗教身份测量，也不把坚持等同于拒绝调整。"
+    },
+    {
+      "id": "fact_bajie",
+      "text": "猪八戒是《西游记》中取经队伍的成员之一。",
+      "type": "fact",
+      "sourceIds": [
+        "src_bajie"
+      ],
+      "limits": "不以体形、贪食或懒惰给使用者贴标签，只保留互动侧面。"
+    },
+    {
+      "id": "model_bajie",
+      "text": "由公开作品侧面启发的原创解读：表达直接，重视当下体验，也愿意给相处增加一点松弛感。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不以体形、贪食或懒惰给使用者贴标签，只保留互动侧面。"
+    },
+    {
+      "id": "fact_wujing",
+      "text": "沙悟净加入《西游记》的取经队伍，参与西行。",
+      "type": "fact",
+      "sourceIds": [
+        "src_wujing"
+      ],
+      "limits": "可靠侧面是原创提炼，承认人物并非完全没有复杂经历。"
+    },
+    {
+      "id": "model_wujing",
+      "text": "由公开作品侧面启发的原创解读：倾向安静承担、稳定配合，用持续做事表达支持。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；可靠侧面是原创提炼，承认人物并非完全没有复杂经历。"
+    },
+    {
+      "id": "fact_white-horse",
+      "text": "《西游记》写到龙子化为白马，成为唐僧的坐骑。",
+      "type": "fact",
+      "sourceIds": [
+        "src_white-horse"
+      ],
+      "limits": "只取安静同行的故事意象，不暗示服从或承担他人的义务。"
+    },
+    {
+      "id": "model_white-horse",
+      "text": "由公开作品侧面启发的原创解读：不一定站在话题中心，仍能以自己的节奏完成重要的部分。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；只取安静同行的故事意象，不暗示服从或承担他人的义务。"
+    },
+    {
+      "id": "fact_guanyin",
+      "text": "观音在《西游记》中引导取经安排，并多次出场。",
+      "type": "fact",
+      "sourceIds": [
+        "src_guanyin"
+      ],
+      "limits": "文学人物匹配不讨论信仰高低，也不承诺现实中的拯救能力。"
+    },
+    {
+      "id": "model_guanyin",
+      "text": "由公开作品侧面启发的原创解读：关心他人的处境，也愿意把理解化成可执行的支持。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；文学人物匹配不讨论信仰高低，也不承诺现实中的拯救能力。"
+    },
+    {
+      "id": "fact_erlang",
+      "text": "二郎神在《西游记》中与孙悟空交锋，并展示变化本领。",
+      "type": "fact",
+      "sourceIds": [
+        "src_erlang"
+      ],
+      "limits": "仅采用小说侧面，不把较量胜负用于解释现实中的强弱。"
+    },
+    {
+      "id": "model_erlang",
+      "text": "由公开作品侧面启发的原创解读：偏好清楚地判断局面，准备好步骤，再把行动执行出来。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；仅采用小说侧面，不把较量胜负用于解释现实中的强弱。"
+    },
+    {
+      "id": "fact_bull-king",
+      "text": "牛魔王在《西游记》的火焰山相关情节中出场。",
+      "type": "fact",
+      "sourceIds": [
+        "src_bull-king"
+      ],
+      "limits": "只匹配行为偏好，不把角色冲突、伤害或善恶移到使用者身上。"
+    },
+    {
+      "id": "model_bull-king",
+      "text": "由公开作品侧面启发的原创解读：独立立场与公开表达较突出，愿意直接回应眼前的变化。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；只匹配行为偏好，不把角色冲突、伤害或善恶移到使用者身上。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "clear",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_wukong",
+        "type": "name",
+        "origin": "src_wukong",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_wukong",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_sanzang",
+        "type": "name",
+        "origin": "src_sanzang",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_sanzang",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_bajie",
+        "type": "name",
+        "origin": "src_bajie",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_bajie",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_wujing",
+        "type": "name",
+        "origin": "src_wujing",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_wujing",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_white-horse",
+        "type": "name",
+        "origin": "src_white-horse",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_white-horse",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_guanyin",
+        "type": "name",
+        "origin": "src_guanyin",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_guanyin",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_erlang",
+        "type": "name",
+        "origin": "src_erlang",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_erlang",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      },
+      {
+        "id": "name_bull-king",
+        "type": "name",
+        "origin": "src_bull-king",
+        "owner": "公共事实／古典文学／原创意象",
+        "basis": "公共历史姓名、古典原著名或本工程原创人格意象；不使用现代译文、台词和官方Logo。",
+        "status": "clear"
+      },
+      {
+        "id": "portrait_bull-king",
+        "type": "image",
+        "file": "assets/journey.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出",
+        "basis": "原创生成插画；历史／古典文学想象，未引用当代演员、影视截图或艺术家作品。",
+        "status": "clear"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "journey",
+    "minutes": 4,
+    "title": "西游路上，你最像谁",
+    "shortTitle": "如果你也去西行",
+    "category": "文学与魔法",
+    "color": "#a46c22",
+    "wash": "#fcf0d8",
+    "tag": "经典 · 冒险",
+    "description": "面对岔路、同行者和旅途里的变化，你会带着怎样的节奏出发？",
+    "stage": "《西游记》明代小说人物，不采用现代游戏、影视改编造型。"
+  }
+}

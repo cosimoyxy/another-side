@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#3258de">
+  <meta name="description" content="另一面，一个有图的测评游乐场。探索历史、文学、动漫与动物人格，遇见自己的另一个侧面。">
+  <title>另一面 · 测评游乐场</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="scoring.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="header">
+    <a href="#/" class="brand" aria-label="另一面，回到首页"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="2" y="2" width="36" height="36" rx="12" fill="currentColor"/><path d="M10 24C14 12 25 12 30 24" fill="none" stroke="white" stroke-width="3"/><circle cx="14" cy="23" r="2" fill="white"/><circle cx="26" cy="23" r="2" fill="white"/></svg><span>另一面<small>测评游乐场</small></span></a>
+    <nav aria-label="主导航"><a href="#/" id="nav-home">发现测评</a><a href="#/about">关于这里</a><button id="surprise" class="nav-pick">随便逛一款 <span aria-hidden="true">✧</span></button></nav>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer"><a href="#/" class="footer-brand">另一面</a><p>世界有很多故事，你也有很多侧面。</p><div><a href="#/about">说明与图片来源</a><button id="privacy">清除本页作答</button></div><small>娱乐与自我探索 · 免费展示 · 无需注册</small></footer>
+  <div id="status" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="dialog" aria-labelledby="dialog-title"></dialog>
+  <noscript>开启 JavaScript 后可以进行测评。题库与人物资料也保存在 products 文件夹中。</noscript>
+</body>
+</html>

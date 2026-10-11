@@ -1,0 +1,1413 @@
+{
+  "meta": {
+    "id": "naruto",
+    "title": "测测你最像哪位火影忍者角色",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "object-match",
+    "description": "十八个训练与协作片段，看看你会怎样和伙伴一起面对新挑战。",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": true
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "假如你加入一支训练小队，第一次面对新练习，你会如何开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "试一个最简单的动作",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「假如你加入一支训练小队，第一次面对新练习，你会如何开始？」，你选择了「试一个最简单的动作」。"
+        },
+        {
+          "id": "c2",
+          "text": "先看别人完整做一遍",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「假如你加入一支训练小队，第一次面对新练习，你会如何开始？」，你选择了「先看别人完整做一遍」。"
+        },
+        {
+          "id": "c3",
+          "text": "确认基本要求后主动做第一轮",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「假如你加入一支训练小队，第一次面对新练习，你会如何开始？」，你选择了「确认基本要求后主动做第一轮」。"
+        },
+        {
+          "id": "c4",
+          "text": "等老师讲清常见问题",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「假如你加入一支训练小队，第一次面对新练习，你会如何开始？」，你选择了「等老师讲清常见问题」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "训练里同一个动作反复失败，你会先怎样理解？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "模仿示范者再练几遍",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「训练里同一个动作反复失败，你会先怎样理解？」，你选择了「模仿示范者再练几遍」。"
+        },
+        {
+          "id": "c2",
+          "text": "记录条件，逐项验证哪里造成变化",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「训练里同一个动作反复失败，你会先怎样理解？」，你选择了「记录条件，逐项验证哪里造成变化」。"
+        },
+        {
+          "id": "c3",
+          "text": "跟着身体感觉调整",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「训练里同一个动作反复失败，你会先怎样理解？」，你选择了「跟着身体感觉调整」。"
+        },
+        {
+          "id": "c4",
+          "text": "比较成功与失败时的步骤差异",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「训练里同一个动作反复失败，你会先怎样理解？」，你选择了「比较成功与失败时的步骤差异」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "一位伙伴没通过展示，觉得自己拖累了大家，你先会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先让他知道仍是重要的伙伴，再谈练习",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「一位伙伴没通过展示，觉得自己拖累了大家，你先会？」，你选择了「先让他知道仍是重要的伙伴，再谈练习」。"
+        },
+        {
+          "id": "c2",
+          "text": "给他一个可以完成的小目标",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「一位伙伴没通过展示，觉得自己拖累了大家，你先会？」，你选择了「给他一个可以完成的小目标」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问他最在意哪次失误",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「一位伙伴没通过展示，觉得自己拖累了大家，你先会？」，你选择了「问问他最在意哪次失误」。"
+        },
+        {
+          "id": "c4",
+          "text": "找出需要补练的部分",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「一位伙伴没通过展示，觉得自己拖累了大家，你先会？」，你选择了「找出需要补练的部分」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "老师提供了成熟练法，但你想到一种不同的办法，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "沿用成熟练法，练扎实再说",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「老师提供了成熟练法，但你想到一种不同的办法，你会？」，你选择了「沿用成熟练法，练扎实再说」。"
+        },
+        {
+          "id": "c2",
+          "text": "说明想法，争取短时间试验",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「老师提供了成熟练法，但你想到一种不同的办法，你会？」，你选择了「说明想法，争取短时间试验」。"
+        },
+        {
+          "id": "c3",
+          "text": "保留主流程，只改一个细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「老师提供了成熟练法，但你想到一种不同的办法，你会？」，你选择了「保留主流程，只改一个细节」。"
+        },
+        {
+          "id": "c4",
+          "text": "做一份新练法，比较实际效果",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「老师提供了成熟练法，但你想到一种不同的办法，你会？」，你选择了「做一份新练法，比较实际效果」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "训练展示需要一位讲解者，你更愿意？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "讲解主要过程并回应问题",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「训练展示需要一位讲解者，你更愿意？」，你选择了「讲解主要过程并回应问题」。"
+        },
+        {
+          "id": "c2",
+          "text": "整理讲解内容，在幕后协助",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「训练展示需要一位讲解者，你更愿意？」，你选择了「整理讲解内容，在幕后协助」。"
+        },
+        {
+          "id": "c3",
+          "text": "主持整场，主动引导观众参与",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「训练展示需要一位讲解者，你更愿意？」，你选择了「主持整场，主动引导观众参与」。"
+        },
+        {
+          "id": "c4",
+          "text": "只讲自己负责的小部分",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「训练展示需要一位讲解者，你更愿意？」，你选择了「只讲自己负责的小部分」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "一个月后有小队展示，你会怎样安排训练？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先定几个重点，想到就练",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「一个月后有小队展示，你会怎样安排训练？」，你选择了「先定几个重点，想到就练」。"
+        },
+        {
+          "id": "c2",
+          "text": "安排步骤、次数和检查节点，留出备用时间",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「一个月后有小队展示，你会怎样安排训练？」，你选择了「安排步骤、次数和检查节点，留出备用时间」。"
+        },
+        {
+          "id": "c3",
+          "text": "按状态练，随时调整内容",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「一个月后有小队展示，你会怎样安排训练？」，你选择了「按状态练，随时调整内容」。"
+        },
+        {
+          "id": "c4",
+          "text": "按周拆分练习和复盘",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「一个月后有小队展示，你会怎样安排训练？」，你选择了「按周拆分练习和复盘」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "小队迟迟没开始准备展示，你通常怎么推动？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "主动约时间，带着材料开始排练",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「小队迟迟没开始准备展示，你通常怎么推动？」，你选择了「主动约时间，带着材料开始排练」。"
+        },
+        {
+          "id": "c2",
+          "text": "等擅长组织的伙伴提安排",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「小队迟迟没开始准备展示，你通常怎么推动？」，你选择了「等擅长组织的伙伴提安排」。"
+        },
+        {
+          "id": "c3",
+          "text": "提议只试一个短片段",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「小队迟迟没开始准备展示，你通常怎么推动？」，你选择了「提议只试一个短片段」。"
+        },
+        {
+          "id": "c4",
+          "text": "先确认大家为什么犹豫",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「小队迟迟没开始准备展示，你通常怎么推动？」，你选择了「先确认大家为什么犹豫」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "两名队友对练习规则的说法不同，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "采用更符合自己经验的解释",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「两名队友对练习规则的说法不同，你会？」，你选择了「采用更符合自己经验的解释」。"
+        },
+        {
+          "id": "c2",
+          "text": "一起查原始规则中的相关段落",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「两名队友对练习规则的说法不同，你会？」，你选择了「一起查原始规则中的相关段落」。"
+        },
+        {
+          "id": "c3",
+          "text": "请熟悉比赛的人判断",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「两名队友对练习规则的说法不同，你会？」，你选择了「请熟悉比赛的人判断」。"
+        },
+        {
+          "id": "c4",
+          "text": "核对完整规则和适用条件，再确认边界",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「两名队友对练习规则的说法不同，你会？」，你选择了「核对完整规则和适用条件，再确认边界」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "新成员跟不上训练节奏，你倾向怎么协助？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "了解他卡在哪里，一起调整",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「新成员跟不上训练节奏，你倾向怎么协助？」，你选择了「了解他卡在哪里，一起调整」。"
+        },
+        {
+          "id": "c2",
+          "text": "重新分配练习任务",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「新成员跟不上训练节奏，你倾向怎么协助？」，你选择了「重新分配练习任务」。"
+        },
+        {
+          "id": "c3",
+          "text": "先关心他是否紧张，再找到适合的节奏",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「新成员跟不上训练节奏，你倾向怎么协助？」，你选择了「先关心他是否紧张，再找到适合的节奏」。"
+        },
+        {
+          "id": "c4",
+          "text": "把动作拆成容易完成的步骤",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「新成员跟不上训练节奏，你倾向怎么协助？」，你选择了「把动作拆成容易完成的步骤」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "小队展示允许自由设计，你最想做什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "在经典流程里加入一个变化",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「小队展示允许自由设计，你最想做什么？」，你选择了「在经典流程里加入一个变化」。"
+        },
+        {
+          "id": "c2",
+          "text": "设计一种大家没试过的互动展示",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「小队展示允许自由设计，你最想做什么？」，你选择了「设计一种大家没试过的互动展示」。"
+        },
+        {
+          "id": "c3",
+          "text": "准确还原经典训练流程",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「小队展示允许自由设计，你最想做什么？」，你选择了「准确还原经典训练流程」。"
+        },
+        {
+          "id": "c4",
+          "text": "结合队友特点做新的组合",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「小队展示允许自由设计，你最想做什么？」，你选择了「结合队友特点做新的组合」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "你找到一个不错的练习窍门，通常如何分享？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "主动约一次交流，让大家互相分享方法",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「你找到一个不错的练习窍门，通常如何分享？」，你选择了「主动约一次交流，让大家互相分享方法」。"
+        },
+        {
+          "id": "c2",
+          "text": "私下告诉一位队友",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「你找到一个不错的练习窍门，通常如何分享？」，你选择了「私下告诉一位队友」。"
+        },
+        {
+          "id": "c3",
+          "text": "在小队休息时给大家演示",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「你找到一个不错的练习窍门，通常如何分享？」，你选择了「在小队休息时给大家演示」。"
+        },
+        {
+          "id": "c4",
+          "text": "先写在自己的训练笔记里",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「你找到一个不错的练习窍门，通常如何分享？」，你选择了「先写在自己的训练笔记里」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "队友临时有事，原定训练只能换时间，你通常？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "重新约个方便的时段就好",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「队友临时有事，原定训练只能换时间，你通常？」，你选择了「重新约个方便的时段就好」。"
+        },
+        {
+          "id": "c2",
+          "text": "修改训练日程和任务分配",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「队友临时有事，原定训练只能换时间，你通常？」，你选择了「修改训练日程和任务分配」。"
+        },
+        {
+          "id": "c3",
+          "text": "确定主要训练不落下",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「队友临时有事，原定训练只能换时间，你通常？」，你选择了「确定主要训练不落下」。"
+        },
+        {
+          "id": "c4",
+          "text": "核对展示依赖，调整顺序并预留补练",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「队友临时有事，原定训练只能换时间，你通常？」，你选择了「核对展示依赖，调整顺序并预留补练」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "队伍在安全的定向活动里停在岔路口，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "结伴查看一小段路线",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「队伍在安全的定向活动里停在岔路口，你倾向？」，你选择了「结伴查看一小段路线」。"
+        },
+        {
+          "id": "c2",
+          "text": "先观察标志，听其他人的判断",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「队伍在安全的定向活动里停在岔路口，你倾向？」，你选择了「先观察标志，听其他人的判断」。"
+        },
+        {
+          "id": "c3",
+          "text": "完成基本确认后去取得现场信息",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「队伍在安全的定向活动里停在岔路口，你倾向？」，你选择了「完成基本确认后去取得现场信息」。"
+        },
+        {
+          "id": "c4",
+          "text": "等熟悉路线的人来确认",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「队伍在安全的定向活动里停在岔路口，你倾向？」，你选择了「等熟悉路线的人来确认」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "你准备学习一种新技巧，通常更喜欢？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "跟着前辈的示范模仿",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「你准备学习一种新技巧，通常更喜欢？」，你选择了「跟着前辈的示范模仿」。"
+        },
+        {
+          "id": "c2",
+          "text": "比较不同方法，记录适用情况和反馈",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「你准备学习一种新技巧，通常更喜欢？」，你选择了「比较不同方法，记录适用情况和反馈」。"
+        },
+        {
+          "id": "c3",
+          "text": "从自由尝试中找到感觉",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「你准备学习一种新技巧，通常更喜欢？」，你选择了「从自由尝试中找到感觉」。"
+        },
+        {
+          "id": "c4",
+          "text": "理解关键原理再做练习",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「你准备学习一种新技巧，通常更喜欢？」，你选择了「理解关键原理再做练习」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "练习后两位队友因为配合不顺而争执，你更可能？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先让双方把情绪说清，再一起练习沟通",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「练习后两位队友因为配合不顺而争执，你更可能？」，你选择了「先让双方把情绪说清，再一起练习沟通」。"
+        },
+        {
+          "id": "c2",
+          "text": "指出哪个环节需要修改",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「练习后两位队友因为配合不顺而争执，你更可能？」，你选择了「指出哪个环节需要修改」。"
+        },
+        {
+          "id": "c3",
+          "text": "分别听清各自的困难",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「练习后两位队友因为配合不顺而争执，你更可能？」，你选择了「分别听清各自的困难」。"
+        },
+        {
+          "id": "c4",
+          "text": "直接安排一轮新的分工",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「练习后两位队友因为配合不顺而争执，你更可能？」，你选择了「直接安排一轮新的分工」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "一种惯常分工让你无法发挥想法，你通常怎样回应？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先完成现有职责",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「一种惯常分工让你无法发挥想法，你通常怎样回应？」，你选择了「先完成现有职责」。"
+        },
+        {
+          "id": "c2",
+          "text": "提出交换一部分任务的建议",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「一种惯常分工让你无法发挥想法，你通常怎样回应？」，你选择了「提出交换一部分任务的建议」。"
+        },
+        {
+          "id": "c3",
+          "text": "在职责范围里加一点个人方式",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「一种惯常分工让你无法发挥想法，你通常怎样回应？」，你选择了「在职责范围里加一点个人方式」。"
+        },
+        {
+          "id": "c4",
+          "text": "做一套不同分工，让大家试过后再选择",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「一种惯常分工让你无法发挥想法，你通常怎样回应？」，你选择了「做一套不同分工，让大家试过后再选择」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "讨论时别人没听懂你的提议，你会怎样澄清？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "当场用简短例子说明",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「讨论时别人没听懂你的提议，你会怎样澄清？」，你选择了「当场用简短例子说明」。"
+        },
+        {
+          "id": "c2",
+          "text": "事后写清楚再发给大家",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「讨论时别人没听懂你的提议，你会怎样澄清？」，你选择了「事后写清楚再发给大家」。"
+        },
+        {
+          "id": "c3",
+          "text": "做一个小演示，邀请大家提问",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「讨论时别人没听懂你的提议，你会怎样澄清？」，你选择了「做一个小演示，邀请大家提问」。"
+        },
+        {
+          "id": "c4",
+          "text": "找熟悉的人帮忙解释",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「讨论时别人没听懂你的提议，你会怎样澄清？」，你选择了「找熟悉的人帮忙解释」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "你如何整理一次训练后的笔记？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "记几个以后要注意的地方",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「你如何整理一次训练后的笔记？」，你选择了「记几个以后要注意的地方」。"
+        },
+        {
+          "id": "c2",
+          "text": "分清现象、原因假设和计划，定期回看",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「你如何整理一次训练后的笔记？」，你选择了「分清现象、原因假设和计划，定期回看」。"
+        },
+        {
+          "id": "c3",
+          "text": "随手记下印象最深的点",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「你如何整理一次训练后的笔记？」，你选择了「随手记下印象最深的点」。"
+        },
+        {
+          "id": "c4",
+          "text": "按步骤写下反馈和下次目标",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「你如何整理一次训练后的笔记？」，你选择了「按步骤写下反馈和下次目标」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "naruto",
+      "name": "漩涡鸣人",
+      "subtitle": "把热望带进第一步",
+      "lead": "愿意行动与表达，也把同行者放在心上，用参与推动变化。",
+      "contrast": "采用疾风传至第四次忍界大战阶段，不推断使用者的成长创伤。",
+      "insight": "把「把热望带进第一步」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 77,
+        "analysis": 28,
+        "care": 67,
+        "freedom": 68,
+        "expression": 76,
+        "structure": 30
+      },
+      "sourceIds": [
+        "src_naruto"
+      ],
+      "claimIds": [
+        "fact_naruto",
+        "model_naruto"
+      ],
+      "fact": "鸣人以成为火影为目标，在漫画中与伙伴共同成长。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "sasuke",
+      "name": "宇智波佐助",
+      "subtitle": "给自己的方向留一条路",
+      "lead": "自主与克制较鲜明，倾向用个人投入而非频繁解释推动事情。",
+      "contrast": "只匹配做事偏好，不认可或转嫁角色的复仇、冲突与伤害行为。",
+      "insight": "把「给自己的方向留一条路」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 66,
+        "analysis": 61,
+        "care": 27,
+        "freedom": 74,
+        "expression": 24,
+        "structure": 56
+      },
+      "sourceIds": [
+        "src_sasuke"
+      ],
+      "claimIds": [
+        "fact_sasuke",
+        "model_sasuke"
+      ],
+      "fact": "佐助与鸣人、小樱共同成为第七班的成员。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "sakura",
+      "name": "春野樱",
+      "subtitle": "把在意的事认真练好",
+      "lead": "愿意查清方法，再持续练习，把关心落到实际支持。",
+      "contrast": "采用成长后的技能学习侧面，不用恋爱选择解释使用者。",
+      "insight": "把「把在意的事认真练好」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 65,
+        "analysis": 63,
+        "care": 70,
+        "freedom": 38,
+        "expression": 57,
+        "structure": 70
+      },
+      "sourceIds": [
+        "src_sakura"
+      ],
+      "claimIds": [
+        "fact_sakura",
+        "model_sakura"
+      ],
+      "fact": "小樱是第七班成员，在故事中学习医疗忍术。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "kakashi",
+      "name": "旗木卡卡西",
+      "subtitle": "先看清，再给出支点",
+      "lead": "习惯观察局面，回应需要时提供可以执行的方向。",
+      "contrast": "不推断隐藏的痛苦或家庭经历，取教师与团队协作阶段。",
+      "insight": "把「先看清，再给出支点」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 41,
+        "analysis": 74,
+        "care": 53,
+        "freedom": 49,
+        "expression": 30,
+        "structure": 66
+      },
+      "sourceIds": [
+        "src_kakashi"
+      ],
+      "claimIds": [
+        "fact_kakashi",
+        "model_kakashi"
+      ],
+      "fact": "卡卡西担任第七班的指导者。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "shikamaru",
+      "name": "奈良鹿丸",
+      "subtitle": "让复杂局面有一个顺序",
+      "lead": "不急着先冲出去，愿意拆解信息和步骤，帮助团队找到清楚路径。",
+      "contrast": "不使用作品中的智商设定评判使用者智力，坐标是原创编辑模型。",
+      "insight": "把「让复杂局面有一个顺序」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 28,
+        "analysis": 77,
+        "care": 42,
+        "freedom": 46,
+        "expression": 26,
+        "structure": 75
+      },
+      "sourceIds": [
+        "src_shikamaru"
+      ],
+      "claimIds": [
+        "fact_shikamaru",
+        "model_shikamaru"
+      ],
+      "fact": "鹿丸在漫画中多次参与战术规划，并支持伙伴。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "hinata",
+      "name": "日向雏田",
+      "subtitle": "安静也能站稳心意",
+      "lead": "更习惯温和而稳定的表达，愿意在关心中逐步建立行动。",
+      "contrast": "安静不意味着软弱；不把人物恋爱、身份或亲子角色投到使用者身上。",
+      "insight": "把「安静也能站稳心意」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 33,
+        "analysis": 43,
+        "care": 78,
+        "freedom": 33,
+        "expression": 22,
+        "structure": 59
+      },
+      "sourceIds": [
+        "src_hinata"
+      ],
+      "claimIds": [
+        "fact_hinata",
+        "model_hinata"
+      ],
+      "fact": "雏田在漫画中持续修习，并在重要情节中保护鸣人。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "lee",
+      "name": "洛克李",
+      "subtitle": "让坚持每天多走一点",
+      "lead": "喜欢直接练习，也愿意安排持续的投入，让变化一点点发生。",
+      "contrast": "不鼓励带伤坚持或过度训练，匹配不评价体能与毅力高低。",
+      "insight": "把「让坚持每天多走一点」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 77,
+        "analysis": 27,
+        "care": 54,
+        "freedom": 30,
+        "expression": 66,
+        "structure": 76
+      },
+      "sourceIds": [
+        "src_lee"
+      ],
+      "claimIds": [
+        "fact_lee",
+        "model_lee"
+      ],
+      "fact": "李以体术训练与反复练习为故事中的重要线索。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "gaara",
+      "name": "我爱罗",
+      "subtitle": "让边界成为一种守护",
+      "lead": "偏好有边界的相处和稳定安排，愿意为共同需要承担一部分。",
+      "contrast": "采用转变后的领导阶段，不用童年遭遇解释使用者心理。",
+      "insight": "把「让边界成为一种守护」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 38,
+        "analysis": 60,
+        "care": 64,
+        "freedom": 38,
+        "expression": 26,
+        "structure": 72
+      },
+      "sourceIds": [
+        "src_gaara"
+      ],
+      "claimIds": [
+        "fact_gaara",
+        "model_gaara"
+      ],
+      "fact": "我爱罗在成长后担任风影，并参与守护村落与联盟。",
+      "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。",
+      "accent": "#af7332",
+      "image": {
+        "file": "assets/naruto.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_naruto",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：作品与第七班简介",
+      "url": "https://naruto-official.com/en/about",
+      "kind": "official"
+    },
+    {
+      "id": "src_sasuke",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：作品与第七班简介",
+      "url": "https://naruto-official.com/en/about",
+      "kind": "official"
+    },
+    {
+      "id": "src_sakura",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：小樱人物回顾",
+      "url": "https://naruto-official.com/en/news/01_1743",
+      "kind": "official"
+    },
+    {
+      "id": "src_kakashi",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：卡卡西与第七班人物回顾",
+      "url": "https://naruto-official.com/en/news/01_1903",
+      "kind": "official"
+    },
+    {
+      "id": "src_shikamaru",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：鹿丸的战术与支持",
+      "url": "https://naruto-official.com/en/news/01_1910",
+      "kind": "official"
+    },
+    {
+      "id": "src_hinata",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：雏田人物回顾",
+      "url": "https://naruto-official.com/en/news/01_1668",
+      "kind": "official"
+    },
+    {
+      "id": "src_lee",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：李的训练与坚持",
+      "url": "https://naruto-official.com/en/news/01_1652",
+      "kind": "official"
+    },
+    {
+      "id": "src_gaara",
+      "checkedAt": "2026-10-11",
+      "title": "火影官方：我爱罗成长阶段",
+      "url": "https://naruto-official.com/en/news/01_1688",
+      "kind": "official"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_naruto",
+      "text": "鸣人以成为火影为目标，在漫画中与伙伴共同成长。",
+      "type": "fact",
+      "sourceIds": [
+        "src_naruto"
+      ],
+      "limits": "采用疾风传至第四次忍界大战阶段，不推断使用者的成长创伤。"
+    },
+    {
+      "id": "model_naruto",
+      "text": "由公开作品侧面启发的原创解读：愿意行动与表达，也把同行者放在心上，用参与推动变化。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用疾风传至第四次忍界大战阶段，不推断使用者的成长创伤。"
+    },
+    {
+      "id": "fact_sasuke",
+      "text": "佐助与鸣人、小樱共同成为第七班的成员。",
+      "type": "fact",
+      "sourceIds": [
+        "src_sasuke"
+      ],
+      "limits": "只匹配做事偏好，不认可或转嫁角色的复仇、冲突与伤害行为。"
+    },
+    {
+      "id": "model_sasuke",
+      "text": "由公开作品侧面启发的原创解读：自主与克制较鲜明，倾向用个人投入而非频繁解释推动事情。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；只匹配做事偏好，不认可或转嫁角色的复仇、冲突与伤害行为。"
+    },
+    {
+      "id": "fact_sakura",
+      "text": "小樱是第七班成员，在故事中学习医疗忍术。",
+      "type": "fact",
+      "sourceIds": [
+        "src_sakura"
+      ],
+      "limits": "采用成长后的技能学习侧面，不用恋爱选择解释使用者。"
+    },
+    {
+      "id": "model_sakura",
+      "text": "由公开作品侧面启发的原创解读：愿意查清方法，再持续练习，把关心落到实际支持。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用成长后的技能学习侧面，不用恋爱选择解释使用者。"
+    },
+    {
+      "id": "fact_kakashi",
+      "text": "卡卡西担任第七班的指导者。",
+      "type": "fact",
+      "sourceIds": [
+        "src_kakashi"
+      ],
+      "limits": "不推断隐藏的痛苦或家庭经历，取教师与团队协作阶段。"
+    },
+    {
+      "id": "model_kakashi",
+      "text": "由公开作品侧面启发的原创解读：习惯观察局面，回应需要时提供可以执行的方向。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不推断隐藏的痛苦或家庭经历，取教师与团队协作阶段。"
+    },
+    {
+      "id": "fact_shikamaru",
+      "text": "鹿丸在漫画中多次参与战术规划，并支持伙伴。",
+      "type": "fact",
+      "sourceIds": [
+        "src_shikamaru"
+      ],
+      "limits": "不使用作品中的智商设定评判使用者智力，坐标是原创编辑模型。"
+    },
+    {
+      "id": "model_shikamaru",
+      "text": "由公开作品侧面启发的原创解读：不急着先冲出去，愿意拆解信息和步骤，帮助团队找到清楚路径。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不使用作品中的智商设定评判使用者智力，坐标是原创编辑模型。"
+    },
+    {
+      "id": "fact_hinata",
+      "text": "雏田在漫画中持续修习，并在重要情节中保护鸣人。",
+      "type": "fact",
+      "sourceIds": [
+        "src_hinata"
+      ],
+      "limits": "安静不意味着软弱；不把人物恋爱、身份或亲子角色投到使用者身上。"
+    },
+    {
+      "id": "model_hinata",
+      "text": "由公开作品侧面启发的原创解读：更习惯温和而稳定的表达，愿意在关心中逐步建立行动。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；安静不意味着软弱；不把人物恋爱、身份或亲子角色投到使用者身上。"
+    },
+    {
+      "id": "fact_lee",
+      "text": "李以体术训练与反复练习为故事中的重要线索。",
+      "type": "fact",
+      "sourceIds": [
+        "src_lee"
+      ],
+      "limits": "不鼓励带伤坚持或过度训练，匹配不评价体能与毅力高低。"
+    },
+    {
+      "id": "model_lee",
+      "text": "由公开作品侧面启发的原创解读：喜欢直接练习，也愿意安排持续的投入，让变化一点点发生。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不鼓励带伤坚持或过度训练，匹配不评价体能与毅力高低。"
+    },
+    {
+      "id": "fact_gaara",
+      "text": "我爱罗在成长后担任风影，并参与守护村落与联盟。",
+      "type": "fact",
+      "sourceIds": [
+        "src_gaara"
+      ],
+      "limits": "采用转变后的领导阶段，不用童年遭遇解释使用者心理。"
+    },
+    {
+      "id": "model_gaara",
+      "text": "由公开作品侧面启发的原创解读：偏好有边界的相处和稳定安排，愿意为共同需要承担一部分。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用转变后的领导阶段，不用童年遭遇解释使用者心理。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "review",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_naruto",
+        "type": "name",
+        "origin": "src_naruto",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_naruto",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_sasuke",
+        "type": "name",
+        "origin": "src_sasuke",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_sasuke",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_sakura",
+        "type": "name",
+        "origin": "src_sakura",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_sakura",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_kakashi",
+        "type": "name",
+        "origin": "src_kakashi",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_kakashi",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_shikamaru",
+        "type": "name",
+        "origin": "src_shikamaru",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_shikamaru",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_hinata",
+        "type": "name",
+        "origin": "src_hinata",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_hinata",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_lee",
+        "type": "name",
+        "origin": "src_lee",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_lee",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_gaara",
+        "type": "name",
+        "origin": "src_gaara",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_gaara",
+        "type": "image",
+        "file": "assets/naruto.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "naruto",
+    "minutes": 4,
+    "title": "测测你最像哪位火影忍者角色",
+    "shortTitle": "找到你的同行方式",
+    "category": "动漫与电影",
+    "color": "#af7332",
+    "wash": "#fcf0df",
+    "tag": "动漫 · 成长",
+    "description": "十八个训练与协作片段，看看你会怎样和伙伴一起面对新挑战。",
+    "stage": "原作漫画疾风传至第四次忍界大战阶段；不同人物保留成长差异。"
+  }
+}

@@ -1,0 +1,1413 @@
+{
+  "meta": {
+    "id": "one-piece",
+    "title": "草帽一伙里，你最像哪位伙伴",
+    "schemaVersion": "1.0.0",
+    "productVersion": "1.0.0",
+    "scoringVersion": "1.0.0",
+    "reportVersion": "1.0.0",
+    "kind": "object-match",
+    "description": "如果加入一支远行小队，你会用好奇、准备，还是陪伴回应未知？",
+    "disclaimer": "娱乐与自我探索；结果只反映本次情境选择，不是心理诊断或能力测验。",
+    "userStudyValidated": false,
+    "requiresHumanReview": true
+  },
+  "dimensions": [
+    {
+      "id": "action",
+      "name": "行动节奏",
+      "lowLabel": "先观察",
+      "highLabel": "先迈步",
+      "description": "遇到新事物时如何开始与推进",
+      "highCopy": "你更愿意先做一个可调整的小尝试。",
+      "lowCopy": "你更愿意观察、理解后再迈出第一步。",
+      "weight": 1
+    },
+    {
+      "id": "analysis",
+      "name": "探索方式",
+      "lowLabel": "凭经验感受",
+      "highLabel": "查证推理",
+      "description": "面对不确定信息时怎样形成判断",
+      "highCopy": "你更习惯比较线索，核对条件与依据。",
+      "lowCopy": "你更习惯从经验、示范与直接感受开始。",
+      "weight": 1
+    },
+    {
+      "id": "care",
+      "name": "支持方式",
+      "lowLabel": "先解决任务",
+      "highLabel": "先照顾感受",
+      "description": "回应同行者需要时优先做什么",
+      "highCopy": "你更愿意先理解感受，再商量具体支持。",
+      "lowCopy": "你更愿意用具体办法和任务安排提供帮助。",
+      "weight": 1
+    },
+    {
+      "id": "freedom",
+      "name": "路径选择",
+      "lowLabel": "沿用惯例",
+      "highLabel": "自主尝试",
+      "description": "对熟悉惯例与新方法的取舍",
+      "highCopy": "你更愿意给个人方法和新形式留出空间。",
+      "lowCopy": "你更愿意借助熟悉的形式，认真完成内容。",
+      "weight": 1
+    },
+    {
+      "id": "expression",
+      "name": "表达习惯",
+      "lowLabel": "安静表达",
+      "highLabel": "公开表达",
+      "description": "选择怎样向他人展示想法与回应",
+      "highCopy": "你更愿意直接分享、演示或带动交流。",
+      "lowCopy": "你更愿意写下来或在熟悉的小范围中交流。",
+      "weight": 1
+    },
+    {
+      "id": "structure",
+      "name": "安排习惯",
+      "lowLabel": "灵活调整",
+      "highLabel": "事先规划",
+      "description": "如何组织时间、步骤和变化",
+      "highCopy": "你更愿意拆分步骤、核对条件并预留时间。",
+      "lowCopy": "你更愿意保留弹性，根据现场和状态调整。",
+      "weight": 1
+    }
+  ],
+  "questions": [
+    {
+      "id": "q01",
+      "dimension": "action",
+      "prompt": "假如你加入一支航海小队，靠岸后面对陌生的小镇，你会先怎么做？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "结伴走一小段熟悉环境",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「假如你加入一支航海小队，靠岸后面对陌生的小镇，你会先怎么做？」，你选择了「结伴走一小段熟悉环境」。"
+        },
+        {
+          "id": "c2",
+          "text": "在船上观察一会儿再下去",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「假如你加入一支航海小队，靠岸后面对陌生的小镇，你会先怎么做？」，你选择了「在船上观察一会儿再下去」。"
+        },
+        {
+          "id": "c3",
+          "text": "确认基本安全后主动去探索",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「假如你加入一支航海小队，靠岸后面对陌生的小镇，你会先怎么做？」，你选择了「确认基本安全后主动去探索」。"
+        },
+        {
+          "id": "c4",
+          "text": "听队友打听完情况再行动",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「假如你加入一支航海小队，靠岸后面对陌生的小镇，你会先怎么做？」，你选择了「听队友打听完情况再行动」。"
+        }
+      ]
+    },
+    {
+      "id": "q02",
+      "dimension": "analysis",
+      "prompt": "地图上的标记和眼前的地形对不上，你会怎样判断？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "问一位熟悉当地的人",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「地图上的标记和眼前的地形对不上，你会怎样判断？」，你选择了「问一位熟悉当地的人」。"
+        },
+        {
+          "id": "c2",
+          "text": "核对地图来源，再比较多个独立线索",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「地图上的标记和眼前的地形对不上，你会怎样判断？」，你选择了「核对地图来源，再比较多个独立线索」。"
+        },
+        {
+          "id": "c3",
+          "text": "先凭现场感觉寻找方向",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「地图上的标记和眼前的地形对不上，你会怎样判断？」，你选择了「先凭现场感觉寻找方向」。"
+        },
+        {
+          "id": "c4",
+          "text": "对照方位、地标和记录时间",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「地图上的标记和眼前的地形对不上，你会怎样判断？」，你选择了「对照方位、地标和记录时间」。"
+        }
+      ]
+    },
+    {
+      "id": "q03",
+      "dimension": "care",
+      "prompt": "一位新伙伴因为帮不上忙而低落，你会先？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先让他安心，说明被接纳不取决于立刻有用",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「一位新伙伴因为帮不上忙而低落，你会先？」，你选择了「先让他安心，说明被接纳不取决于立刻有用」。"
+        },
+        {
+          "id": "c2",
+          "text": "教他一项马上能用的技能",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「一位新伙伴因为帮不上忙而低落，你会先？」，你选择了「教他一项马上能用的技能」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问他最想参与哪一部分",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「一位新伙伴因为帮不上忙而低落，你会先？」，你选择了「问问他最想参与哪一部分」。"
+        },
+        {
+          "id": "c4",
+          "text": "给他安排一个可以完成的任务",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「一位新伙伴因为帮不上忙而低落，你会先？」，你选择了「给他安排一个可以完成的任务」。"
+        }
+      ]
+    },
+    {
+      "id": "q04",
+      "dimension": "freedom",
+      "prompt": "一条成熟航线和一条新探索路线摆在面前，你更偏好？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "选择成熟路线，享受稳定航行",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「一条成熟航线和一条新探索路线摆在面前，你更偏好？」，你选择了「选择成熟路线，享受稳定航行」。"
+        },
+        {
+          "id": "c2",
+          "text": "安排一小段新路线体验未知",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「一条成熟航线和一条新探索路线摆在面前，你更偏好？」，你选择了「安排一小段新路线体验未知」。"
+        },
+        {
+          "id": "c3",
+          "text": "主线不变，顺路探索一处新地方",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「一条成熟航线和一条新探索路线摆在面前，你更偏好？」，你选择了「主线不变，顺路探索一处新地方」。"
+        },
+        {
+          "id": "c4",
+          "text": "为新路线做准备，尝试自己的航行方式",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「一条成熟航线和一条新探索路线摆在面前，你更偏好？」，你选择了「为新路线做准备，尝试自己的航行方式」。"
+        }
+      ]
+    },
+    {
+      "id": "q05",
+      "dimension": "expression",
+      "prompt": "小队需要和码头工作人员沟通，你更愿意怎样参与？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "介绍小队需要并回应问题",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「小队需要和码头工作人员沟通，你更愿意怎样参与？」，你选择了「介绍小队需要并回应问题」。"
+        },
+        {
+          "id": "c2",
+          "text": "整理信息，让别人去讲",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「小队需要和码头工作人员沟通，你更愿意怎样参与？」，你选择了「整理信息，让别人去讲」。"
+        },
+        {
+          "id": "c3",
+          "text": "主动打开对话，把不同需求串起来",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「小队需要和码头工作人员沟通，你更愿意怎样参与？」，你选择了「主动打开对话，把不同需求串起来」。"
+        },
+        {
+          "id": "c4",
+          "text": "只回答自己负责的部分",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「小队需要和码头工作人员沟通，你更愿意怎样参与？」，你选择了「只回答自己负责的部分」。"
+        }
+      ]
+    },
+    {
+      "id": "q06",
+      "dimension": "structure",
+      "prompt": "出航前需要整理食物、工具和行程，你通常怎样准备？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "参考经验补齐常用物品",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「出航前需要整理食物、工具和行程，你通常怎样准备？」，你选择了「参考经验补齐常用物品」。"
+        },
+        {
+          "id": "c2",
+          "text": "核对数量、使用时段和备用补给",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「出航前需要整理食物、工具和行程，你通常怎样准备？」，你选择了「核对数量、使用时段和备用补给」。"
+        },
+        {
+          "id": "c3",
+          "text": "先备必需品，路上灵活调整",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「出航前需要整理食物、工具和行程，你通常怎样准备？」，你选择了「先备必需品，路上灵活调整」。"
+        },
+        {
+          "id": "c4",
+          "text": "列清单，给各项分配负责人",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「出航前需要整理食物、工具和行程，你通常怎样准备？」，你选择了「列清单，给各项分配负责人」。"
+        }
+      ]
+    },
+    {
+      "id": "q07",
+      "dimension": "action",
+      "prompt": "大家讨论要不要试一条新的航线，却一直没决定，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "认领准备工作，推动一次可撤回的尝试",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「大家讨论要不要试一条新的航线，却一直没决定，你倾向？」，你选择了「认领准备工作，推动一次可撤回的尝试」。"
+        },
+        {
+          "id": "c2",
+          "text": "等负责航线的人做决定",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「大家讨论要不要试一条新的航线，却一直没决定，你倾向？」，你选择了「等负责航线的人做决定」。"
+        },
+        {
+          "id": "c3",
+          "text": "提议先试一个短航段",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「大家讨论要不要试一条新的航线，却一直没决定，你倾向？」，你选择了「提议先试一个短航段」。"
+        },
+        {
+          "id": "c4",
+          "text": "再听一轮各自的顾虑",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「大家讨论要不要试一条新的航线，却一直没决定，你倾向？」，你选择了「再听一轮各自的顾虑」。"
+        }
+      ]
+    },
+    {
+      "id": "q08",
+      "dimension": "analysis",
+      "prompt": "船上的一个小装置运作异常，你更常怎样排查？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "凭经验试着调一调",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「船上的一个小装置运作异常，你更常怎样排查？」，你选择了「凭经验试着调一调」。"
+        },
+        {
+          "id": "c2",
+          "text": "逐项检查最近改变的部件",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「船上的一个小装置运作异常，你更常怎样排查？」，你选择了「逐项检查最近改变的部件」。"
+        },
+        {
+          "id": "c3",
+          "text": "请有经验的队友看一眼",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「船上的一个小装置运作异常，你更常怎样排查？」，你选择了「请有经验的队友看一眼」。"
+        },
+        {
+          "id": "c4",
+          "text": "建立故障假设，按可验证的顺序排除",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「船上的一个小装置运作异常，你更常怎样排查？」，你选择了「建立故障假设，按可验证的顺序排除」。"
+        }
+      ]
+    },
+    {
+      "id": "q09",
+      "dimension": "care",
+      "prompt": "小队刚遇到一次挫折，伙伴把责任都揽在自己身上，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "听听他为什么这么责备自己",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「小队刚遇到一次挫折，伙伴把责任都揽在自己身上，你会？」，你选择了「听听他为什么这么责备自己」。"
+        },
+        {
+          "id": "c2",
+          "text": "先补救损失，恢复必要安排",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「小队刚遇到一次挫折，伙伴把责任都揽在自己身上，你会？」，你选择了「先补救损失，恢复必要安排」。"
+        },
+        {
+          "id": "c3",
+          "text": "先陪他缓下来，再一起分清责任和意外",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「小队刚遇到一次挫折，伙伴把责任都揽在自己身上，你会？」，你选择了「先陪他缓下来，再一起分清责任和意外」。"
+        },
+        {
+          "id": "c4",
+          "text": "一起列出真正需要修正的部分",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「小队刚遇到一次挫折，伙伴把责任都揽在自己身上，你会？」，你选择了「一起列出真正需要修正的部分」。"
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "dimension": "freedom",
+      "prompt": "要给小队设计一面自己的旗帜，你倾向？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "在经典图案里加一个个人细节",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「要给小队设计一面自己的旗帜，你倾向？」，你选择了「在经典图案里加一个个人细节」。"
+        },
+        {
+          "id": "c2",
+          "text": "尝试一种不常见的形式，先看看远处效果",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「要给小队设计一面自己的旗帜，你倾向？」，你选择了「尝试一种不常见的形式，先看看远处效果」。"
+        },
+        {
+          "id": "c3",
+          "text": "采用经典、易识别的图案",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「要给小队设计一面自己的旗帜，你倾向？」，你选择了「采用经典、易识别的图案」。"
+        },
+        {
+          "id": "c4",
+          "text": "组合大家的兴趣做新的图案",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「要给小队设计一面自己的旗帜，你倾向？」，你选择了「组合大家的兴趣做新的图案」。"
+        }
+      ]
+    },
+    {
+      "id": "q11",
+      "dimension": "expression",
+      "prompt": "完成一次有趣的航行后，你最想怎样分享？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "组织一次故事分享，邀请大家一起讨论",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「完成一次有趣的航行后，你最想怎样分享？」，你选择了「组织一次故事分享，邀请大家一起讨论」。"
+        },
+        {
+          "id": "c2",
+          "text": "先发给几位朋友",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「完成一次有趣的航行后，你最想怎样分享？」，你选择了「先发给几位朋友」。"
+        },
+        {
+          "id": "c3",
+          "text": "向一群朋友讲述经历",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「完成一次有趣的航行后，你最想怎样分享？」，你选择了「向一群朋友讲述经历」。"
+        },
+        {
+          "id": "c4",
+          "text": "写成自己的航海笔记",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「完成一次有趣的航行后，你最想怎样分享？」，你选择了「写成自己的航海笔记」。"
+        }
+      ]
+    },
+    {
+      "id": "q12",
+      "dimension": "structure",
+      "prompt": "天气使原定靠岸计划改变，你会怎样调整？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "跟着现场情况重新安排",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「天气使原定靠岸计划改变，你会怎样调整？」，你选择了「跟着现场情况重新安排」。"
+        },
+        {
+          "id": "c2",
+          "text": "重新排好路段和停留时间",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「天气使原定靠岸计划改变，你会怎样调整？」，你选择了「重新排好路段和停留时间」。"
+        },
+        {
+          "id": "c3",
+          "text": "保留大方向，先处理眼前事项",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「天气使原定靠岸计划改变，你会怎样调整？」，你选择了「保留大方向，先处理眼前事项」。"
+        },
+        {
+          "id": "c4",
+          "text": "核对补给、余量与备选停靠点",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「天气使原定靠岸计划改变，你会怎样调整？」，你选择了「核对补给、余量与备选停靠点」。"
+        }
+      ]
+    },
+    {
+      "id": "q13",
+      "dimension": "action",
+      "prompt": "你有一项想在航行途中练习的新技能，通常怎样开始？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "每天试一点简单动作",
+          "effects": {
+            "action": 1
+          },
+          "evidence": "面对「你有一项想在航行途中练习的新技能，通常怎样开始？」，你选择了「每天试一点简单动作」。"
+        },
+        {
+          "id": "c2",
+          "text": "先看别人做，慢慢理解",
+          "effects": {
+            "action": -3
+          },
+          "evidence": "面对「你有一项想在航行途中练习的新技能，通常怎样开始？」，你选择了「先看别人做，慢慢理解」。"
+        },
+        {
+          "id": "c3",
+          "text": "约好练习时间，当天做第一轮",
+          "effects": {
+            "action": 3
+          },
+          "evidence": "面对「你有一项想在航行途中练习的新技能，通常怎样开始？」，你选择了「约好练习时间，当天做第一轮」。"
+        },
+        {
+          "id": "c4",
+          "text": "等找到合适教材再练",
+          "effects": {
+            "action": -1
+          },
+          "evidence": "面对「你有一项想在航行途中练习的新技能，通常怎样开始？」，你选择了「等找到合适教材再练」。"
+        }
+      ]
+    },
+    {
+      "id": "q14",
+      "dimension": "analysis",
+      "prompt": "听到一个关于宝藏的传闻，你首先想知道什么？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "谁在当地也听说过",
+          "effects": {
+            "analysis": -1
+          },
+          "evidence": "面对「听到一个关于宝藏的传闻，你首先想知道什么？」，你选择了「谁在当地也听说过」。"
+        },
+        {
+          "id": "c2",
+          "text": "最早记录在哪里，哪些细节能独立证实",
+          "effects": {
+            "analysis": 3
+          },
+          "evidence": "面对「听到一个关于宝藏的传闻，你首先想知道什么？」，你选择了「最早记录在哪里，哪些细节能独立证实」。"
+        },
+        {
+          "id": "c3",
+          "text": "故事是否让自己感到有趣",
+          "effects": {
+            "analysis": -3
+          },
+          "evidence": "面对「听到一个关于宝藏的传闻，你首先想知道什么？」，你选择了「故事是否让自己感到有趣」。"
+        },
+        {
+          "id": "c4",
+          "text": "描述中的地点和时间是否一致",
+          "effects": {
+            "analysis": 1
+          },
+          "evidence": "面对「听到一个关于宝藏的传闻，你首先想知道什么？」，你选择了「描述中的地点和时间是否一致」。"
+        }
+      ]
+    },
+    {
+      "id": "q15",
+      "dimension": "care",
+      "prompt": "船上资源有限，伙伴疲惫得不想说话，你更可能？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先照顾他的状态，再一起谈能承担多少",
+          "effects": {
+            "care": 3
+          },
+          "evidence": "面对「船上资源有限，伙伴疲惫得不想说话，你更可能？」，你选择了「先照顾他的状态，再一起谈能承担多少」。"
+        },
+        {
+          "id": "c2",
+          "text": "替他完成眼前最重的工作",
+          "effects": {
+            "care": -1
+          },
+          "evidence": "面对「船上资源有限，伙伴疲惫得不想说话，你更可能？」，你选择了「替他完成眼前最重的工作」。"
+        },
+        {
+          "id": "c3",
+          "text": "问问他需要安静还是帮忙",
+          "effects": {
+            "care": 1
+          },
+          "evidence": "面对「船上资源有限，伙伴疲惫得不想说话，你更可能？」，你选择了「问问他需要安静还是帮忙」。"
+        },
+        {
+          "id": "c4",
+          "text": "重新分配任务，保证运转",
+          "effects": {
+            "care": -3
+          },
+          "evidence": "面对「船上资源有限，伙伴疲惫得不想说话，你更可能？」，你选择了「重新分配任务，保证运转」。"
+        }
+      ]
+    },
+    {
+      "id": "q16",
+      "dimension": "freedom",
+      "prompt": "队里的老办法已不太适合新成员，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "先保持习惯，让新成员熟悉",
+          "effects": {
+            "freedom": -3
+          },
+          "evidence": "面对「队里的老办法已不太适合新成员，你会？」，你选择了「先保持习惯，让新成员熟悉」。"
+        },
+        {
+          "id": "c2",
+          "text": "提出一个可以试行的新办法",
+          "effects": {
+            "freedom": 1
+          },
+          "evidence": "面对「队里的老办法已不太适合新成员，你会？」，你选择了「提出一个可以试行的新办法」。"
+        },
+        {
+          "id": "c3",
+          "text": "局部改动，保留主要方式",
+          "effects": {
+            "freedom": -1
+          },
+          "evidence": "面对「队里的老办法已不太适合新成员，你会？」，你选择了「局部改动，保留主要方式」。"
+        },
+        {
+          "id": "c4",
+          "text": "设计两套方案，让大家比较使用体验",
+          "effects": {
+            "freedom": 3
+          },
+          "evidence": "面对「队里的老办法已不太适合新成员，你会？」，你选择了「设计两套方案，让大家比较使用体验」。"
+        }
+      ]
+    },
+    {
+      "id": "q17",
+      "dimension": "expression",
+      "prompt": "船上晚间休息时，有人提议来一场即兴表演，你会？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "愿意表演一个完整节目",
+          "effects": {
+            "expression": 1
+          },
+          "evidence": "面对「船上晚间休息时，有人提议来一场即兴表演，你会？」，你选择了「愿意表演一个完整节目」。"
+        },
+        {
+          "id": "c2",
+          "text": "在旁边听，帮忙准备道具",
+          "effects": {
+            "expression": -3
+          },
+          "evidence": "面对「船上晚间休息时，有人提议来一场即兴表演，你会？」，你选择了「在旁边听，帮忙准备道具」。"
+        },
+        {
+          "id": "c3",
+          "text": "主持整场，让每个人都能加入",
+          "effects": {
+            "expression": 3
+          },
+          "evidence": "面对「船上晚间休息时，有人提议来一场即兴表演，你会？」，你选择了「主持整场，让每个人都能加入」。"
+        },
+        {
+          "id": "c4",
+          "text": "参加一个小片段",
+          "effects": {
+            "expression": -1
+          },
+          "evidence": "面对「船上晚间休息时，有人提议来一场即兴表演，你会？」，你选择了「参加一个小片段」。"
+        }
+      ]
+    },
+    {
+      "id": "q18",
+      "dimension": "structure",
+      "prompt": "你负责管理一份航行记录，更可能采用哪种方式？",
+      "choices": [
+        {
+          "id": "c1",
+          "text": "每天简单记几个要点",
+          "effects": {
+            "structure": -1
+          },
+          "evidence": "面对「你负责管理一份航行记录，更可能采用哪种方式？」，你选择了「每天简单记几个要点」。"
+        },
+        {
+          "id": "c2",
+          "text": "分类记录并定期复查，方便之后回溯",
+          "effects": {
+            "structure": 3
+          },
+          "evidence": "面对「你负责管理一份航行记录，更可能采用哪种方式？」，你选择了「分类记录并定期复查，方便之后回溯」。"
+        },
+        {
+          "id": "c3",
+          "text": "想到有趣的事就记下来",
+          "effects": {
+            "structure": -3
+          },
+          "evidence": "面对「你负责管理一份航行记录，更可能采用哪种方式？」，你选择了「想到有趣的事就记下来」。"
+        },
+        {
+          "id": "c4",
+          "text": "用固定格式记录主要情况",
+          "effects": {
+            "structure": 1
+          },
+          "evidence": "面对「你负责管理一份航行记录，更可能采用哪种方式？」，你选择了「用固定格式记录主要情况」。"
+        }
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "luffy",
+      "name": "蒙奇·D·路飞",
+      "subtitle": "先出发的自由心",
+      "lead": "重视自由与共同经历，愿意用一次行动把未知变得可接近。",
+      "contrast": "采用漫画草帽一伙共同航行阶段；不测量勇气、领导力或战斗能力。",
+      "insight": "把「先出发的自由心」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 77,
+        "analysis": 27,
+        "care": 56,
+        "freedom": 78,
+        "expression": 73,
+        "structure": 25
+      },
+      "sourceIds": [
+        "src_luffy"
+      ],
+      "claimIds": [
+        "fact_luffy",
+        "model_luffy"
+      ],
+      "fact": "路飞是《ONE PIECE》草帽一伙的船长。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 0
+      }
+    },
+    {
+      "id": "zoro",
+      "name": "罗罗诺亚·索隆",
+      "subtitle": "安静地练到下一步",
+      "lead": "倾向直接练习、持续投入，让行动与坚持替自己表达。",
+      "contrast": "克制是建模解释，不把自我消耗或冒险作为成长要求。",
+      "insight": "把「安静地练到下一步」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 69,
+        "analysis": 35,
+        "care": 35,
+        "freedom": 40,
+        "expression": 25,
+        "structure": 68
+      },
+      "sourceIds": [
+        "src_zoro"
+      ],
+      "claimIds": [
+        "fact_zoro",
+        "model_zoro"
+      ],
+      "fact": "索隆在草帽一伙中担任战斗员。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 1
+      }
+    },
+    {
+      "id": "nami",
+      "name": "娜美",
+      "subtitle": "给远行一份清楚安排",
+      "lead": "关注信息和实际条件，也愿意公开协调，让旅途更有章法。",
+      "contrast": "不把职业直接等同于完整人格，不以金钱刻板印象解释结果。",
+      "insight": "把「给远行一份清楚安排」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 48,
+        "analysis": 70,
+        "care": 46,
+        "freedom": 44,
+        "expression": 65,
+        "structure": 74
+      },
+      "sourceIds": [
+        "src_nami"
+      ],
+      "claimIds": [
+        "fact_nami",
+        "model_nami"
+      ],
+      "fact": "娜美是草帽一伙的航海士。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 2
+      }
+    },
+    {
+      "id": "usopp",
+      "name": "乌索普",
+      "subtitle": "让想象找到表达方式",
+      "lead": "想象与表达都很鲜明，愿意把一个点子变成大家能参与的故事。",
+      "contrast": "不将角色的吹嘘或胆怯判给使用者，保留角色成长变化。",
+      "insight": "把「让想象找到表达方式」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 43,
+        "analysis": 48,
+        "care": 56,
+        "freedom": 72,
+        "expression": 77,
+        "structure": 36
+      },
+      "sourceIds": [
+        "src_usopp"
+      ],
+      "claimIds": [
+        "fact_usopp",
+        "model_usopp"
+      ],
+      "fact": "乌索普是草帽一伙的狙击手。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 3
+      }
+    },
+    {
+      "id": "sanji",
+      "name": "山治",
+      "subtitle": "把关心做成日常",
+      "lead": "愿意提供具体照料，也能把任务稳定地做好，让同行更舒服。",
+      "contrast": "不采用性别化追求作为特征，关心与做事方式是原创映射。",
+      "insight": "把「把关心做成日常」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 66,
+        "analysis": 40,
+        "care": 73,
+        "freedom": 37,
+        "expression": 58,
+        "structure": 64
+      },
+      "sourceIds": [
+        "src_sanji"
+      ],
+      "claimIds": [
+        "fact_sanji",
+        "model_sanji"
+      ],
+      "fact": "山治是草帽一伙的厨师。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 4
+      }
+    },
+    {
+      "id": "chopper",
+      "name": "托尼托尼·乔巴",
+      "subtitle": "认真照顾每一份需要",
+      "lead": "愿意学习与查证，也把理解别人的处境放进自己的行动。",
+      "contrast": "只借用故事职业侧面，不提供医疗建议或评价专业能力。",
+      "insight": "把「认真照顾每一份需要」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 35,
+        "analysis": 62,
+        "care": 78,
+        "freedom": 36,
+        "expression": 31,
+        "structure": 62
+      },
+      "sourceIds": [
+        "src_chopper"
+      ],
+      "claimIds": [
+        "fact_chopper",
+        "model_chopper"
+      ],
+      "fact": "乔巴是草帽一伙的船医。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 5
+      }
+    },
+    {
+      "id": "robin",
+      "name": "妮可·罗宾",
+      "subtitle": "让线索慢慢显形",
+      "lead": "更愿意安静观察，把分散的信息放到一起，再形成自己的判断。",
+      "contrast": "不推断隐藏创伤或私人经历，采用成年同行阶段的公开行为。",
+      "insight": "把「让线索慢慢显形」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 29,
+        "analysis": 75,
+        "care": 50,
+        "freedom": 65,
+        "expression": 24,
+        "structure": 59
+      },
+      "sourceIds": [
+        "src_robin"
+      ],
+      "claimIds": [
+        "fact_robin",
+        "model_robin"
+      ],
+      "fact": "罗宾是草帽一伙的考古学者。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 6
+      }
+    },
+    {
+      "id": "franky",
+      "name": "弗兰奇",
+      "subtitle": "把点子做成看得见的东西",
+      "lead": "喜欢试新方法，也乐于把成果展示出来，在创造中回应伙伴。",
+      "contrast": "创造侧面不等于现实技术水平，也不以身体设计定义使用者。",
+      "insight": "把「把点子做成看得见的东西」当成一次观察邀请：试着回想近期一个真实选择，看看这个侧面是否符合当时的自己。",
+      "vector": {
+        "action": 73,
+        "analysis": 61,
+        "care": 42,
+        "freedom": 76,
+        "expression": 77,
+        "structure": 45
+      },
+      "sourceIds": [
+        "src_franky"
+      ],
+      "claimIds": [
+        "fact_franky",
+        "model_franky"
+      ],
+      "fact": "弗兰奇是草帽一伙的船大工。",
+      "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。",
+      "accent": "#287eaa",
+      "image": {
+        "file": "assets/one-piece.webp",
+        "cols": 4,
+        "rows": 2,
+        "index": 7
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "src_luffy",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    },
+    {
+      "id": "src_zoro",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    },
+    {
+      "id": "src_nami",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    },
+    {
+      "id": "src_usopp",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    },
+    {
+      "id": "src_sanji",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    },
+    {
+      "id": "src_chopper",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    },
+    {
+      "id": "src_robin",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    },
+    {
+      "id": "src_franky",
+      "checkedAt": "2026-10-11",
+      "title": "ONE PIECE FILM RED 官方角色与职责",
+      "url": "https://www.onepiece-film.jp/red/movie/",
+      "kind": "official"
+    }
+  ],
+  "claims": [
+    {
+      "id": "fact_luffy",
+      "text": "路飞是《ONE PIECE》草帽一伙的船长。",
+      "type": "fact",
+      "sourceIds": [
+        "src_luffy"
+      ],
+      "limits": "采用漫画草帽一伙共同航行阶段；不测量勇气、领导力或战斗能力。"
+    },
+    {
+      "id": "model_luffy",
+      "text": "由公开作品侧面启发的原创解读：重视自由与共同经历，愿意用一次行动把未知变得可接近。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；采用漫画草帽一伙共同航行阶段；不测量勇气、领导力或战斗能力。"
+    },
+    {
+      "id": "fact_zoro",
+      "text": "索隆在草帽一伙中担任战斗员。",
+      "type": "fact",
+      "sourceIds": [
+        "src_zoro"
+      ],
+      "limits": "克制是建模解释，不把自我消耗或冒险作为成长要求。"
+    },
+    {
+      "id": "model_zoro",
+      "text": "由公开作品侧面启发的原创解读：倾向直接练习、持续投入，让行动与坚持替自己表达。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；克制是建模解释，不把自我消耗或冒险作为成长要求。"
+    },
+    {
+      "id": "fact_nami",
+      "text": "娜美是草帽一伙的航海士。",
+      "type": "fact",
+      "sourceIds": [
+        "src_nami"
+      ],
+      "limits": "不把职业直接等同于完整人格，不以金钱刻板印象解释结果。"
+    },
+    {
+      "id": "model_nami",
+      "text": "由公开作品侧面启发的原创解读：关注信息和实际条件，也愿意公开协调，让旅途更有章法。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不把职业直接等同于完整人格，不以金钱刻板印象解释结果。"
+    },
+    {
+      "id": "fact_usopp",
+      "text": "乌索普是草帽一伙的狙击手。",
+      "type": "fact",
+      "sourceIds": [
+        "src_usopp"
+      ],
+      "limits": "不将角色的吹嘘或胆怯判给使用者，保留角色成长变化。"
+    },
+    {
+      "id": "model_usopp",
+      "text": "由公开作品侧面启发的原创解读：想象与表达都很鲜明，愿意把一个点子变成大家能参与的故事。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不将角色的吹嘘或胆怯判给使用者，保留角色成长变化。"
+    },
+    {
+      "id": "fact_sanji",
+      "text": "山治是草帽一伙的厨师。",
+      "type": "fact",
+      "sourceIds": [
+        "src_sanji"
+      ],
+      "limits": "不采用性别化追求作为特征，关心与做事方式是原创映射。"
+    },
+    {
+      "id": "model_sanji",
+      "text": "由公开作品侧面启发的原创解读：愿意提供具体照料，也能把任务稳定地做好，让同行更舒服。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不采用性别化追求作为特征，关心与做事方式是原创映射。"
+    },
+    {
+      "id": "fact_chopper",
+      "text": "乔巴是草帽一伙的船医。",
+      "type": "fact",
+      "sourceIds": [
+        "src_chopper"
+      ],
+      "limits": "只借用故事职业侧面，不提供医疗建议或评价专业能力。"
+    },
+    {
+      "id": "model_chopper",
+      "text": "由公开作品侧面启发的原创解读：愿意学习与查证，也把理解别人的处境放进自己的行动。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；只借用故事职业侧面，不提供医疗建议或评价专业能力。"
+    },
+    {
+      "id": "fact_robin",
+      "text": "罗宾是草帽一伙的考古学者。",
+      "type": "fact",
+      "sourceIds": [
+        "src_robin"
+      ],
+      "limits": "不推断隐藏创伤或私人经历，采用成年同行阶段的公开行为。"
+    },
+    {
+      "id": "model_robin",
+      "text": "由公开作品侧面启发的原创解读：更愿意安静观察，把分散的信息放到一起，再形成自己的判断。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；不推断隐藏创伤或私人经历，采用成年同行阶段的公开行为。"
+    },
+    {
+      "id": "fact_franky",
+      "text": "弗兰奇是草帽一伙的船大工。",
+      "type": "fact",
+      "sourceIds": [
+        "src_franky"
+      ],
+      "limits": "创造侧面不等于现实技术水平，也不以身体设计定义使用者。"
+    },
+    {
+      "id": "model_franky",
+      "text": "由公开作品侧面启发的原创解读：喜欢试新方法，也乐于把成果展示出来，在创造中回应伙伴。",
+      "type": "original",
+      "sourceIds": [],
+      "limits": "全部坐标由编辑创作，未测量作者、人物或真实使用者；创造侧面不等于现实技术水平，也不以身体设计定义使用者。"
+    }
+  ],
+  "scoring": {
+    "algorithm": "weighted-distance-v1",
+    "tieThreshold": 2.5,
+    "weakMatchThreshold": 28,
+    "lowSeparationThreshold": 4
+  },
+  "rights": {
+    "status": "review",
+    "commercialUse": false,
+    "assets": [
+      {
+        "id": "writing",
+        "type": "text",
+        "origin": "项目原创",
+        "basis": "题目、选项、证据、维度与报告文案由本工程新编。",
+        "status": "clear"
+      },
+      {
+        "id": "fonts",
+        "type": "font",
+        "origin": "使用者系统字体",
+        "basis": "使用系统自带字体栈，不打包第三方字体文件。",
+        "status": "clear"
+      },
+      {
+        "id": "name_luffy",
+        "type": "name",
+        "origin": "src_luffy",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_luffy",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 0,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_zoro",
+        "type": "name",
+        "origin": "src_zoro",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_zoro",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 1,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_nami",
+        "type": "name",
+        "origin": "src_nami",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_nami",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 2,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_usopp",
+        "type": "name",
+        "origin": "src_usopp",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_usopp",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 3,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_sanji",
+        "type": "name",
+        "origin": "src_sanji",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_sanji",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 4,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_chopper",
+        "type": "name",
+        "origin": "src_chopper",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_chopper",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 5,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_robin",
+        "type": "name",
+        "origin": "src_robin",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_robin",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 6,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      },
+      {
+        "id": "name_franky",
+        "type": "name",
+        "origin": "src_franky",
+        "owner": "相应作品权利方",
+        "basis": "评论式角色提及；正式公开用途未核实授权。",
+        "status": "review"
+      },
+      {
+        "id": "portrait_franky",
+        "type": "image",
+        "file": "assets/one-piece.webp",
+        "tile": 7,
+        "origin": "built-in image_gen 新生成，见 image-manifest.json",
+        "owner": "本项目生成输出；角色权利归相应权利方",
+        "basis": "原创生成角色同人插画，仍含第三方角色表达；仅本地审查稿，AI与免费都不代表授权。",
+        "status": "review"
+      }
+    ]
+  },
+  "reports": {
+    "intro": "从日常偏好与故事人物的一个侧面相遇。",
+    "footer": "这是一种原创匹配方式，不是对人完整而固定的定义。"
+  },
+  "presentation": {
+    "slug": "one-piece",
+    "minutes": 4,
+    "title": "草帽一伙里，你最像哪位伙伴",
+    "shortTitle": "一起向大海出发",
+    "category": "动漫与电影",
+    "color": "#287eaa",
+    "wash": "#e6f4fb",
+    "tag": "动漫 · 航海",
+    "description": "如果加入一支远行小队，你会用好奇、准备，还是陪伴回应未知？",
+    "stage": "《ONE PIECE》漫画草帽一伙共同航行阶段；不采用真人剧设定。"
+  }
+}
