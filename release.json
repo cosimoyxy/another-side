@@ -1,6 +1,6 @@
 {
   "name": "另一面 · 测评游乐场",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "url": "https://cosimoyxy.github.io/another-side/",
   "products": 10,
   "questions": 186,
@@ -9,15 +9,15 @@
   "rightsReview": "REVIEW",
   "deploymentAuthorization": "用户明确要求部署到自己的 GitHub，供朋友测试。",
   "artifactHashes": {
-    "index.html": "cf130f0d11a074dde3e07dcb248349039f8edd807528f3430acfde19349a8806",
-    "style.css": "392fd2fc4c0bd5803a146dfb216a585b4d8ccd8941f87f208533825b11aaae9c",
-    "app.js": "1198135630e549da8755ac80e889b3eeeb4e636966220bc7eb8261002ee1f004",
+    "index.html": "aed49ce487ed900b4a0fe165ea60acef229733a044f0f62f3961683cbcd0043f",
+    "style.css": "b678f2b2e3b2e2622d37c5359d76ef7aeb49d5c3ce33c72a4dbbaa1b79ab8f15",
+    "app.js": "634cd7fdf837fb3896805c5982b2814158d763c86620aa003d8ab4d7c093379d",
     "data.js": "d8d1acda7516d87b61ba5ea2fce3becf3f45667881663f67b1a3b1473b7f0dd8",
     "scoring.js": "055ae6fecc8adc9edbfe3ec266e89d4807cc9667137c752450e3a67c80933398"
   },
   "files": {
     ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "app.js": "1198135630e549da8755ac80e889b3eeeb4e636966220bc7eb8261002ee1f004",
+    "app.js": "634cd7fdf837fb3896805c5982b2814158d763c86620aa003d8ab4d7c093379d",
     "assets/animals.webp": "650ff230cf78d5f65333226a442ff135554169b2a898fd819073c5a4426fa630",
     "assets/ghibli.webp": "83025de57f267dbb510a0d8ee30a4c37f5ba2c5d0b7154489dac7b86f6e665fc",
     "assets/harry-potter/arthur.jpg": "9465c1e33c8ab148e2d86c7494ce6b52980643e42a08a9f446e9e36d87a02cb8",
@@ -49,8 +49,8 @@
     "assets/scientists.webp": "8a8ada5e158e73b2a445810619d8d0b901f84eecaa5837f6979e0bd88c6fdfc3",
     "data.js": "d8d1acda7516d87b61ba5ea2fce3becf3f45667881663f67b1a3b1473b7f0dd8",
     "favicon.svg": "deb9f67064f22beb26f7a8be478cd3d2dcd452292ab56fe31107749ae4c9c0b2",
-    "index.html": "cf130f0d11a074dde3e07dcb248349039f8edd807528f3430acfde19349a8806",
+    "index.html": "aed49ce487ed900b4a0fe165ea60acef229733a044f0f62f3961683cbcd0043f",
     "scoring.js": "055ae6fecc8adc9edbfe3ec266e89d4807cc9667137c752450e3a67c80933398",
-    "style.css": "392fd2fc4c0bd5803a146dfb216a585b4d8ccd8941f87f208533825b11aaae9c"
+    "style.css": "b678f2b2e3b2e2622d37c5359d76ef7aeb49d5c3ce33c72a4dbbaa1b79ab8f15"
   }
 }

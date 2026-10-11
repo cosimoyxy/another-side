@@ -8,7 +8,11 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
 
 /* Square atlas tiles cover the portrait without stretching faces. */
-.portrait{container-type:size}.tile{position:absolute;width:max(100cqw,100cqh);height:max(100cqw,100cqh);left:50%;top:50%;transform:translate(-50%,-50%)}.atlas-image{position:absolute;max-width:none;object-fit:fill}
+.portrait{container-type:size}.tile{position:absolute;width:max(100cqw,100cqh);height:max(100cqw,100cqh);left:50%;top:50%;transform:translate(-50%,-50%);overflow:hidden}.atlas-image{position:absolute;max-width:none;object-fit:fill}
+
+/* A result shows the whole selected portrait, with its own clipping boundary. */
+.result-hero>.portrait{width:100%;height:auto;min-height:0;aspect-ratio:1;align-self:center;background:var(--wash)}
+.result-hero>.portrait .single{object-fit:contain;object-position:center}
 
 .card-preview img{height:auto}
 
